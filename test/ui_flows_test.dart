@@ -1,5 +1,4 @@
 import 'package:bloom/integration/bloom_gateway.dart';
-import 'package:bloom/integration/pending_gateway.dart';
 import 'package:bloom/ui/bloom_app.dart';
 import 'package:bloom/ui/editors.dart';
 import 'package:bloom/ui/habit_detail.dart';
@@ -218,11 +217,11 @@ Future<void> mount(WidgetTester tester, BloomGateway gateway) async {
 
 void main() {
   testWidgets(
-    'honest production integration error and retry; no fake records',
+    'unavailable storage shows error and retry without fake records',
     (tester) async {
-      await mount(tester, PendingGateway());
+      await mount(tester, UiTestGateway()..failLoad = true);
       expect(find.text('Your habits could not be loaded'), findsOneWidget);
-      expect(find.textContaining('awaiting team integration'), findsOneWidget);
+      expect(find.textContaining('Cannot open local database'), findsOneWidget);
       await tapVisible(tester, find.text('Try again'));
       expect(find.byType(HabitCard), findsNothing);
     },

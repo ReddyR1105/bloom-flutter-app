@@ -77,6 +77,7 @@ class ContentColumn extends StatelessWidget {
   final List<Widget> children;
   @override
   Widget build(BuildContext context) => SingleChildScrollView(
+    keyboardDismissBehavior: ScrollViewKeyboardDismissBehavior.onDrag,
     physics: const AlwaysScrollableScrollPhysics(),
     padding: const EdgeInsets.all(24),
     child: Center(
