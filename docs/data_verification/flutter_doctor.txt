@@ -1,0 +1,46 @@
+[!] Flutter (Channel stable, 3.47.7, on macOS 26.5 25F71 darwin-arm64, locale en-US) [641ms]
+    • Flutter version 3.47.7 on channel stable at /Users/hetjani/development/flutter_activity09
+    ! The flutter binary is not on your path. Consider adding /Users/hetjani/development/flutter_activity09/bin to your path.
+    ! The dart binary is not on your path. Consider adding /Users/hetjani/development/flutter_activity09/bin to your path.
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision abaf9c5237 (3 weeks ago), 2026-10-08 09:51:21 -0700
+    • Engine revision deb287481e
+    • Dart version 3.13.5
+    • DevTools version 2.60.0
+    • Feature flags: enable-web, enable-linux-desktop, enable-macos-desktop, enable-windows-desktop, enable-android, enable-ios, cli-animations, enable-native-assets, enable-record-use, enable-swift-package-manager, omit-legacy-version-file, enable-lldb-debugging, enable-uiscene-migration
+    • If those were intentional, you can disregard the above warnings; however it is recommended to use "git" directly to perform update checks and upgrades.
+
+[✓] Android toolchain - develop for Android devices (Android SDK version 36.0.0) [888ms]
+    • Android SDK at /Users/hetjani/Library/Android/sdk
+    • Emulator version 37.1.11.0 (build_id 15917651) (CL:N/A)
+    • Platform android-37.0, build-tools 36.0.0
+    • Java binary at: /Users/hetjani/develop/jdk21/Contents/Home/bin/java
+      This JDK is specified in your Flutter configuration.
+      To change the current JDK, run: `flutter config --jdk-dir="path/to/jdk"`.
+    • Java version OpenJDK Runtime Environment Temurin-21.0.12.1+1 (build 21.0.12.1+1-LTS)
+    • All Android licenses accepted.
+
+[!] Xcode - develop for iOS and macOS [102ms]
+    ✗ Xcode installation is incomplete; a full installation is necessary for iOS and macOS development.
+      Download at: https://developer.apple.com/xcode/
+      Or install Xcode via the App Store.
+      Once installed, run:
+        sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+        sudo xcodebuild -runFirstLaunch
+    ! CocoaPods not installed.
+        CocoaPods is a package manager for iOS or macOS platform code.
+        Without CocoaPods, plugins will not work on iOS or macOS.
+        For more info, see https://flutter.dev/to/platform-plugins
+      For installation instructions, see https://guides.cocoapods.org/using/getting-started.html#installation
+
+[✓] Chrome - develop for the web [35ms]
+    • Chrome at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome
+
+[✓] Connected device (2 available) [743ms]
+    • macOS (desktop) • macos  • darwin-arm64   • macOS 26.5 25F71 darwin-arm64
+    • Chrome (web)    • chrome • web-javascript • Google Chrome 156.0.8078.47
+
+[✓] Network resources [163ms]
+    • All expected network resources are available.
+
+! Doctor found issues in 2 categories.
