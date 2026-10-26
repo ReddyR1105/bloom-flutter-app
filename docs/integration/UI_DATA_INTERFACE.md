@@ -1,5 +1,7 @@
 # Rohan / Het integration boundary — October 26, 2026
 
+**Integration update:** Het's exact tip `6459294` is integrated and `BloomRepository.open()` directly implements this gateway. Production startup now opens/injects it; no mapping adapter or pending gateway remains. See PR2_REVIEW.md, HET_INTEGRATION_HANDOFF.md and the current TEST_LOG.md. The inspection and proposed steps below are retained as the original pre-integration contract, not the current availability status.
+
 ## Inspection and ownership
 
 Before edits, origin/main contained only README.md and .gitignore (commit 4e5ae0d). Local planning branch contained the handoff and documentation (1825175). No lib/, test/, pubspec.yaml, AGENTS.md, instructor rubric, or data/helper APIs existed. Fetch succeeded; no Het branch or PR was visible. The user confirmed Het is still working. This is not an assessment of work on his machine.

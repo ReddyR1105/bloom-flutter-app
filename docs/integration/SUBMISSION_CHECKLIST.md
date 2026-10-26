@@ -1,40 +1,30 @@
-# Submission checklist — NOT READY
+# Individual submission checklist
 
-Deadline: October 27, 2026, 11:59 PM America/New_York. Group number still unknown. This is derived from the supplied handoff; the actual instructor assignment/rubric and question bank were not present. If they differ, the actual assignment controls.
+Technical code and verification are complete; genuine course/human evidence remains pending. Deadline: October 27, 2026, 11:59 PM America/New_York. Actual rubric/question bank was not supplied; verify it before upload.
 
-| Deliverable | Current status / responsible party |
-| --- | --- |
-| Five-screen integrated app | Rohan UI implemented; Het adapter/data/helper integration pending. |
-| Release APK | Build result documented in TEST_LOG; integration review APK is not a functional final submission. |
-| Source archive | Archive current source only; exclude secrets, local paths, .git, caches, build output and final_submission recursion. Regenerate after integration. |
-| README + ARCHITECTURE | Current integration status documented; update versions/schema/usage from Het's real implementation. |
-| TEST_LOG | Actual results only; UI tests do not prove persistence. |
-| AI_FEATURE.md | Het-owned, not available; requires real helper tests/evaluation. |
-| AI_Usage_Log.md | Actual AI-assisted work recorded; each member adds their actual use. |
-| Approved_Proposal.docx | User reports verbal approval; no instructor-approved file supplied. Do not rename the pending draft. |
-| SIGNED_STATEMENT.pdf | Real signatures required from Rohan and Het; not supplied. |
-| PROJECT_REPORT.pdf | Must reflect integrated implemented features and actual test/issues; not yet finalizable. |
-| Presentation + questions-only Word file | Demo outline prepared; actual professor question bank and final working app needed. |
-| Kanban_Contribution_Evidence.pdf | Actual board captures/reviews and contribution trace required; none supplied. |
-| Real app screenshots | Do not use handoff designs as evidence. Final working persisted app screenshots pending. |
-| Repository link | https://github.com/ReddyR1105/bloom-flutter-app |
-| ClickUp reference | https://app.clickup.com/90141780863/v/l/li/901422402099?pr=90149411098 — user-supplied List URL. Tool access failed; actual Board URL not independently verified. |
-| Real video URL | Team must record/upload actual 20–25 minute demo (confirm real rubric); not supplied. |
-| Final group-named ZIP | Only after integration and genuine required artifacts. Review bundle must remain clearly labeled incomplete. |
+## Shared package
 
-## Device/evidence gates
+- [x] Integrated Flutter UI + actual SQLite/SharedPreferences/local helper.
+- [x] Actual release APK; hash and build/install output recorded.
+- [x] 33 host tests and two acceptance tests on each of two separate Android AVDs.
+- [x] Actual release offline/process restart/settings restoration and screenshots on both AVDs.
+- [x] README, architecture, actual TEST_LOG, AI_FEATURE and AI usage disclosure.
+- [x] Technical report, real presentation deck/speaker notes, source archive and technical ZIP prepared.
+- [x] Actual Git contribution trace; no invented commits/reviews.
+- [ ] Confirm actual rubric, group number/team name, final course-required folder/ZIP name.
+- [ ] Actual professor bank -> 10–15 real questions with required categories/IDs -> questions-only Word file.
+- [ ] Genuine signatures -> SIGNED_STATEMENT.pdf; required instructor proposal/approval record.
+- [ ] Actual board URL/captures/card links and contribution evidence; missing historic captures disclosed.
+- [ ] Real peer observation/improvement evidence, authentic human review and any required individual reflection.
+- [ ] Real 20–25 minute team recording per handoff (confirm actual rubric), actual uploaded video URL.
+- [ ] Review and add genuine missing evidence, verify final ZIP after changes.
 
-- [ ] Het's actual SQLite/data/helper suite reviewed and passing after merge.
-- [ ] Persistent restart/offline, cascade, uniqueness and correction tests on real Android runtime.
-- [ ] Two distinct Android devices/emulators identified and tested. Only one existing AVD was discovered; a second-device check remains pending.
-- [ ] Real peer observation, improvement, before/after evidence.
-- [ ] Actual Oct 17/20/23/27 captures if they exist; disclose missing historical captures instead of recreating them.
-- [ ] Real reviewed PRs and authentic meaningful contribution history. No padded/backdated commits.
+## Rohan Reddy Gosangi
 
-## Individual uploads — human actions only
+Own UI/navigation/integration/accessibility/docs/demo/package. Review both students' actual work, supply your real signature and honest contribution evidence, participate in recording/Q&A, upload your final required package to iCollege individually, verify file and preserve receipt. Upload/receipt status: NOT SUPPLIED.
 
-Rohan Reddy Gosangi: verify group/package identity and actual required deliverables, upload own final package to iCollege before deadline, save receipt, and verify uploaded file. Status: NOT UPLOADED / receipt not supplied.
+## Het Jani
 
-Het Jani: independently verify the same final package and any individually required material, upload own package to iCollege, save receipt, and verify uploaded file. Status: NOT UPLOADED / receipt not supplied.
+Own SQLite/repository/models/preferences/helper and data/helper tests. Review the integrated UI against your APIs/results, supply your real signature and honest contribution evidence, participate in recording/Q&A, upload your final required package to iCollege individually, verify file and preserve receipt. Upload/receipt status: NOT SUPPLIED.
 
-No iCollege submission is performed by this assistant.
+The agent does not submit. No signature, reflection, historic board state, peer observation, human review or receipt is invented. Actual contribution counts do not demonstrate the handoff's 20 meaningful commits/member; do not pad or backdate commits.

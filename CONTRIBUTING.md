@@ -1,6 +1,6 @@
 # Bloom collaboration
 
-Instructor approval is pending. Until written approval or explicit authorization to proceed is provided, work only on proposal/planning documentation and repository/board preparation. Do not create Flutter source, generate a Flutter project, or build an APK.
+The user reported verbal instructor approval and explicitly authorized implementation on October 26. See docs/integration/APPROVAL_STATUS.md; do not represent that report as written instructor-issued evidence. Preserve actual authorship and require the genuine course evidence listed in HUMAN_INPUT_REQUIRED.md.
 
 ## Branches and reviews
 

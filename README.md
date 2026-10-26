@@ -1,75 +1,83 @@
-﻿# Bloom — integration review
+# Bloom
 
-Small steps. Visible growth.
+**Small steps. Visible growth.** An offline Flutter habit tracker with cream/sage/forest styling and a saved-progress garden.
 
-**NOT READY FOR FINAL SUBMISSION.** Rohan's five-screen Flutter UI is implemented and UI tests pass, but Het is still developing SQLite, preferences and the goal helper. No data implementation is currently visible in the repository. Startup deliberately shows a data-integration error through PendingGateway instead of presenting fake saved data. Do not submit this review build as the completed assignment.
+Rohan Reddy Gosangi and Het Jani — undergraduate pathway. Deadline: **October 27, 2026, 11:59 PM America/New_York**. Group number was not supplied.
 
-Student: Rohan Reddy Gosangi (undergraduate). Partner: Het Jani (pathway not supplied). Group number: pending.
 Repository: https://github.com/ReddyR1105/bloom-flutter-app
-Deadline: October 27, 2026, 11:59 PM America/New_York.
+Integrated branch: `rohan/final-ui-integration`; PR #1 targets main. Het's exact branch tip `64592948b41686de65cbd660102d034fe6bc1225` is preserved in its ancestry (PR #2).
 
-The user reports verbal instructor approval and explicitly instructed implementation to continue on October 26. Written approval/approved proposal and independent instructor verification were not supplied. See [approval record](docs/integration/APPROVAL_STATUS.md). The actual assignment/rubric/question bank was not supplied; the handoff is the available requirements source and must yield to the actual assignment if it differs.
+The actual app is now connected to `BloomRepository.open()` for SQLite, real SharedPreferences and the offline helper. The previous pending-data placeholder is removed. Technical checks and remaining human evidence are distinguished in [TEST_LOG.md](TEST_LOG.md) and [SUBMISSION_VERIFICATION.md](SUBMISSION_VERIFICATION.md); automated checks do not establish grading compliance.
 
-## Setup and run
+## Setup, run and build
+
+Verified development environment: Flutter **3.47.4 stable**, Dart **3.13.3**, Android SDK/build-tools **36.0.0**, Android Studio bundled Java **25.0.3**. Install Flutter/Android SDK and accept Android licenses, then:
 
 ```powershell
 git clone https://github.com/ReddyR1105/bloom-flutter-app.git
 cd bloom-flutter-app
 git switch rohan/final-ui-integration
+flutter doctor -v
 flutter pub get
-flutter run
+flutter run -d <android-device-id>
 ```
 
-The branch must be pushed before clone/switch works on another machine. Existing local checkout: D:\ai-business-engine\bloom-flutter-app. Do not reuse the separate parent repository for Bloom.
-
-Verified toolchain: Flutter 3.47.4 stable, Dart 3.13.3, Android SDK/build-tools 36.0.0; Java 25.0.3 bundled with Android Studio. pubspec.lock records resolved packages. Current direct packages are Flutter SDK and development-only flutter_test/flutter_lints; SQLite/shared_preferences are to be integrated from Het's branch, not falsely listed as installed runtime dependencies.
-
-## Screen flow and usage
-
-Four bottom tabs: Today, Habits, Insights, Settings. New/edit forms and activity routes provide five distinct roles. Following usage assumes Het's real adapter has been connected:
-
-1. Today/Habits → New habit: enter name/category/unit, positive daily target, weekly goal 1–7 → Save.
-2. Open habit → Start → adjust temporary progress → Save progress or reach target and Finish. Reset explicitly confirms that today's saved record returns to zero/Started.
-3. Habit detail → Edit or Delete; deleting warns that all linked history is removed.
-4. Insights → filter history by habit, view explained weekly count/rate, add a past entry, correct or delete a check-in. Unique habit/date and bounds are checked by the UI and must be enforced in the repository.
-5. Settings → default target, week start, reduced motion; gateway writes must persist via SharedPreferences.
-6. Goal suggestion → explanation → Apply prefills edit form; Cancel/Not now changes no goal. Only Save persists. Insufficient history must abstain.
-
-Garden stages derive exclusively from completed saved entries supplied by the gateway: 0 seed; 1–4 sprout; 5–13 growing; 14+ blooming. No independent game state. Cream/sage/forest styling, static owned vector artwork, scrollable layouts and resizable text follow the supplied designs. No Firebase, online sync, remote login or cloud AI.
-
-## Architecture, data and helper
-
-See [ARCHITECTURE.md](ARCHITECTURE.md) and the [exact integration contract](docs/integration/UI_DATA_INTERFACE.md). Rohan owns UI/navigation/accessibility/integration/docs/packaging. Het owns models/repositories/SQLite/preferences/helper and data/helper tests. No Het-owned file has been edited.
-
-Required SQLite schema (planned persistence, not yet implemented in this branch):
-
-| Table | Fields/constraints |
-| --- | --- |
-| habits | id PK, title, category, unit, daily_target positive integer, weekly_target 1–7, created_at, archived |
-| check_ins | id PK, habit_id FK, local ISO date, progress 0..target, started/in_progress/completed status, optional note; UNIQUE(habit_id,date) |
-
-Enable foreign keys per connection and ON DELETE CASCADE. Check-in deletion leaves the habit. Preserve records/settings across process restart. No historic daily-target snapshot exists in the required schema; final documentation must explain target-edit implications.
-
-Het's offline Gentle Goal Suggestion must use the last 14 local calendar days, require seven distinct tracked dates, count completions/2, round half up and clamp to 1–7 days/week; explain the result and compare with fixed 3 days/week. It is a rule, not a trained model. AI_FEATURE.md and actual evaluation/data tests are pending from Het. The UI only renders his result and never calculates or persists it on Apply.
-
-## Verify and build
+Android is the supported runtime; host tests use SQLite FFI. Browser targets are not a supported SQLite app runtime. No credentials, server, account or internet connection is needed for app usage. Development tools may download build dependencies.
 
 ```powershell
-dart format --output=none --set-exit-if-changed lib test
+dart format --output=none --set-exit-if-changed lib test integration_test
 flutter analyze
 flutter test --reporter expanded
+flutter test integration_test/android_acceptance_test.dart -d <android-emulator-id> --no-uninstall --reporter expanded
 flutter build apk --release
 ```
 
-Actual results and device limitations: [TEST_LOG.md](TEST_LOG.md). The 10 UI tests use an explicit test double; they do not prove SQLite/helper correctness or restart persistence. Android release output, when built: build/app/outputs/flutter-apk/app-release.apk. Generated release configuration uses the local debug signing key for coursework installation, not production distribution; no key is committed.
+Actual output: `build/app/outputs/flutter-apk/app-release.apk`. The release-mode build uses the local debug signing configuration for coursework installation, not a production signing certificate. No key is committed. Windows Kotlin incremental caching is disabled to handle the project/Pub cache being on different drives. Required Gradle wrappers and pubspec.lock are committed; generated caches/build folders/local.properties are excluded.
 
-## Collaboration and submission
+Runtime dependencies: `sqflite 2.4.5`, `shared_preferences 2.5.6`, `path 1.9.1`, Flutter SDK. Dev dependencies: flutter_test/integration_test SDKs, flutter_lints 6.0.0, sqflite_common_ffi and shared_preferences_platform_interface. Exact transitive versions are in pubspec.lock.
 
-Current branch: rohan/final-ui-integration. Preserve main and Het's branches; use real reviewed PRs. Do not fake reviews, identities, contributions or historic dates. See [contribution workflow](CONTRIBUTING.md), [demo/speaker plan](docs/integration/DEMO_OUTLINE.md), [submission checklist with separate uploads](docs/integration/SUBMISSION_CHECKLIST.md), and [AI usage log](docs/planning/AI_Usage_Log.md).
+## Screen flow and usage
 
-ClickUp reference: https://app.clickup.com/90141780863/v/l/li/901422402099?pr=90149411098
-This is the supplied List reference. Access failed, so the actual Board URL is not verified. Real board screenshots/contribution PDF are absent; do not invent historic states. Expected final evidence PDF: Kanban_Contribution_Evidence.pdf (pending).
+Four tabs — Today, Habits, Insights, Settings — plus routed forms/activity provide five distinct roles:
 
-final_submission/ is a local review staging folder and is ignored by Git to avoid recursive archives and binary build artifacts. Only finalize it after Het integration, actual tests, real screenshots/signatures/peer evidence, report, instructor question selection, real recording and group identity. The handoff calls for a 20–25 minute demo and at least 20 steady meaningful commits/member; actual instructor rubric remains unavailable. No iCollege upload will be performed by this assistant; each student must upload and retain their own receipt.
+1. **Today:** real completed count, saved-completion garden, habit cards and category filter. Tap a habit for activity; New habit opens the form.
+2. **Create/edit habit:** title, category, measurement unit, daily target 1–100000, weekly target 1–7. Save validates/persists; Cancel does not. Duplicate titles are allowed; IDs distinguish habits.
+3. **Habit detail/activity:** Start creates/resumes the canonical local-day entry. Slider/stepper changes are temporary until Save progress or Finish. Finish requires the daily target. Reset confirms today's saved entry becomes zero/Started, preserving other days. Delete habit explicitly warns that ALL its check-ins are removed.
+4. **History/insights:** filter by habit, view saved entries/notes and explained weekly totals/rate, add an accurate past check-in (from habit creation through today), correct or delete entries. Duplicate habit/date is rejected; deleting an entry leaves its habit.
+5. **Settings:** default target for new habits, Monday/Sunday week start and reduced motion. All restore from SharedPreferences. Device reduced-motion settings are also respected.
 
-No license has been selected; no open-source license grant is implied. Known blocking limitation: PendingGateway is still the startup dependency. This build cannot save habits until the real persisted adapter is merged. Missing human evidence remains explicitly listed in the checklist.
+Garden stages are derived only from saved completed entries: zero seed, 1–4 sprout, 5–13 growing, 14+ blooming. No second game model, cloud backend, authentication, sync or cloud AI. Empty/loading/error states, retry, explicit confirmations, large touch targets, scrollable portrait/landscape layouts and resizable labels are implemented. Screenshots contain clearly labeled acceptance-test records; the app does not seed demo data on startup.
+
+## Architecture and schema
+
+See [ARCHITECTURE.md](ARCHITECTURE.md), [gateway contract](lib/integration/bloom_gateway.dart), [Het's API handoff](HET_INTEGRATION_HANDOFF.md) and [PR #2 review record](docs/integration/PR2_REVIEW.md).
+
+| Table | Fields/constraints |
+| --- | --- |
+| habits | id PK, title, category, unit, daily_target positive integer <=100000, weekly_target 1–7, created_at local date, archived |
+| check_ins | id PK, habit_id FK, local ISO date, progress 0..target, status started/in_progress/completed, note; UNIQUE(habit_id,date) |
+
+Foreign keys are enabled per connection with ON DELETE CASCADE. SQL constraints/triggers and Dart validation protect bounds/status/dates. Corrections and lifecycle operations are transactional. Version 1 is the first schema; unsupported migrations fail visibly rather than deleting records. The app owns one repository and closes it on disposal. SQLite and settings survive ordinary process termination/restart as detailed in actual device results.
+
+## Gentle Goal Suggestion
+
+Pure local Dart rules; not a trained model. Input is one habit's last 14 inclusive calendar days, requiring at least seven distinct tracked saved dates. Count completed days, divide by two, round half up, clamp 1–7. Eight completed days suggests four/week. Insufficient history abstains. Zero completions yields one with a reliability caveat. Apply only prefills the edit form; only explicit Save persists. Not now/Cancel changes nothing.
+
+[AI_FEATURE.md](AI_FEATURE.md) documents all five case types, baseline, explanation, independent synthetic fixtures and limits. Actual synthetic paired n=8 plus one abstention: helper MAE **1.875**, fixed-three-day baseline **1.625** days/week; baseline performed better on these artificial cases. No real-user accuracy or trained-AI claim.
+
+## Team, evidence and submission
+
+- Rohan: UI/navigation, integration, accessibility, README, demo planning and packaging; `lib/ui`, main, UI/startup/device tests and submission scripts.
+- Het: SQLite/repository/models, preferences, helper calculation and data/helper tests; `lib/data`, `lib/helper`, `test/data`, `test/helper`, AI_FEATURE.md.
+
+Both original commit histories are preserved; no fake attribution, empty/padded/backdated commits or invented human reviews. [AI_Usage_Log.md](AI_Usage_Log.md) records actual assistance. The handoff's 20 meaningful commits/member is not demonstrated by visible history; report the actual counts, not manufactured compliance.
+
+ClickUp reference: https://app.clickup.com/90141780863/v/l/li/901422402099?pr=90149411098 (List link supplied by user). Access failed; actual Board URL and dated captures are unverified. Planned statuses: Backlog -> Ready -> In progress (WIP 1/member) -> Review/test (WIP 2/team) -> Done. `Kanban_Contribution_Evidence.pdf` in the package contains actual Git/technical trace plus an explicit missing-board-evidence section, not fabricated historic screenshots.
+
+`final_submission/Bloom_ProjectOne_Rohan_Het/` is the technical submission staging folder; matching ZIP is adjacent. Source archive excludes secrets/caches/build output. See the included report, deck, test log, screenshots, [planned 22-minute speaker split](docs/integration/DEMO_OUTLINE.md) and [individual-upload checklist](docs/integration/SUBMISSION_CHECKLIST.md). The actual professor bank is needed before creating the required questions-only Word selection; no questions are invented.
+
+The user reports verbal instructor approval; no written instructor-approved proposal copy was supplied. The actual assignment/rubric remains unavailable, so the supplied handoff controls current preparation subject to the real assignment. Signatures, actual peer observation/improvement evidence, historic board captures, actual recording/video URL and individual iCollege receipts remain human-only. The assistant does not upload to iCollege.
+
+## Known limitations and license
+
+No cloud backup or export/sync; uninstalling may remove local records. No historical daily-target snapshots: lowering caps history, raising targets can demote older completions, affecting counts/garden/suggestions. One preferences cache assumes one owning isolate. Both tested AVDs use the same Android 17 image; no physical-device/older-OS coverage is claimed. No real peer feedback or course acceptance is claimed. No open-source license has been selected; rights are retained and no open-source grant is implied.

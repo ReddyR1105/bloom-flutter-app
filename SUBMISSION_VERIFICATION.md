@@ -1,22 +1,24 @@
-# Bloom — current submission status, October 26, 2026
+# Bloom submission verification — October 26, 2026
 
-**NOT READY: integration review only.** Do not upload the review ZIP as a complete Project One submission.
+**Technical implementation and verification PASS. Required human/course evidence remains incomplete.** This package supersedes the earlier UI-only integration-review bundle; do not upload that old bundle.
 
-| Requirement | Status |
+| Requirement | Status / evidence |
 | --- | --- |
-| Rohan branch, five screen roles, design, forms/lifecycle/confirmations, integration contract | PASS for UI implementation against gateway, source b056775. |
-| Format/analyze/UI tests/release compile | PASS — actual output in TEST_LOG.md and docs/verification. |
-| Actual release APK exists, installs, launches on one emulator | PASS for current review build; current app shows pending-adapter error. |
-| User confirmation of verbal approval | RECORDED; independent written instructor approval not supplied. |
-| Het SQLite/preferences/helper branch and exact APIs | PENDING HET — no fetched branch or PR visible at latest check. |
-| Fully functional persisted Bloom app | FAIL/BLOCKED until actual adapter integration and verification. |
-| Helper AI_FEATURE.md and data/helper tests | PENDING HET. |
-| Full actual assignment/rubric and question bank | PENDING HUMAN INPUT; handoff available only. |
-| Second Android device / restart/offline/data tests | PENDING, no coverage fabricated. |
-| Genuine signatures, peer observation, contribution/board evidence, final report/deck/recording | PENDING HUMAN INPUT / final integrated build. |
-| Group number, actual Board URL | PENDING HUMAN INPUT; supplied ClickUp List reference retained, access failed. |
-| Individual iCollege submissions | Rohan: NOT UPLOADED; Het: NOT UPLOADED. Assistant will not submit. |
+| Real persisted five-role Bloom UI, lifecycle, both-table CRUD and settings | PASS; production injects BloomRepository.open(), no placeholder. |
+| Het exact branch/source preservation | PASS; tip 6459294 integrated; four original Het commits preserved; data/helper files unchanged. |
+| Formatting / analyzer / host tests | PASS; 16 files unchanged, no issues, all 33 tests pass. |
+| Real Android integration tests | PASS; two tests on each of two separate AVDs. |
+| Actual release APK build/install/launch | PASS; bytes/hash and exact output in TEST_LOG.md. |
+| Process restart / airplane mode / SQLite / real settings | PASS on phone and tablet; actual XML/screenshots/logs retained. |
+| Portrait/landscape / large text | PASS for actual scripted access and inspected screenshots; widget2× and device1.5×; no physical/screen-reader certification. |
+| Helper/evaluation/AI disclosure | PASS; actual rule/tests, AI_FEATURE.md, AI_Usage_Log.md; synthetic baseline performs better, no overclaim. |
+| Report / presentation / source archive / technical ZIP | Prepared from actual code/results/screenshots; verify manifest hashes in staged package. |
+| Instructor approval evidence | User reports verbal approval; no written instructor-issued copy supplied. |
+| Actual rubric / question bank / selected Word questions | PENDING HUMAN INPUT; handoff only, no invented questions. |
+| Group number / final naming | PENDING HUMAN INPUT; working name Bloom_ProjectOne_Rohan_Het. |
+| Signed statement / approved-proposal copy as required | PENDING HUMAN INPUT; blank/draft copies are explicitly marked in human_input. |
+| Authentic board/peer/contribution evidence and human reviews | PENDING HUMAN INPUT; contribution PDF has real Git trace but missing-board disclosure; course 20/member threshold not established. |
+| Actual recording / video link | PENDING HUMAN INPUT; deck and planned 22-minute speaker split do not constitute a recording. |
+| Individual iCollege submissions/receipts | Rohan: NOT UPLOADED. Het: NOT UPLOADED. Assistant does not submit. |
 
-See docs/integration/SUBMISSION_CHECKLIST.md for complete artifact and individual-upload requirements. The original draft remains pending in its historical text; it is not presented as an approved proposal. No professor questions, signatures, video links, peer feedback, or historic screenshots have been invented.
-
-The current final_submission staging folder and review ZIP contain only available genuine artifacts, prominently marked incomplete. Final group-named ZIP and actual functional final APK must be generated after Het integration and remaining requirements are met.
+Read HUMAN_INPUT_REQUIRED.md and docs/integration/SUBMISSION_CHECKLIST.md before uploading. The actual instructor assignment is authoritative over the supplied handoff. Deadline: October 27, 2026, 11:59 PM America/New_York.

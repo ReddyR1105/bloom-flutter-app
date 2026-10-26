@@ -1,0 +1,76 @@
+﻿Release acceptance on emulator-5556; test fixtures are explicitly labeled [TEST].
+google/sdk_gphone16k_x86_64/emu64xa16k:17/CP31.260623.012/16064790:userdebug/dev-keys
+Physical size: 2560x1600
+Physical density: 320
+Performing Streamed Install
+Success
+Airplane mode actual value: 1
+Starting: Intent { cmp=edu.gsu.bloom.bloom/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: edu.gsu.bloom.bloom/.MainActivity
+TotalTime: 7392
+WaitTime: 7429
+Complete
+Release acceptance on emulator-5556; test fixtures are explicitly labeled [TEST].
+google/sdk_gphone16k_x86_64/emu64xa16k:17/CP31.260623.012/16064790:userdebug/dev-keys
+Physical size: 2560x1600
+Physical density: 320
+Performing Streamed Install
+Success
+Airplane mode actual value: 1
+Starting: Intent { cmp=edu.gsu.bloom.bloom/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: edu.gsu.bloom.bloom/.MainActivity
+TotalTime: 6122
+WaitTime: 6162
+Complete
+Release acceptance on emulator-5556; test fixtures are explicitly labeled [TEST].
+google/sdk_gphone16k_x86_64/emu64xa16k:17/CP31.260623.012/16064790:userdebug/dev-keys
+Physical size: 2560x1600
+Physical density: 320
+Performing Streamed Install
+Success
+Airplane mode actual value: 1
+Starting: Intent { cmp=edu.gsu.bloom.bloom/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: edu.gsu.bloom.bloom/.MainActivity
+TotalTime: 4800
+WaitTime: 4830
+Complete
+PASS visible assertion: [TEST] Restart proof
+PASS visible assertion: 10 / 10 pages
+PASS SQLite habit/check-in completion survives Android force-stop/relaunch in airplane mode.
+PASS visible assertion: Default daily target: 27
+PASS visible assertion: Sunday
+PASS actual SharedPreferences target/week-start/reduced-motion restored after process restart.
+PASS visible assertion: 10 / 10 pages saved
+PASS visible assertion: Habit name
+Release acceptance on emulator-5556; test fixtures are explicitly labeled [TEST].
+google/sdk_gphone16k_x86_64/emu64xa16k:17/CP31.260623.012/16064790:userdebug/dev-keys
+Physical size: 2560x1600
+Physical density: 320
+Performing Streamed Install
+Success
+Airplane mode actual value: 1
+Starting: Intent { cmp=edu.gsu.bloom.bloom/.MainActivity }
+Status: ok
+LaunchState: COLD
+Activity: edu.gsu.bloom.bloom/.MainActivity
+TotalTime: 3765
+WaitTime: 3783
+Complete
+PASS visible assertion: [TEST] Restart proof
+PASS visible assertion: 10 / 10 pages
+PASS SQLite habit/check-in completion survives Android force-stop/relaunch in airplane mode.
+PASS visible assertion: Default daily target: 27
+PASS visible assertion: Sunday
+PASS actual SharedPreferences target/week-start/reduced-motion restored after process restart.
+PASS visible assertion: 10 / 10 pages saved
+PASS visible assertion: Habit name
+PASS visible assertion: [TEST] Restart proof
+PASS visible assertion: [TEST] Restart proof
+PASS history remains accessible in rotated portrait at 1.5x system text scale; inspect authentic screenshot for visual quality.
+All scripted release checks passed. No peer feedback or human contribution evidence is implied.

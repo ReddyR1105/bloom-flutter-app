@@ -125,3 +125,4 @@ app.*.symbols
 !/android/gradle/wrapper/gradle-wrapper.jar
 final_submission/
 *.iml
+docs/verification/tablet_emulator_std*.txt
