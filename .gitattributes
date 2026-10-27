@@ -5,3 +5,9 @@
 *.md text eol=lf
 *.png binary
 *.jar binary
+*.pdf binary
+*.docx binary
+*.pptx binary
+*.zip binary
+# Preserve exact supplied course text bytes for question-source provenance.
+docs/requirements/COURSE_*.txt -text whitespace=-blank-at-eol,cr-at-eol

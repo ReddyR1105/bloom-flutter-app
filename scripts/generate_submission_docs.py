@@ -125,17 +125,17 @@ def main():
              para('Build/test issues repaired: Kotlin incremental paths failed across C:/D: roots; project disables '
                   'incremental compilation and uses in-process Kotlin. Android helper assertion initially ran before '
                   'asynchronous I/O completed; acceptance now waits for actual result. Raw failures and final logs retained.'),
-             para('5. Source and APK identity', 'Heading1'), para('Source commit: '+commit),
+             para('5. Source and APK identity', 'Heading1'), para('Source base before generated-document packaging: '+commit),
              para('APK bytes: '+str(apk.stat().st_size)), para('APK SHA-256: '+apk_hash),
              para('Release uses the local debug signing configuration for coursework installation. No signing key '
                   'is included. Source archive omits secrets, caches, local.properties and build output.'),
              para('6. Genuine evidence and remaining human work', 'Heading1'),
              para('Rohan reports verbal instructor approval; no written approval or approved proposal copy was supplied. '
-                  'The actual assignment/rubric and professor question bank remain unavailable; the supplied handoff is '
-                  'the available requirements source. The draft planned a 20-25 minute demo and at least 20 meaningful '
-                  'commits/member. Current visible history does not establish that contribution threshold. No commits '
+                  'The actual assessment and delivery excerpts were supplied October 26 and are mapped in '
+                  'RUBRIC_EVIDENCE_CROSSWALK.md. They require a 20-25 minute demo aiming for 23 minutes and at least 20 meaningful '
+                  'commits/member. The actual bank is now supplied; the questions-only undergraduate selection is prepared, but course upload and recorded answers remain human actions. Current visible history does not establish that contribution threshold. No commits '
                   'were padded or backdated.'),
-             para('Still required: actual group number, genuine signatures, actual question selection, real team recording '
+             para('Still required: actual group number, genuine signatures, questions-selection upload before recording, real team recording '
                   'and video URL, real peer observation/improvement evidence, genuine board snapshots and human review. '
                   'Missing October 17/20/23 evidence cannot be recreated. Both members upload individually and preserve '
                   'their receipts; this assistant does not upload to iCollege.'),
@@ -205,7 +205,7 @@ def main():
         s.notes_slide.notes_text_frame.text = (f'Planned speaker: {speaker}. Approximate segment: {minutes} minutes. '
             'Demonstrate the actual installed app and explain the points naturally. Synthetic test fixtures shown '
             'must remain labeled. No recording, peer observation, signatures or human participation is claimed by '
-            'this deck. Actual instructor questions must be selected from the real bank, which was not supplied.')
+            'this deck. The actual bank and verified ten-question selection are supplied. Upload the questions-only Word document before recording and use the separate evidence guide for rehearsal.')
         return s
 
     phone = ROOT/'docs/device_evidence/emulator-5554'
@@ -246,9 +246,9 @@ def main():
           'Real history does not demonstrate 20 meaningful commits/member.',
           'Board captures, signatures, peer evidence and video remain human work.',
           'Verbal approval is student-reported; no written approval fabricated.'], 'Both', 1)
-    slide('Instructor Q&A and submission', ['Insert the actual 10-15 selected bank questions before recording.',
-          'Required IDs per handoff: I1, I2, D1, D2, R4; verify actual rubric.',
-          'Use genuine responses from both students.', 'Each student uploads individually and verifies receipt.'], 'Both', 4)
+    slide('Instructor Q&A and submission', ['Selected: I1/I2, A1/A2, D1/D2, T1/T2, R1/R4.',
+          'Upload the questions-only Word selection BEFORE recording.',
+          'Use genuine responses from both students.', 'Each student uploads individually and verifies receipt.'], 'Both', 5)
     prs.save(str(out/'Project1_Presentation.pptx'))
     (out/'DOCUMENT_GENERATION.txt').write_text(
         f'Generated from source {commit}\nAPK SHA-256 {apk_hash}\n'

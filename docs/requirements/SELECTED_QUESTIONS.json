@@ -1,0 +1,41 @@
+{
+  "source": "docs/requirements/COURSE_Curated_Questions.txt",
+  "source_sha256": "B28AE159E1D52CE4B993A9116B60505A50E855FE2142CDF4CDC0B91B65453FC7",
+  "selected_ids": [
+    "I1",
+    "I2",
+    "A1",
+    "A2",
+    "D1",
+    "D2",
+    "T1",
+    "T2",
+    "R1",
+    "R4"
+  ],
+  "categories": {
+    "implementation": [
+      "I1",
+      "I2"
+    ],
+    "architecture": [
+      "A1",
+      "A2"
+    ],
+    "local_data": [
+      "D1",
+      "D2"
+    ],
+    "testing": [
+      "T1",
+      "T2"
+    ],
+    "reflection": [
+      "R1",
+      "R4"
+    ]
+  },
+  "questions_only_docx": "Bloom_Project1_SelectedQuestions.docx",
+  "selection_text_verified_verbatim": true,
+  "uploaded_before_recording": false
+}

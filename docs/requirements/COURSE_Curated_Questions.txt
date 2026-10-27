@@ -1,0 +1,223 @@
+Problem → decision → evidence → impact
+
+Show the build. Defend the decisions.
+Curated, evidence-based questions inspired by the supplied Project Two template, adapted to Project One's widgets, local data, and presentation rules. Use actual code and measured results, not generic theory.
+
+Build your question set
+Plan the presentation
+Project One rules
+Proposal: October 17, 2026
+Final: October 27, 2026
+Both at 11:59 PM, Eastern Time (America/New_York).
+
+20–25 minutes · 10–15 questions · local storage only
+
+Project One / October 13-27, 2026
+
+Build progress dashboard
+15 calendar days. One clear route to delivery.
+
+Testing & delivery
+View milestones & daily steps
+Today's focus
+Day 14 of 15
+Upload questions before recording; rehearse, record, and verify the release APK.
+
+Next milestone
+Final submission / deadline
+
+1d 03h 05m 07s
+Oct 27 · 11:59 PM Eastern
+
+Final deadline remaining
+Individual submission / October 27
+
+1d 03h 05m 07s
+11:59 PM Eastern / verify upload receipt
+
+Calendar time elapsed
+Not task completion
+92.5%
+
+Start / Oct 13
+Finish / Oct 27
+Your four delivery checkpoints
+01
+Proposal
+Oct 17 · 11:59 PM
+Date passed / verify evidence
+02
+UI / navigation
+Oct 20 · checkpoint
+Date passed / verify evidence
+03
+Core functionality
+Oct 23 · checkpoint
+Date passed / verify evidence
+04
+Final submission
+Oct 27 · 11:59 PM
+Upcoming
+Eastern Time / America/New_York
+Uses your device clock; verify that it is correct. Checkpoints are date-based planning targets, not new upload deadlines. Elapsed dates do not prove task completion or approval. Build only after instructor-team approval.
+
+01 · Balanced selection & delivery rules
+Select 10–15 questions total from this page. Include at least two from each of the five categories: implementation, architecture, local data, testing, and reflection. The minimum mix is exactly 10; add up to five relevant questions, not a second full set.
+Include I1, I2, D1, D2, and R4 in your set so widgets, controls/state, both entities' CRUD, the no-cloud boundary, and the required local smart helper are demonstrated. These five count toward the category minimums; R4 is one reflection selection, not an extra question.
+Create TeamName_Project1_SelectedQuestions.docx containing the selected IDs and full question text only, with no answers. Upload it to the Project One iCollege dropbox before recording/presenting, and include it in each member's final package by October 27. No separate earlier calendar deadline is introduced.
+Answer in any order within the 20–25 minute team presentation; aim for 23 minutes on average. Integrate answers into the app and VS Code walkthrough instead of adding a separate speech. Name the question ID on a slide or verbally so coverage is traceable.
+Every member explains their own contribution and answers at least one selected question. Allocate questions across members; teammates may share demonstrations but cannot substitute for an individual's understanding.
+Undergraduate presentation: explain the complete core implementation. Graduate presentation: additionally select at least one architecture question from A3/A4/A5, one local-data question from D3/D4, and one testing question from T3/T4/T5. Connect answers to advanced state, architecture, data integrity, and automated tests. These three selections are included in the 10–15 total, not extra questions. Questions have no difficulty labels; IDs define the graduate selection groups.
+Project-specific scope: Firebase, Firestore, cloud authentication, and Project Two's selection rules do not apply. Use Project One's 20–25 minute presentation, 10–15 balanced questions, and local-only app requirements. Both pathways demonstrate the required introductory smart helper; rules qualify when labeled honestly. A trained model is not mandatory.
+Evidence standard: name the file/class or function, show the user action and outcome, explain the decision/trade-off, and reference a test or commit. If you did not encounter a particular bug, demonstrate a deliberately tested failure scenario; do not invent development history.
+
+Valid starting sets: undergraduate core: I1, I2, A1, A2, D1, D2, T1, T2, R1, R4 (10). Graduate example: I1, I2, A1, A3, D1, D2, D3, T1, T3, R1, R4 (11; A3/D3/T3 satisfy the graduate selection groups). You may add R2 for a focused Kanban answer within the 15-question maximum. Adapt nonrequired IDs to your evidence; copy full selected question text into Word, not just IDs.
+
+Scoring: this is the existing mandatory Q&A category, not an extra grade: 10 undergraduate points or 5 graduate points in the 100-point pathway rubric. Code, testing, and teamwork evidence also support their respective categories without creating duplicate bonus awards.
+
+I · Widgets & implementation
+I1 · Widget tree & ownership Required
+Show one reusable StatelessWidget and one StatefulWidget in your app. Explain their responsibilities, how build() renders current values, and which interaction requires mutable state.
+
+Evidence: widget tree, actual classes, and a before/after UI action.
+
+I2 · Buttons, controls & state Required
+Trace a button and slider interaction (or justify your numeric-control alternative) through input validation, setState()/state notification, and rendering. Which values are transient and which must be saved?
+
+Evidence: callbacks, form validation, visible values, and saved settings/records.
+
+I3 · Five-screen user flow
+Demonstrate catalog → editor → detail/activity → history → settings. How do routing, back navigation, lists/grids, and a gesture preserve the user's context?
+
+Evidence: screen map, route code, and a complete user flow.
+
+I4 · Build order & redesign
+Explain the implementation order of your two record types and activity flow. Which peer observation changed a widget/layout, and how did you verify that revision?
+
+Evidence: commits, before/after wireframes, and peer task results.
+
+I5 · Accessibility under change
+Show portrait/landscape, increased text scale, and reduced-motion behavior. How do labels, focus, dialogs, and non-color status feedback keep your activity usable?
+
+Evidence: device settings, labeled controls, and accessibility test notes.
+
+A · Architecture & state
+A1 · Responsibilities
+Trace one feature through widget, state/model, and data helper. Where are domain rules and database calls owned, and what would break if the widget performed every responsibility?
+
+Evidence: architecture diagram and file-level walkthrough.
+
+A2 · Lifecycle
+Show how a controller, timer, listener, or async operation is owned and cleaned up. What happens when a user leaves the screen before an operation finishes?
+
+Evidence: initState/dispose or equivalent ownership code and a navigation-away test.
+
+A3 · State-management trade-off
+Compare your chosen state approach with one alternative. Demonstrate loading/error/success and cross-screen updates. Graduate students must show their Provider, Riverpod, or BLoC implementation, not setState alone.
+
+Evidence: state transitions, rationale, and a reproducible consistency test.
+
+A4 · Testable boundaries
+How do repository boundaries and dependency injection let you test without a real device database? Show the dependency direction and a fake or test implementation.
+
+Evidence: ARCHITECTURE.md, injected dependency, and test output.
+
+A5 · Refactor with constraints
+Identify a fragile responsibility and propose ordered refactor steps. How would you preserve CRUD, offline behavior, navigation, and the current acceptance criteria?
+
+Evidence: current code, concrete revision plan, and regression checks.
+
+D · Local storage & CRUD · no cloud backend
+D1 · Both entities' CRUD Required
+Show create, read, update, and delete for your primary record and linked history record. Trace SQL/helper calls, validation, delete confirmation, and the final refreshed UI. Explain what happens to child records when a parent is deleted.
+
+Evidence: schema/keys, parameterized operations, and both complete CRUD demonstrations.
+
+D2 · Persistence & no-cloud proof Required
+Explain SQLite versus SharedPreferences in your app. With networking disabled, save records and a setting, close/relaunch the app, and show restored values. Why are GitHub, ClickUp, and YouTube not app backends?
+
+Evidence: dependencies, local file/schema ownership, airplane-mode restart, and restored setting.
+
+D3 · Data integrity
+Demonstrate invalid input, a repeated save, or a related-record update/delete failure. What constraint or transaction prevents inconsistent records, and how does the user recover?
+
+Evidence: constraint/transaction code, scenario, and expected versus actual results.
+
+D4 · Schema evolution
+Design or demonstrate a schema change without silently losing saved history. How do versioning, migration, and test fixtures preserve record relationships?
+
+Evidence: migration code or clearly labeled design, old/new schema, and verification plan/results.
+
+D5 · Filter & aggregate
+Show your topic filter and history count/total/average/completion rate. How do edited/deleted records affect derived values and empty-data behavior?
+
+Evidence: query/calculation and a manually checkable dataset.
+
+T · Testing & reliability
+T1 · Acceptance coverage
+Map tests to both entities' CRUD, the five-screen workflow, settings persistence, and offline operation. Show normal, empty, and invalid cases on two devices/emulators.
+
+Evidence: test matrix, device details, and pass/fail results.
+
+T2 · Failure & recovery
+Show a real bug or deliberately tested save/lifecycle failure. What causes it, what feedback appears, and how does the user recover without duplicate or lost records?
+
+Evidence: reproduction steps, fix or tested guard, and regression result.
+
+T3 · Automated tests
+Demonstrate unit, widget, and integration tests and explain their different boundaries. Graduate students show at least 10 meaningful unit tests plus widget/integration evidence and the coverage report.
+
+Evidence: test files, commands, results, and an uncovered risk.
+
+T4 · Performance evidence
+Measure a list, filter, or aggregate interaction using the same local dataset before and after an optimization (or establish a baseline and justified plan). What changed, and what correctness check prevents a misleading improvement?
+
+Evidence: dataset size, profiling method, measurements, and regression check.
+
+T5 · Deterministic state transitions
+How do you test start/progress/finish/reset and lifecycle cleanup without relying on arbitrary waiting? Show controlled inputs or time and prove reset does not leave stale callbacks active.
+
+Evidence: transition rules, fake clock or controlled fixture, and test results.
+
+R · Teamwork, learning & responsibility
+R1 · Authentic ownership
+Explain your contribution with a feature branch, meaningful commits, and a review. How did the team distribute work and ensure everyone could explain their implementation?
+
+Evidence: task owners, PR/review links, contribution map, and meeting notes.
+
+R2 · Kanban improvement
+Show WIP limits, a blocked/aging task, and a completed checkpoint. Which flow observation changed a team policy, and how did the change affect finishing work?
+
+Evidence: dated board snapshots, flow metrics, blocker action, and reflection.
+
+R3 · Learning & documentation
+Which course concept changed how you solved a problem? Show where README/architecture/user-guide notes help another developer reproduce or maintain your solution.
+
+Evidence: concept-to-code mapping, setup verification, and one documented limitation.
+
+R4 · Required smart helper & critical thinking Required
+Demonstrate your local helper's input, suggestion, explanation, override, and no-data/invalid feedback. Why did you choose these inputs and this method? Compare with your baseline, show a counterexample, and justify a revision or retained limitation. Undergraduates show five case types; graduates additionally show two-method results on at least five held-out valid cases. Label rules versus ML accurately.
+
+Evidence: AI_FEATURE.md, expected/actual case table, metric/sample size, local computation and offline/restart, user control, and individual contribution. AI_Usage_Log.md is separate and needed only if an AI development assistant was used.
+
+R5 · Next iteration
+Which planning choice created a limitation, and what would you change first? Propose an improvement that preserves local-only storage and equal topic scope.
+
+Evidence: decision log, prioritized task, owner, and verification plan.
+
+02 · Presentation run of show · target 23 minutes
+Q&A is woven into the walkthrough, not added afterward
+Time	Show	Question evidence
+0–2 min	Problem, approved topic, users, and member roles.	Name the selected set and who owns each demonstration.
+2–9 min	Five-screen app flow, buttons/controls, both entities' CRUD, offline restart.	I1/I2/D1/D2; pair visible outcomes with short explanations.
+9–17 min	VS Code widget/state/data trace, required smart helper, architecture, failures, and tests.	R4 plus architecture/testing questions; show helper/baseline results, counterexample, exact functions, and trade-offs.
+17–20 min	Peer-driven design revision, test coverage, and known limitations.	Remaining relevant implementation/testing questions; no claims without evidence.
+20–23 min	Kanban, individual contributions, learning, and next iteration.	At least two reflection questions, with commits/board evidence.
+Keep the complete recording between 20 and 25 minutes, averaging about 23 minutes when rehearsed. These segment allocations are guidance, not separate graded time limits. Use concise 45–60 second answer summaries while demonstrating; one trace may supply evidence for several questions, but identify each ID and answer each prompt. Include transitions and Q&A inside the same total; do not pad a shorter demo with unrelated material.
+
+Submit the PowerPoint, questions-only Word document, tested APK, approved proposal, report, signed statement, repository link, and accessible YouTube video link. All members upload their final package individually. Recorded answers belong in the video, not in the questions-only document.
+
+Project One · Curated Questions · Submission checklist
+Home
+Top
+Bottom

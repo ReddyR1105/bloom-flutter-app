@@ -15,24 +15,68 @@ from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Table, Tabl
 from xml.sax.saxutils import escape
 
 
-SEGMENTS = [
-    ('0:00-2:00', 'Rohan', 'Introduce Bloom and navigate',
-     'Introduce yourselves using your real names and undergraduate pathway. Explain that Bloom is an offline habit tracker. Show Today, Habits, Insights and Settings, then point out the routed create/edit form and activity detail. Explain the cream/sage/forest design and that the plant represents saved completions. Do not say this is a user study or an independently built project without AI assistance.'),
-    ('2:00-6:00', 'Rohan', 'Demonstrate validated habit/activity flows',
-     'Use a dedicated demo emulator, preserving any personal data. Create a clearly labeled demo habit with category, unit, target and weekly goal. Show an invalid empty name or zero target, then Save a valid habit. Edit it, Start today, move progress without saving, explain the unsaved label, Save progress, reach the target, and Finish. Show the saved dashboard/garden update. Open Reset, Cancel once, then confirm it and explain the single-day effect. Reach target and Finish again.'),
-    ('6:00-10:00', 'Het', 'Demonstrate both tables and integrity',
-     'Open History, filter by habit, correct today\'s note/status using consistent progress and Save. Show duplicate-date rejection. Delete a check-in and confirm the habit remains, then recreate today\'s entry from Start. Explain habits and check_ins in lib/data/bloom_repository.dart, foreign_keys ON, unique habit/date, progress/status validation, transaction rollback and cascade. Use a separate disposable demo habit to demonstrate the explicit all-history deletion warning and cascade. Do not delete another person\'s real records.'),
-    ('10:00-12:00', 'Het', 'Demonstrate actual offline persistence',
-     'Set a distinctive default target, week start and reduced-motion preference. Save a completed check-in. Show airplane mode enabled, force-stop and relaunch the app, then show the restored habit/completion and all three settings. Identify the actual emulator/profile. Explain that two separate Android 17 AVDs were tested; do not claim physical-device or older-OS testing. The existing TEST_LOG and per-device XML/screenshots record executed checks, not a substitute for this live demonstration.'),
-    ('12:00-15:00', 'Het', 'Explain the helper and actual evaluation',
-     'Open lib/helper/goal_suggestion.dart and AI_FEATURE.md. Explain the inclusive 14-calendar-day window, seven distinct tracked dates, half-up rounding and 1-7 clamp. A new habit must show Not enough history yet. For the eligible-history example, demonstrate the explicitly synthetic [TEST] Helper fixture through the real Android integration test; do not pretend these are personal historic check-ins. Show the eight-completion/four-day worked example and the five case types. Report the actual synthetic paired n=8 plus one abstention: helper MAE 1.875, fixed-three baseline 1.625 days/week. State that the baseline performed better and that this does not establish real-user accuracy.'),
-    ('15:00-17:00', 'Rohan', 'Explain control and accessibility',
-     'Show the real integration test\'s Apply/Cancel/Save flow: Apply prefills a four-day goal, Cancel leaves the saved three-day goal unchanged, and only Save persists four. Show portrait/landscape, large text, scrollable forms, confirmation dialogs and reduced motion. If a real peer observation and implemented improvement have been supplied, present their actual before/after record; otherwise disclose that peer evidence is missing. Automated test fixes are not peer feedback.'),
-    ('17:00-19:00', 'Both', 'Show authentic collaboration',
-     'Show the actual GitHub commits and PRs, each member\'s owned files, actual code/test links and AI disclosure. PR #2 integrates Het\'s original commits; PR #1 contains the combined application. Agent-assisted review is not human peer approval. Show the real ClickUp board/cards if accessible, linking task to code/tests/review. Do not recreate historic screenshots, claim unobserved WIP compliance, or claim 20 meaningful commits each when the visible history does not establish it.'),
-    ('19:00-22:00', 'Both', 'Answer the actual instructor bank questions',
-     'Insert and rehearse the actual selected professor questions once the bank is supplied. The handoff requests 10-15 questions, at least two per required category, including I1/I2/D1/D2/R4. No question text has been supplied or invented. Allocate enough time for genuine answers from both students; shorten earlier narration if necessary while respecting the actual rubric\'s duration. End with honest limitations, repository access and each student\'s individual upload obligation.'),
-]
+SEGMENTS = [('0:00-2:00',
+  'Both',
+  'Introduce users, roles and selected IDs (R1 introduction)',
+  "Introduce both real students and undergraduate pathway. State Bloom's offline habit-tracking purpose and "
+  'actual ownership. Name the selected set: I1/I2, A1/A2, D1/D2, T1/T2, R1/R4. Questions are answered during '
+  'the walkthrough, not as a separate speech. Upload the questions-only Word file before recording.'),
+ ('2:00-6:00',
+  'Rohan',
+  'App interaction and widgets (I1, I2, part of D1)',
+  'Show Today/Habits, create/edit with empty-name or zero-target validation, then a valid Save. Identify '
+  'HabitCard as reusable StatelessWidget and HabitEditor/HabitDetail as StatefulWidget. Start, move the '
+  'progress slider without saving, explain draft versus persisted progress, Save, Finish at target and show '
+  'the garden. Demonstrate Reset Cancel/confirm and state the one-day scope. Preserve unrelated records; use '
+  'clearly labeled demo data.'),
+ ('6:00-9:00',
+  'Het, with Rohan operating UI',
+  'Both entities CRUD and offline proof (D1, D2)',
+  'Show history read/correction/delete and that child deletion preserves the habit. Show the explicit '
+  'parent/all-history warning on a disposable demo habit and refreshed counts. Set a distinctive '
+  'target/week-start/reduced-motion preference, enable airplane mode, force-stop/relaunch, and show restored '
+  'completion/settings. Explain SQLite relations versus SharedPreferences and why GitHub/ClickUp/YouTube are '
+  'not runtime backends.'),
+ ('9:00-12:00',
+  'Rohan and Het',
+  'VS Code boundaries and lifecycle (A1, A2)',
+  'Trace HabitEditor through BloomGateway to BloomRepository validation/SQL and back to refreshed state. '
+  'Explain why widgets do not own all data logic. Show owned controllers in initState/dispose, mounted '
+  'checks, repository close and an open completing after disposal. Point to ui_startup_test.dart and explain '
+  'the controlled navigation-away test; do not invent a timer or personal bug history.'),
+ ('12:00-15:00',
+  'Het, Rohan explains UI control',
+  'Helper and honest evaluation (R4)',
+  'Show the pure local helper, input units/window/distinct-day threshold, explanation and no-data/invalid '
+  'feedback. Use the explicitly synthetic real-SQLite acceptance fixture for 8 completions -> 4 days/week, '
+  'then Apply/Cancel/Save. Report actual paired synthetic n=8 plus one abstention: helper MAE1.875 versus '
+  'fixed-three baseline1.625 days/week. Baseline was better; disclose the counterexample and historic-target '
+  'limitation. No trained model or real-user benefit is claimed.'),
+ ('15:00-17:00',
+  'Both',
+  'Failure/recovery and test boundaries (T2, T1)',
+  'Show the controlled failed-save test with preserved form and zero writes, plus explicit startup '
+  'retry/disposal regression. Label test-double failure scenarios honestly. For actual build history show '
+  'the Windows cross-drive Kotlin cache failure and fix, separately from user-facing recovery. Explain real '
+  'host SQLite, host settings mocks, UI test double and actual Android plugins without confusing their '
+  'evidence.'),
+ ('17:00-20:00',
+  'Both',
+  'Coverage, accessibility and iteration (T1; T2 verification)',
+  'Use TEST_LOG to map both CRUD entities, all five roles, settings, helper and offline/restart to actual '
+  'results. Identify the two AVD profiles, same Android17 image and coverage limits. Show '
+  'portrait/landscape, large text, reduced motion and DESIGN_ITERATION.pdf. If real peer feedback is '
+  'provided, demonstrate its actual revision and verification; otherwise disclose that missing evidence. '
+  'Automated fixes and design concepts are not peer observations.'),
+ ('20:00-23:00',
+  'Both',
+  'Authentic collaboration, learning and limits (R1; R4 responsibility)',
+  'Follow one actual ClickUp task -> owner/acceptance criteria -> commit/PR -> code -> test/review result, '
+  'using genuine board evidence if available. Each member explains their actual branch/files/review and '
+  'personal learning. Show true author history; no claim of20 meaningful commits/member where not '
+  'established. Disclose absent historic captures/peer review. R4 was answered earlier; briefly reinforce '
+  'user control and limitations rather than appending another Q&A speech. Each member answers their own '
+  'questions and later uploads individually.')]
 
 
 def main():
@@ -79,17 +123,17 @@ def main():
         story += [Spacer(1, 20), p(name, 'Heading2'), p(role), Spacer(1, 18),
                   p('Genuine signature: __________________________  Date: __________________')]
     story += [Spacer(1, 24), p('Repository: https://github.com/ReddyR1105/bloom-flutter-app'),
-              Spacer(1, 12), p('Approval is recorded separately. This is not instructor-issued approval or proof of completed evidence. After genuine signatures, export/scan as SIGNED_STATEMENT.pdf.')]
+              Spacer(1, 12), p('Approval is recorded separately. This is not instructor-issued approval or proof of completed evidence. After genuine signatures, export/scan as SIGNED_STATEMENT.pdf or a readable signed PNG/JPG.')]
     SimpleDocTemplate(str(human/'UNSIGNED_Team_Statement.pdf')).build(story)
 
     runbook = Document()
     runbook.add_heading('Bloom - Recording Runbook', 0)
-    runbook.add_paragraph('Planned 22-minute live team presentation, not a recording or proof of participation. Confirm duration and question requirements against the actual instructor rubric.')
+    runbook.add_paragraph('Planned 23-minute live team presentation, not a recording or proof of participation. The actual course excerpts require 20-25 minutes and recommend 23. The actual bank is supplied; the separate questions-only Word selection is prepared and must be uploaded before recording.')
     runbook.add_heading('Before recording', 1)
     for text in [
         'Install the included real app-release.apk. Confirm microphone/screen capture and both real students\' participation.',
         'Review the report, deck and exact code/tests. Do not read an invented personal reflection or claim observations you did not make.',
-        'Have the actual professor question selection and genuine board/peer evidence ready. These were not supplied.',
+        'Upload the supplied questions-only Word selection before recording; have genuine board/peer evidence ready. Those human evidence items remain unverified.',
         'Use clearly labeled demo/test records and preserve unrelated personal data. Record the actual app, not design mockups.',
         'Open source and terminal. Commands below are demonstrations to execute, not new pass results until executed.'
     ]:
@@ -109,7 +153,7 @@ def main():
     runbook.add_paragraph('Upload the genuine recording, verify its access and duration, and write the real URL to YouTube_Video_Link.txt. Finish genuine missing evidence, regenerate the final ZIP, then each student uploads individually to iCollege and saves the actual receipt. No upload is performed by this script.')
     runbook.save(root/'RECORDING_RUNBOOK.docx')
     story = [p('Bloom - Recording Runbook', 'Title'),
-             p('Planned live presentation, not a completed recording. Both students must participate authentically. Actual rubric and professor bank remain required.')]
+             p('Planned live presentation, not a completed recording. Both students must participate authentically. The actual rubric and full question bank are now supplied. Use the verified questions-only selection and separate Q&A evidence guide.')]
     for timing, speaker, title, directions in SEGMENTS:
         story += [Spacer(1, 12), p(f'{timing} | {speaker} | {title}', 'Heading2'), p(directions)]
     SimpleDocTemplate(str(root/'RECORDING_RUNBOOK.pdf')).build(story)
@@ -117,9 +161,9 @@ def main():
     checklist = [p('Bloom - Finish before upload', 'Title'),
                  p('Technical package prepared. Genuine course/human evidence is still incomplete.'), Spacer(1, 12)]
     tasks = [
-        'Enter the actual group number and required team name; verify official rubric and ZIP naming.',
-        'Supply the actual professor bank; select the required real questions and generate the questions-only Word file.',
-        'Both students genuinely sign the prefilled form and save SIGNED_STATEMENT.pdf. Retain required proposal/approval evidence.',
+        'Enter the actual group number and required team name; use the confirmed Project_Group[Number]_Bloom.zip format.',
+        'Upload Bloom_Project1_SelectedQuestions.docx BEFORE recording; the verified selection contains 10 actual questions, two per category and all required IDs.',
+        'Both students genuinely sign the prefilled form. A signed PDF or readable signed PNG/JPG is accepted. Retain required proposal/approval evidence.',
         'Attach genuine board captures, task/review links and required peer evidence. Disclose absent historic captures and commit-count shortfall.',
         'Have Het genuinely review PR #1; merge it before relying on the repository default main branch.',
         'Record the actual team demo using the runbook/deck; add the real video URL. Do not fabricate participation or answers.',
@@ -128,7 +172,7 @@ def main():
     ]
     for i, task in enumerate(tasks, 1):
         checklist += [p(f'{i}. {task}'), Spacer(1, 10)]
-    checklist += [p('The supplied handoff specifies a 20-25 minute demo and at least 20 meaningful commits/member. Verify the actual rubric; visible Git history does not establish that commit threshold. No empty/backdated commits should be manufactured.')]
+    checklist += [p('The supplied actual rubric specifies a 20-25 minute demo aiming for 23 and at least 20 meaningful commits/member; visible Git history does not establish that commit threshold. No empty/backdated commits should be manufactured.')]
     SimpleDocTemplate(str(root/'FINISH_BEFORE_UPLOAD.pdf')).build(checklist)
 
     deck = Presentation(root/'Project1_Presentation.pptx')

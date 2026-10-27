@@ -1,18 +1,17 @@
-# Planned joint demo — not a recording
+# Actual course-aligned presentation plan ? not a recording
 
-Provisional duration: 22 minutes, within the handoff's planned 20–25 minutes. The actual instructor rubric/question bank was not supplied; confirm against it before recording. Do not record claims of persistence/helper results until integration and actual device tests succeed.
+Target: 23 minutes inside the required 20?25 minutes. The actual question bank and rules are supplied. Answers are woven into the app/VS Code walkthrough, not appended as a separate Q&A speech. Both students must explain their own work and answer at least one selected question.
 
-| Time | Speaker | Demonstration / explanation |
+Selection: I1, I2, A1, A2, D1, D2, T1, T2, R1, R4 ? exactly two in each of implementation, architecture, local data, testing and reflection, including all mandatory IDs. The Word selection contains exact full questions only; upload it before recording and include it in each final ZIP. The separate rehearsal guide has evidence pointers, not fabricated student answers.
+
+| Time | Speakers | Actual evidence and IDs |
 | --- | --- | --- |
-| 0:00–2:00 | Rohan | Team names, undergraduate scope, Bloom's audience and clean design, screen/navigation overview. |
-| 2:00–6:00 | Rohan | On the actual app: habit create/validation/edit; Start, progress, Finish; confirmed Reset; garden changes from saved records. |
-| 6:00–10:00 | Het | SQLite schema, both entity CRUD, unique habit/date, progress bounds, FK cascade, history corrections and delete behavior; show real code/tests. |
-| 10:00–12:00 | Het | Actual device offline/process-restart demonstration, preferences persistence, and real test/device results. |
-| 12:00–15:00 | Het | Helper input/window/distinct-day rule, explanation, baseline, five test case types and honest synthetic evaluation limitations. |
-| 15:00–17:00 | Rohan | Apply prefill versus explicit Save; portrait/landscape/large text; real peer observation and implemented improvement if available. |
-| 17:00–19:00 | Both | Actual ClickUp task → commit/PR → tests/review trace, ownership, real history and genuine evidence gaps. |
-| 19:00–22:00 | Both | Answer selected actual instructor questions, splitting categories according to the actual bank; final known limitations. |
+| 0?2 | Both | Users, scope, approved topic/approval status, roles, selected set; R1 ownership introduction. |
+| 2?9 | Rohan / Het | Five-screen app and controls, both entities CRUD, confirmations, offline restart/settings; I1/I2/D1/D2. |
+| 9?17 | Both | VS Code boundaries/lifecycle, helper reason/override/baseline/counterexample, failure guards/tests; A1/A2/R4/T2. |
+| 17?20 | Both | Actual coverage, orientations/text scale, documented design iteration and limits; T1/T2. Real peer feedback only if supplied. |
+| 20?23 | Both | Real ClickUp task -> owner/criteria -> code/PR -> test/review; authentic individual contributions/learning; R1 and responsibility/limits linked to R4. |
 
-The actual question selection requires 10–15 questions, at least two per required category, including I1/I2/D1/D2/R4 according to the handoff. If answers require more time, reduce earlier explanation rather than omit required questions; rehearse within the real rubric duration. Do not invent question text. Only create the questions-only Word file from the actual bank.
+Identify IDs on slides or verbally. Keep answers concise while demonstrating; one trace can support several prompts but each must be addressed. Rehearse within the same total instead of padding time. No separate video/time is substituted for the collaboration trace.
 
-Both students must participate authentically. Show the actual final installed build, no concept images represented as screenshots, no invented peer feedback, no fake device coverage. Record/upload the real video and insert its real link. Each student later uploads their own final package; the agent does not submit to iCollege.
+Use actual recorded results in TEST_LOG.md; both AVDs share Android 17, so do not claim older-OS or physical-device tests. Synthetic [TEST] data remains labeled. No signatures, peer observation, historic captures, human approval, personal learning or recording are invented. Both students later upload individually and preserve actual receipts.

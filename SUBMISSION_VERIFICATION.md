@@ -14,11 +14,13 @@
 | Helper/evaluation/AI disclosure | PASS; actual rule/tests, AI_FEATURE.md, AI_Usage_Log.md; synthetic baseline performs better, no overclaim. |
 | Report / presentation / source archive / technical ZIP | Prepared from actual code/results/screenshots; verify manifest hashes in staged package. |
 | Instructor approval evidence | User reports verbal approval; no written instructor-issued copy supplied. |
-| Actual rubric / question bank / selected Word questions | PENDING HUMAN INPUT; handoff only, no invented questions. |
+| Actual rubric / question bank / selected Word questions | All supplied course pages read and mapped; actual question bank received. Ten-question Word selection is prepared and verified verbatim; upload-before-recording and real answers pending. |
 | Group number / final naming | PENDING HUMAN INPUT; working name Bloom_ProjectOne_Rohan_Het. |
 | Signed statement / approved-proposal copy as required | PENDING HUMAN INPUT; blank/draft copies are explicitly marked in human_input. |
 | Authentic board/peer/contribution evidence and human reviews | PENDING HUMAN INPUT; contribution PDF has real Git trace but missing-board disclosure; course 20/member threshold not established. |
-| Actual recording / video link | PENDING HUMAN INPUT; deck and planned 22-minute speaker split do not constitute a recording. |
+| Actual recording / video link | PENDING HUMAN INPUT; deck and planned 23-minute speaker split do not constitute a recording. |
 | Individual iCollege submissions/receipts | Rohan: NOT UPLOADED. Het: NOT UPLOADED. Assistant does not submit. |
 
 Read HUMAN_INPUT_REQUIRED.md and docs/integration/SUBMISSION_CHECKLIST.md before uploading. The actual instructor assignment is authoritative over the supplied handoff. Deadline: October 27, 2026, 11:59 PM America/New_York.
+
+Rubric placement correction: Kanban_Contribution_Evidence.pdf is now at repository root and ZIP root, linked exactly by README. This corrects delivery placement; it does not make absent board/peer/flow evidence complete. Signed readable PNG/JPG is accepted as an alternative to PDF. No course grade is predicted.
