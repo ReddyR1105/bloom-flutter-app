@@ -105,7 +105,7 @@ def main():
         '20-23: actual task-to-code/test trace, each person\'s ownership and learning (R1; R4 responsibility). No separate Q&A speech.'
     ]:
         guide.add_paragraph(text,style='List Bullet')
-    guide.add_paragraph('Upload Bloom_Project1_SelectedQuestions.docx to the course dropbox BEFORE recording, include it in each final ZIP, and identify question IDs on slides or verbally. A working Bloom filename is used; adjust prefix if the actual team name differs. No group number is invented.')
+    guide.add_paragraph('Upload Bloom_Project1_SelectedQuestions.docx to the course dropbox BEFORE recording, include it in each final ZIP, and identify question IDs on slides or verbally. The supplied roster verifies UG-P03; final package naming uses Project_Group03_Bloom.zip.')
     guide.save(package/'Q_AND_A_REHEARSAL_GUIDE.docx')
 
     styles = getSampleStyleSheet()
@@ -184,7 +184,7 @@ def main():
     # IDs, signatures, board captures or an original on-time submission.
     proposal=Document(ROOT/'docs/planning/Supplied_Handoff/docs/Bloom_Flutter_Project_Proposal.docx')
     replacements={
-        '[ADD GROUP NUMBER AND TEAM NAME]':'REQUIRED HUMAN INPUT: actual group number and team name',
+        '[ADD GROUP NUMBER AND TEAM NAME]':'UG-P03 (Group 03) | Bloom',
         '[ADD ALL MEMBERS, ROLE OWNERS AND UNDERGRAD/GRAD PATHWAYS]':
             'Rohan Reddy Gosangi - undergraduate: UI/navigation/integration/accessibility/docs/package; '
             'Het Jani - undergraduate: SQLite/repositories/preferences/helper/data tests. Actual student IDs not supplied.',
@@ -209,7 +209,7 @@ def main():
             for cell in row.cells: replace_paragraphs(cell.paragraphs)
     proposal.add_page_break()
     proposal.add_heading('October 26 update - unfinalized draft, not an approval record',1)
-    proposal.add_paragraph('This working update fills known team/repository facts and preserves the original concept images. It does not assert an on-time October 17 upload or instructor signature. Missing group details, actual student IDs, genuine signed attachment and required approval evidence must be completed by the team.')
+    proposal.add_paragraph('This working update fills known team/repository facts and preserves the original concept images. It does not assert an on-time October 17 upload or instructor signature. Actual student IDs, genuine signed attachment and required approval evidence must be completed by the team.')
     table=proposal.add_table(rows=1, cols=4)
     table.style='Table Grid'
     for cell,value in zip(table.rows[0].cells,['Member','Pathway','Actual student ID','Responsibility']): cell.text=value

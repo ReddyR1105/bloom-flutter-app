@@ -105,7 +105,7 @@ def main():
     doc.sections[0].left_margin = doc.sections[0].right_margin = DocInches(.75)
     doc.add_heading('Bloom - Team Acknowledgment', 0)
     doc.add_paragraph('UNSIGNED FORM - requires both students\' genuine signatures and dates.')
-    doc.add_paragraph('Group number / required team name: __________________________________')
+    doc.add_paragraph('Group: UG-P03 (Group 03) | Project: Bloom')
     doc.add_paragraph(statement)
     for name, role in members:
         doc.add_heading(name, 2)
@@ -117,7 +117,7 @@ def main():
     doc.save(human / 'Team_Statement_FOR_SIGNATURE.docx')
     story = [p('Bloom - Team Acknowledgment', 'Title'),
              p('UNSIGNED FORM - signatures and dates must be supplied by the actual students.'),
-             Spacer(1, 12), p('Group number / required team name: __________________________________'),
+             Spacer(1, 12), p('Group: UG-P03 (Group 03) | Project: Bloom'),
              Spacer(1, 12), p(statement)]
     for name, role in members:
         story += [Spacer(1, 20), p(name, 'Heading2'), p(role), Spacer(1, 18),
@@ -161,7 +161,7 @@ def main():
     checklist = [p('Bloom - Finish before upload', 'Title'),
                  p('Technical package prepared. Genuine course/human evidence is still incomplete.'), Spacer(1, 12)]
     tasks = [
-        'Enter the actual group number and required team name; use the confirmed Project_Group[Number]_Bloom.zip format.',
+        'Verified roster group UG-P03; package filename Project_Group03_Bloom.zip. Fill actual student IDs in the proposal.',
         'Upload Bloom_Project1_SelectedQuestions.docx BEFORE recording; the verified selection contains 10 actual questions, two per category and all required IDs.',
         'Both students genuinely sign the prefilled form. A signed PDF or readable signed PNG/JPG is accepted. Retain required proposal/approval evidence.',
         'Attach genuine board captures, task/review links and required peer evidence. Disclose absent historic captures and commit-count shortfall.',

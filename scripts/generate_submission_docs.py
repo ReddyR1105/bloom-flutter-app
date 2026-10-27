@@ -135,7 +135,7 @@ def main():
                   'RUBRIC_EVIDENCE_CROSSWALK.md. They require a 20-25 minute demo aiming for 23 minutes and at least 20 meaningful '
                   'commits/member. The actual bank is now supplied; the questions-only undergraduate selection is prepared, but course upload and recorded answers remain human actions. Current visible history does not establish that contribution threshold. No commits '
                   'were padded or backdated.'),
-             para('Still required: actual group number, genuine signatures, questions-selection upload before recording, real team recording '
+             para('Verified roster group: UG-P03. Still required: genuine signatures, questions-selection upload before recording, real team recording '
                   'and video URL, real peer observation/improvement evidence, genuine board snapshots and human review. '
                   'Missing October 17/20/23 evidence cannot be recreated. Both members upload individually and preserve '
                   'their receipts; this assistant does not upload to iCollege.'),

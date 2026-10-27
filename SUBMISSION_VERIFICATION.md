@@ -15,7 +15,7 @@
 | Report / presentation / source archive / technical ZIP | Prepared from actual code/results/screenshots; verify manifest hashes in staged package. |
 | Instructor approval evidence | User reports verbal approval; no written instructor-issued copy supplied. |
 | Actual rubric / question bank / selected Word questions | All supplied course pages read and mapped; actual question bank received. Ten-question Word selection is prepared and verified verbatim; upload-before-recording and real answers pending. |
-| Group number / final naming | PENDING HUMAN INPUT; working name Bloom_ProjectOne_Rohan_Het. |
+| Group number / final naming | VERIFIED: supplied roster lists UG-P03, Undergraduate (Pair), Rohan Reddy Gosangi and Het Jani. Final filename Project_Group03_Bloom.zip. |
 | Signed statement / approved-proposal copy as required | PENDING HUMAN INPUT; blank/draft copies are explicitly marked in human_input. |
 | Authentic board/peer/contribution evidence and human reviews | PENDING HUMAN INPUT; contribution PDF has real Git trace but missing-board disclosure; course 20/member threshold not established. |
 | Actual recording / video link | PENDING HUMAN INPUT; deck and planned 23-minute speaker split do not constitute a recording. |

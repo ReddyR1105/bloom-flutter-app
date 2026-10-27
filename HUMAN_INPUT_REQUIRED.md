@@ -3,7 +3,7 @@
 The actual course pages and full question bank have now been supplied, read and mapped. The technical app, APK, report, deck, exact questions-only Word selection and supporting documents are prepared. Required genuine human evidence is still incomplete.
 
 1. Upload `Bloom_Project1_SelectedQuestions.docx` BEFORE recording. It contains I1/I2, A1/A2, D1/D2, T1/T2 and R1/R4 verbatim, two/category and all mandatory IDs. Do not add answers to this file; use the separate rehearsal guide.
-2. Supply the actual group number/team name and student IDs needed for the proposal. Rename the folder/ZIP to `Project_Group[Number]_Bloom.zip` using the real number; no value is invented.
+2. Group UG-P03 is verified from the supplied class roster; the final filename is `Project_Group03_Bloom.zip`. Supply the actual student IDs needed for the proposal. The roster does not provide those IDs.
 3. Both students genuinely sign/date the prepared statement. The course accepts a signed PDF or readable signed PNG/JPG including continuation pages. Unsigned templates are only preparation aids, not completed evidence.
 4. Include the finalized approved proposal and signed attachment as required. The user reports verbal instructor approval, but no instructor-approved finalized Word copy or independent approval record was supplied. An updated draft is not mislabeled as approved or backdated.
 5. Supply the actual ClickUp Board URL, owner/role mapping, shared-link permissions, readable task details/criteria/activity/review transitions and dated flow sample. October 17/20/23 captures were not supplied; retrieve genuine ones if they exist, otherwise disclose their absence. Capture the actual October 27 final board on that date. No substitute board or historic state is fabricated.

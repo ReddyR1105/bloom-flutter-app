@@ -12,8 +12,8 @@ Technical code and verification are complete; genuine course/human evidence rema
 - [x] Technical report, real presentation deck/speaker notes, source archive and technical ZIP prepared.
 - [x] Actual Git contribution trace; no invented commits/reviews.
 - [x] Read the supplied actual rubric/delivery excerpts and map evidence/gaps in RUBRIC_EVIDENCE_CROSSWALK.md.
-- [ ] Supply group number/team name and use Project_Group[Number]_Bloom.zip naming.
-- [ ] Actual professor bank -> 10–15 real questions with required categories/IDs -> questions-only Word file.
+- [x] Verify roster group UG-P03 and use Project_Group03_Bloom.zip naming.
+- [x] Actual professor bank -> 10–15 real questions with required categories/IDs -> questions-only Word file.
 - [ ] Genuine signatures -> signed PDF or readable PNG/JPG; required instructor proposal/approval record.
 - [ ] Actual board URL/captures/card links and contribution evidence; missing historic captures disclosed.
 - [ ] Real peer observation/improvement evidence, authentic human review and any required individual reflection.

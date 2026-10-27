@@ -10,6 +10,6 @@ Integration: local fast-forward from 69d4e01 to the exact branch tip, preserving
 
 Limitations retained: schema v1 has no prior deployed migrations; unsupported upgrades must be explicitly implemented later. Historic target snapshots do not exist; target edits can change historic completion/suggestions. SharedPreferences assumes one owning isolate. No backups/cloud recovery. Android runtime acceptance and release verification results are documented separately in the current TEST_LOG; Het's original macOS results are retained in DATA_TEST_LOG, not passed off as Rohan's device results.
 
-The actual instructor rubric and bank were not supplied. This review does not establish grading compliance, 20 commits/member, human peer review, signatures, usability feedback, approval evidence or course submission.
+At the time of the initial review, the actual instructor rubric and bank were not supplied; they were subsequently supplied and mapped in RUBRIC_EVIDENCE_CROSSWALK.md. This review does not establish grading compliance, 20 commits/member, human peer review, signatures, usability feedback, approval evidence or course submission.
 
 Formal agent-assisted COMMENT review recorded on PR #2 (review ID 5656546173). PR #2 is now marked merged through the normal GitHub merge endpoint with the exact expected head SHA. Final integrated host checks pass33 tests; two Android acceptance tests pass on each of the two AVD profiles; independent release offline/restart/settings/rotation checks pass on both. No human peer approval is claimed.

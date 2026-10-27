@@ -41,7 +41,7 @@ Board expectations: Free Forever shared List + Board view, all members invited, 
 | TeamName_Project1_SelectedQuestions.docx | Prepared from the actual bank with full text and no answers; working Bloom prefix may be adjusted to actual team name. Upload before recording. |
 | GitHub_Repository_Link.txt | Present. Repo is private: instructor must be added as collaborator or repository made public by authorized team action. Instructor access is unverified; do not change privacy silently. |
 | YouTube_Video_Link.txt and actual 20–25 minute team recording | Missing. Aim for rehearsed 23 minutes, with actual app, VS Code, both members and integrated answers/ClickUp trace. |
-| `Project_Group[Number]_Bloom.zip` | Current working name Bloom_ProjectOne_Rohan_Het.zip; actual group number still needed. Source/tests also remain in the repo and source archive. |
+| `Project_Group[Number]_Bloom.zip` | Verified roster UG-P03 (Group 03); final name Project_Group03_Bloom.zip. Source/tests also remain in the repo and source archive. |
 | Individual uploads | Rohan and Het each upload to iCollege by October 27, 2026, 11:59 PM Eastern and retain actual receipts. No upload performed here. |
 
 ## Individual reflection / peer evidence
