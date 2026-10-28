@@ -11,3 +11,5 @@ Both team members are reported undergraduate. Graduate-only state-management/bac
 Displayed source countdowns/percentages are browser UI, not verified task completion. The actual deadline is October 27, 2026, 11:59 PM America/New_York. October 20/23 are checkpoints, not new graded upload deadlines. The October 27 final board capture is upcoming as of October 26; do not create it with an earlier timestamp.
 
 See ../../RUBRIC_EVIDENCE_CROSSWALK.md. Student IDs for the proposal, genuine signatures, approved proposal evidence, real peer/board evidence, instructor private-repository access, human PR approval, recording and upload receipts are not supplied by course requirement pages.
+
+The latest user-pasted Human?AI Testing announcement received October28 is preserved in COURSE_Human_AI_Testing_Guidelines_User_Pasted_2026-10-28.txt and supersedes earlier pasted testing announcements for this package. See ../../TESTING_LABELS_AND_RERUN.md for the exact participation/execution distinction and real rerun results. The original eleven assignment excerpts remain preserved.

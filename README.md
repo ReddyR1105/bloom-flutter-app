@@ -85,3 +85,5 @@ No cloud backup or export/sync; uninstalling may remove local records. No histor
 ## Future enhancements (not implemented or claimed as bonus)
 
 Potential future work: versioned historical target snapshots, explicit local export/restore with validation, and broader Android/accessibility testing. These are proposals only; no extra runtime/cloud features or bonus points are claimed. The required helper and baseline are base work under the actual rubric.
+
+Fresh October28 host verification: formatter unchanged, analyzer clean,33 host tests pass. Current supplied guidance permits Human?AI Testing; [testing roles and rerun evidence](TESTING_LABELS_AND_RERUN.md) distinguishes student direction from AI execution and manual/peer testing. Exact raw logs are in docs/verification/host_rerun_2026-10-28. The app source/dependencies and tested release APK are unchanged.
