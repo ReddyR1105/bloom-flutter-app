@@ -12,4 +12,4 @@ Displayed source countdowns/percentages are browser UI, not verified task comple
 
 See ../../RUBRIC_EVIDENCE_CROSSWALK.md. Student IDs for the proposal, genuine signatures, approved proposal evidence, real peer/board evidence, instructor private-repository access, human PR approval, recording and upload receipts are not supplied by course requirement pages.
 
-The latest user-pasted Human?AI Testing announcement received October28 is preserved in COURSE_Human_AI_Testing_Guidelines_User_Pasted_2026-10-28.txt and supersedes earlier pasted testing announcements for this package. See ../../TESTING_LABELS_AND_RERUN.md for the exact participation/execution distinction and real rerun results. The original eleven assignment excerpts remain preserved.
+The latest user-pasted Human–AI Testing announcement received October28 is preserved in COURSE_Human_AI_Testing_Guidelines_User_Pasted_2026-10-28.txt and supersedes earlier pasted testing announcements for this package. See ../../TESTING_LABELS_AND_RERUN.md for the exact participation/execution distinction and real rerun results. The original eleven assignment excerpts remain preserved.
