@@ -25,7 +25,8 @@ def main():
     metadata = json.loads(metadata_path.read_text(encoding='utf-8-sig')) if metadata_path.exists() else {}
     files = []
     for path in sorted(root.rglob('*')):
-        if path.is_file() and path.name != 'MANIFEST.json' and '__pycache__' not in path.parts:
+        if (path.is_file() and path.name != 'MANIFEST.json'
+                and '__pycache__' not in path.parts and not path.name.startswith('~$')):
             files.append({'path': path.relative_to(root).as_posix(), 'bytes': path.stat().st_size,
                           'sha256': hashlib.sha256(path.read_bytes()).hexdigest().upper()})
     (root/'MANIFEST.json').write_text(json.dumps({
@@ -36,7 +37,8 @@ def main():
     destination = root.parent/(root.name+'.zip')
     with zipfile.ZipFile(destination, 'w', zipfile.ZIP_DEFLATED, compresslevel=6) as archive:
         for path in sorted(root.rglob('*')):
-            if path.is_file() and '__pycache__' not in path.parts:
+            if (path.is_file() and '__pycache__' not in path.parts
+                    and not path.name.startswith('~$')):
                 archive.write(path, f'{root.name}/{path.relative_to(root).as_posix()}')
     with zipfile.ZipFile(destination) as archive:
         assert archive.testzip() is None, 'ZIP CRC failure'
