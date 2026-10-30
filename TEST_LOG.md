@@ -1,3 +1,34 @@
+# Final verification October 30 2026
+
+Bloom - Minimal Habit Tracker
+Georgia State University, Mobile Application Development Project One, UG-P03
+Rohan Reddy Gosangi and Het Jani
+
+| Check | Actual final result | Evidence in this package |
+| --- | --- | --- |
+| Format | PASS, 16 files,0 changes | verification/final_2026-10-30/format_final.txt |
+| Analyzer | PASS, no issues | verification/final_2026-10-30/analyze_final.txt |
+| Host suite | PASS, 33 tests | verification/final_2026-10-30/tests.txt |
+| Phone Android acceptance | PASS, 2 tests | verification/final_2026-10-30/phone_acceptance.txt |
+| Tablet Android acceptance | PASS, 2 tests | verification/final_2026-10-30/tablet_acceptance.txt |
+| Actual release build | PASS,assembleRelease 57.6 s,50.2MB reported | verification/final_2026-10-30/release_build.txt |
+| Phone release/offline/restart/settings/rotation | PASS | verification/final_2026-10-30/phone_release_checks.txt |
+| Tablet release/offline/restart/settings/rotation | PASS | verification/final_2026-10-30/tablet_release_checks.txt |
+
+The two separate AVDs are Pixel_4a/emulator-5554 and Bloom_Tablet_API37/emulator-5556. Both use Android 17 x86_64. Phone natural resolution 1080x2340/density440; tablet 2560x1600/density320. Both were rotated and checked at 1.5x system text scale. Actual XML/screenshots/fingerprints are in verification/devices_2026-10-30. This does not claim physical-device, older-OS or screen-reader coverage.
+
+The new release build reproduced the earlier APK exactly: 52658245 bytes, SHA-256: 67A2A518877DDAB76C5D234105B231C66691146B21F55A2CC164D59200D7BFD7. Production lib/data and lib/helper remain unchanged from Het's reviewed tip 6459294. No new app features were added for packaging.
+
+Real failures and repairs: saved unrelated [DEMO] records exposed order assumptions in the Android acceptance harness. The test now explicitly filters/selects its own [TEST] habit for history corrections and duplicate-date checks. The release harness now scrolls the intended history title into view before asserting/snapshotting it. Unrelated saved records were preserved. Initial failures remain in phone_acceptance_initial_failure.txt, phone_acceptance_history_selection_failure.txt and phone_release_history_visibility_failure.txt. The final passing reruns retain all original assertions. These were harness selection/visibility fixes, not concealed database failures.
+
+Classification follows only the latest supplied Human-AI Testing announcement. The student directed the testing through chat; Codex executed the automated commands. No individual manual execution, observation of every run, peer usability session or signature is invented. Development assistance is recorded in AI_Usage_Log.md and TESTING_LABELS_AND_RERUN.md.
+
+In the source repository, corresponding evidence is under docs/verification/final_2026-10-30 and docs/device_evidence/final_2026-10-30.
+
+Earlier dated verification follows. Its original dates and execution environments remain distinct.
+
+---
+
 # Actual integrated verification — October 26, 2026
 
 Runtime source commit: `2cf89bc` (full compiled-code snapshot in Git). Het's exact source tip `64592948b41686de65cbd660102d034fe6bc1225` is preserved in ancestry. Later changes are documentation/verification-script improvements; Het's data/helper sources are unchanged.

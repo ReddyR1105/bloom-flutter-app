@@ -107,6 +107,10 @@ try {
     $bloomHomeTree = Snapshot 'home_after_back'
     Tap-Label $bloomHomeTree 'Insights'
     $history = Snapshot '04_history'
+    # Unrelated saved demo entries can place the fixture below the fold.
+    # Scroll to its noninteractive title before recording/asserting this view.
+    Tap-Label $history '[TEST] Restart proof'
+    $history = Snapshot '04_history'
     Require-Text $history '[TEST] Restart proof'
 
     Invoke-Adb @('shell','settings','put','system','accelerometer_rotation','0') | Out-Null

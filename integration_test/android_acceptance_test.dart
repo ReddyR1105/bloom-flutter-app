@@ -119,6 +119,10 @@ void main() {
         expect(find.byType(Garden), findsOneWidget);
         await tester.tap(find.text('Insights'));
         await tester.pumpAndSettle();
+        // History can include unrelated saved demonstration records.
+        // Filter to this fixture before correcting the first visible entry.
+        await tap(tester, find.byType(DropdownButtonFormField<int>));
+        await tap(tester, find.text('[TEST] Read 20 pages').last);
         await tap(tester, find.text('Correct or delete check-in').first);
         await tester.enterText(
           field('Note (optional)'),
@@ -130,6 +134,10 @@ void main() {
           'Android acceptance correction',
         );
         await tap(tester, find.text('Add a past check-in'));
+        // Saved demo/user habits may precede this fixture in the dropdown.
+        // Select the intended habit explicitly instead of relying on ordering.
+        await tap(tester, find.byType(DropdownButtonFormField<int>));
+        await tap(tester, find.text('[TEST] Read 20 pages').last);
         await tap(tester, find.text('Save check-in'));
         expect(find.textContaining('already has a check-in'), findsOneWidget);
         await tap(tester, find.text('Cancel'));

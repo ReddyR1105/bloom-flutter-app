@@ -11,3 +11,5 @@
 *.zip binary
 # Preserve exact supplied course text bytes for question-source provenance.
 docs/requirements/COURSE_*.txt -text whitespace=-blank-at-eol,cr-at-eol
+docs/verification/final_2026-10-30/** -text whitespace=-blank-at-eol,cr-at-eol
+docs/device_evidence/final_2026-10-30/** -text whitespace=-blank-at-eol,cr-at-eol

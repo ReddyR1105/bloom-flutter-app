@@ -1,0 +1,4 @@
+{
+  "exit_code": 0,
+  "command": "verify_android_release.ps1 -Serial emulator-5554"
+}
