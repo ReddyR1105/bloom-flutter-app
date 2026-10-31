@@ -1,16 +1,78 @@
-# Human inputs before course upload
+# Bloom - Final Project Completion Record
 
-The actual course pages and full question bank have now been supplied, read and mapped. The technical app, APK, report, deck, exact questions-only Word selection and supporting documents are prepared. Required genuine human evidence is still incomplete.
+Georgia State University | Mobile Application Development - Project One
 
-1. Upload `Bloom_Project1_SelectedQuestions.docx` BEFORE recording. It contains I1/I2, A1/A2, D1/D2, T1/T2 and R1/R4 verbatim, two/category and all mandatory IDs. Do not add answers to this file; use the separate rehearsal guide.
-2. Group UG-P03 is verified from the supplied class roster; the final filename is `Project_Group03_Bloom.zip`. Supply the actual student IDs needed for the proposal. The roster does not provide those IDs.
-3. Both students genuinely sign/date the prepared statement. The course accepts a signed PDF or readable signed PNG/JPG including continuation pages. Unsigned templates are only preparation aids, not completed evidence.
-4. Include the finalized approved proposal and signed attachment as required. The user reports verbal instructor approval, but no instructor-approved finalized Word copy or independent approval record was supplied. An updated draft is not mislabeled as approved or backdated.
-5. Supply the actual ClickUp Board URL, owner/role mapping, shared-link permissions, readable task details/criteria/activity/review transitions and dated flow sample. October 17/20/23 captures were not supplied; retrieve genuine ones if they exist, otherwise disclose their absence. Capture the actual October 27 final board on that date. No substitute board or historic state is fabricated.
-6. Supply one real peer usability observation, its actual design revision and verification. DESIGN_ITERATION.pdf provides genuine concept-to-runtime and automated-test evidence, explicitly not a peer observation. Complete the optional reflection worksheet in your own words; no personal learning is invented.
-7. Have Het genuinely review PR #1 before main merge. Agent-assisted review is disclosed, not human approval. Visible history does not demonstrate at least 20 steady meaningful commits/member; disclose that gap rather than padding/backdating commits.
-8. Record the actual app and VS Code walkthrough with both students. Required duration is 20?25 minutes, aiming for 23. Weave the selected answers and a real ClickUp task-to-code/test trace into the same presentation. Upload the genuine recording and add its accessible real URL to YouTube_Video_Link.txt.
-9. Ensure instructor access to the private repository (instructor collaborator or authorized public visibility), verify links/privacy, review the actual rubric crosswalk, add genuine missing files and regenerate/verify the ZIP. The contribution PDF is in repo and ZIP but cannot substitute for absent board evidence.
-10. Rohan and Het each upload individually to iCollege before October 27, 2026, 11:59 PM America/New_York, verify the actual file and retain their own receipt. The assistant does not submit.
+Team: Rohan Reddy Gosangi and Het Jani  
+Pathway: Undergraduate | Group: UG-P03  
+Status record updated: October 31, 2026  
+Latest actual application verification: October 30, 2026
 
-No physical-device/older-Android or screen-reader certification is claimed. Two separate AVD profiles and actual commands/results are documented. No open-source license has been selected; rights are retained. Technical checks do not promise a grade or erase genuine evidence gaps. Old Bloom_Integration_Review files are superseded.
+## Completed implementation and deliverables
+
+| Item | Recorded result | Evidence |
+| --- | --- | --- |
+| App identity and design | Complete: Bloom offline habit tracker, sage-green and cream interface | README.md; actual screenshots |
+| Screen roles | Complete: Today, create/edit habit, habit detail/activity, history/insights and settings | Flutter source and UI tests |
+| Habit management | Complete: persisted create/read/update/delete, validation and delete confirmation | lib/ui; lib/data; host and Android tests |
+| Activity lifecycle | Complete: start/resume, progress, finish, reset and corrections | repository and UI tests |
+| Data constraints | Complete: unique habit/date check-ins and validated progress bounds | repository tests and Android acceptance tests |
+| Offline persistence | Complete: SQLite habits/check-ins; SharedPreferences settings | actual restart/offline checks on both AVDs |
+| History and garden | Complete: filters, derived summaries and garden reward from stored completions | source, tests and recorded app behavior |
+| Local helper | Complete: calculation, reason, Apply/Not now and explicit Save | AI_FEATURE.md; helper tests |
+| Formatting | PASS: 16 files, zero changes | TEST_LOG.md |
+| Static analysis | PASS: no issues | TEST_LOG.md |
+| Host tests | PASS: 33 | raw final verification logs |
+| Android acceptance tests | PASS: two tests on each of two separate phone/tablet AVDs | raw final verification logs |
+| Release device checks | PASS on both AVDs: offline/restart/settings/rotation and large text | actual screenshots, XML and logs |
+| Release APK | Built and verified, 52,658,245 bytes | app-release.apk |
+| Documentation | Prepared: README, architecture, report, schema, test log, helper evaluation and assistance disclosure | package documents |
+| Questions selection | Prepared: I1/I2, A1/A2, D1/D2, T1/T2, R1/R4; ten verbatim questions | Bloom_Project1_SelectedQuestions.docx |
+| Presentation | Prepared: 35 slides, full two-speaker script and 20:30 silent app/code visuals | presentation/20_minute_version |
+| App screen recordings | Included: authentic app interactions using controlled demo records | presentation/app_screen_recordings |
+| Submission archives | Prepared; ZIP CRC and manifest hashes verified when packaged | MANIFEST.json; final ZIP |
+
+APK SHA-256: 67A2A518877DDAB76C5D234105B231C66691146B21F55A2CC164D59200D7BFD7.
+
+Both tested devices are separate Android 17 x86_64 emulators: Pixel_4a and Bloom_Tablet_API37. No physical-device, older-OS or screen-reader coverage is claimed. Initial harness failures and their passing repairs remain in the test evidence.
+
+## Recorded workstream responsibilities
+
+| Team member | Delivered workstream |
+| --- | --- |
+| Rohan Reddy Gosangi | UI, navigation, integration, accessibility checks, README/documentation, presentation preparation and final packaging |
+| Het Jani | SQLite models/repository, preferences persistence, local helper calculation and data/helper tests |
+
+These are the recorded workstream assignments and implemented outputs, not claims that either student personally executed every development or test command. Required development-assistance disclosure remains in AI_Usage_Log.md. Testing classification: Human-AI Testing, student-directed and AI-executed.
+
+## Evidence status requiring genuine student or external records
+
+| Requirement | Actual recorded status | Next genuine action |
+| --- | --- | --- |
+| Instructor approval | Verbal approval reported by Rohan; independent finalized approval copy not supplied | Include the actual approved proposal and any required approval record |
+| Student IDs | Not supplied in the project records | Enter the actual IDs in required proposal fields |
+| Signatures and dates | Genuine signed statement not supplied | Both students sign/date the actual statement; include all pages |
+| Questions upload | No upload receipt supplied | Verify the Word selection was uploaded before the required recording |
+| Final team recording | Silent visual aids and script prepared; real student narration not supplied | Record both voices, actual VS Code explanation and genuine ClickUp trace; keep total 20-25 minutes |
+| Video URL | No genuine final narrated-video URL supplied | Upload the final edit and verify instructor access |
+| ClickUp evidence | Reference list URL supplied; Board view, permissions and complete historic/task evidence unverified | Add genuine readable board snapshots, owners, acceptance/activity and task-to-code/test traces |
+| Peer usability feedback | Genuine peer observation not supplied | Include an actual observation, revision and verification |
+| PR review | PR #2 integrated; PR #1 open with review pending as inspected October 30 | Het reviews the final integration; follow the course approval-before-merge workflow |
+| Commit requirement | Observed history does not establish 20 meaningful commits per member | Report the real history; do not manufacture or backdate it |
+| Instructor repository access | Repository private at last verification; instructor access unverified | Verify authorized instructor access |
+| Individual course uploads | No student submission receipts supplied; assistant did not submit | Each student uploads individually and retains the actual receipt |
+
+Reference repository: https://github.com/ReddyR1105/bloom-flutter-app
+
+Supplied ClickUp reference: https://app.clickup.com/90141780863/v/l/li/901422402099?pr=90149411098
+
+The supplied ClickUp reference is not independently verified as the final Board URL. Missing historical snapshots cannot be reconstructed as genuine dated evidence.
+
+## Final delivery
+
+Requested archive: Bloom_Project1_Final_Submission.zip.  
+Course-named alias: Project_Group03_Bloom.zip.  
+The two archives contain the same current package.
+
+Use presentation/20_minute_version/START_HERE.txt for the shorter presentation. Its 20:30 timeline already includes app demonstrations; replace matching segments with the required genuine VS Code/board trace rather than appending beyond the allowed duration. Captured visual time labels may refer to the earlier 23-minute edit; use the shorter script timestamps.
+
+The original deadline was October 27, 2026, 11:59 PM America/New_York. Any late acceptance requires the actual course process. Technical completion does not establish missing personal evidence, submission receipts or a guaranteed grade.
