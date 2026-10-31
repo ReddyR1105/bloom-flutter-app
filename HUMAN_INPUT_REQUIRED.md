@@ -48,13 +48,13 @@ These are the recorded workstream assignments and implemented outputs, not claim
 
 | Requirement | Actual recorded status | Next genuine action |
 | --- | --- | --- |
-| Instructor approval | Verbal approval reported by Rohan; independent finalized approval copy not supplied | Include the actual approved proposal and any required approval record |
+| Instructor approval | Proposal supplied October 31; verbal approval reported by Rohan; no instructor annotation in supplied file | Original proposal included in provided_evidence; independent instructor approval record unverified |
 | Student IDs | Not supplied in the project records | Enter the actual IDs in required proposal fields |
-| Signatures and dates | Genuine signed statement not supplied | Both students sign/date the actual statement; include all pages |
+| Signatures and dates | User supplied statement containing both typed names and dates | Included unchanged in provided_evidence; original unsigned filename/note retained; course acceptance of format unverified |
 | Questions upload | No upload receipt supplied | Verify the Word selection was uploaded before the required recording |
 | Final team recording | Silent visual aids and script prepared; real student narration not supplied | Record both voices, actual VS Code explanation and genuine ClickUp trace; keep total 20-25 minutes |
 | Video URL | No genuine final narrated-video URL supplied | Upload the final edit and verify instructor access |
-| ClickUp evidence | Reference list URL supplied; Board view, permissions and complete historic/task evidence unverified | Add genuine readable board snapshots, owners, acceptance/activity and task-to-code/test traces |
+| ClickUp evidence | October 18 Board screenshot supplied, showing 39 Backlog tasks; list URL supplied | Planning evidence included; final state, other dated snapshots, permissions and full task traces unverified |
 | Peer usability feedback | Genuine peer observation not supplied | Include an actual observation, revision and verification |
 | PR review | PR #2 integrated; PR #1 open with review pending as inspected October 30 | Het reviews the final integration; follow the course approval-before-merge workflow |
 | Commit requirement | Observed history does not establish 20 meaningful commits per member | Report the real history; do not manufacture or backdate it |
@@ -65,7 +65,7 @@ Reference repository: https://github.com/ReddyR1105/bloom-flutter-app
 
 Supplied ClickUp reference: https://app.clickup.com/90141780863/v/l/li/901422402099?pr=90149411098
 
-The supplied ClickUp reference is not independently verified as the final Board URL. Missing historical snapshots cannot be reconstructed as genuine dated evidence.
+The supplied ClickUp reference is not independently verified as the final Board URL. The supplied October 18 planning snapshot is now included. Other missing historical snapshots cannot be reconstructed as genuine dated evidence.
 
 ## Final delivery
 
@@ -76,3 +76,7 @@ The two archives contain the same current package.
 Use presentation/20_minute_version/START_HERE.txt for the shorter presentation. Its 20:30 timeline already includes app demonstrations; replace matching segments with the required genuine VS Code/board trace rather than appending beyond the allowed duration. Captured visual time labels may refer to the earlier 23-minute edit; use the shorter script timestamps.
 
 The original deadline was October 27, 2026, 11:59 PM America/New_York. Any late acceptance requires the actual course process. Technical completion does not establish missing personal evidence, submission receipts or a guaranteed grade.
+
+## Evidence received October 31
+
+The original proposal, team statement containing user-supplied typed signature entries, and October 18 planning-board image are included in provided_evidence/. See its README for precise observations. Rohan reports all requirements complete; this record does not invent independent verification of final uploads, peer review, board transitions or student narration.
