@@ -1,0 +1,253 @@
+by design. Memorable by personality.
+
+Find your next great build.
+Choose a real problem you care about, then give it a distinctive interaction. Every brief has the depth of a product pitch and the boundaries of a feasible course project.
+
+Browse the concepts
+Prepare your proposal
+Your build at a glance
+One choice.
+One complete app.
+A focused build. A distinctive experience.
+
+Screen roles
+5
+SQLite entities
+2
+Full local CRUD
+1 activity flow
+Settings
+Filter + aggregate
+1 required smart helper
+Proposal due
+October 17, 2026
+Final project due
+October 27, 2026
+Both due at 11:59 PM / Eastern Time (America/New_York).
+
+20–25 minute presentation
+Aim for 23 minutes, including Q&A.
+Project One / October 13-27, 2026
+
+Build progress dashboard
+15 calendar days. One clear route to delivery.
+
+Testing & delivery
+View milestones & daily steps
+Today's focus
+Day 14 of 15
+Upload questions before recording; rehearse, record, and verify the release APK.
+
+Next milestone
+Final submission / deadline
+
+1d 03h 07m 54s
+Oct 27 · 11:59 PM Eastern
+
+Final deadline remaining
+Individual submission / October 27
+
+1d 03h 07m 54s
+11:59 PM Eastern / verify upload receipt
+
+Calendar time elapsed
+Not task completion
+92.5%
+
+Start / Oct 13
+Finish / Oct 27
+Your four delivery checkpoints
+01
+Proposal
+Oct 17 · 11:59 PM
+Date passed / verify evidence
+02
+UI / navigation
+Oct 20 · checkpoint
+Date passed / verify evidence
+03
+Core functionality
+Oct 23 · checkpoint
+Date passed / verify evidence
+04
+Final submission
+Oct 27 · 11:59 PM
+Upcoming
+Eastern Time / America/New_York
+Uses your device clock; verify that it is correct. Checkpoints are date-based planning targets, not new upload deadlines. Elapsed dates do not prove task completion or approval. Build only after instructor-team approval.
+
+Before you choose
+
+Equal complexity is built into every brief.
+All nine use the same complexity contract and same pathway rubric. The mandatory core is five screen roles, two related entities with full CRUD for both, one start/progress/finish/reset workflow, one filter/aggregate, SharedPreferences settings, covered widgets and controls, one required local smart helper, and common offline/restart/error/two-device verification.
+
+Feature suggestions: choose presentation details that serve your user, not every idea on the page. Visual polish is optional; one local smart helper is required for both pathways. Select one suggested feature, not every idea, and label rules or ML accurately. Each page offers the same depth: concept, five-screen map, six feature pillars, two-entity data model, integrity challenge, required helper recipe, separate undergraduate/graduate implementation, and demo evidence.
+
+No cloud-based app storage or services. No Firebase, cloud authentication, live feeds, remote inference, or online multiplayer. Use small bundled datasets and on-device records. These briefs take structural inspiration from the supplied full-build reference, not its cloud stack, dates, or larger feature scope.
+🎓
+Everyday utility
+4 ideas
+🌱
+Personal momentum
+3 ideas
+🎃
+Playful discovery
+2 ideas
+Everyday utility
+
+Turn friction into a useful little tool.
+Open a feature preview for helper choices and optional polish, or read the full brief for the required scope.
+
+🍲
+Food / personal budgeting
+Budget Bites
+A campus meal decision desk that remembers what lunch actually cost. Plan a meal, log a purchase, and see how small choices affect your budget.
+
+Signature interaction: a budget dial paired with a transparent spending receipt.
+
+Local model: meals + purchase logs.
+
+Budget Bites feature preview
+Open the full Budget Bites brief →
+🎯
+Campus / micro-adventures
+Campus Challenge
+A personal mission board for small, meaningful campus achievements: discover a study spot, practice a skill, or take a creative break.
+
+Signature interaction: a mission passport that celebrates verified personal progress.
+
+Local model: challenges + progress logs.
+
+Campus Challenge feature preview
+Open the full Campus Challenge brief →
+🧭
+Exploration / preparation
+Trail Tales
+A lightweight expedition planner that turns packing and reflection into a personal field notebook, without pretending to be a navigation or safety service.
+
+Signature interaction: a readiness checklist and planned-versus-actual time card.
+
+Local model: trip plans + trip logs.
+
+Trail Tales feature preview
+Open the full Trail Tales brief →
+🎟
+Events / personal itinerary
+Festival Pocket
+A locally curated event planner for campus activities, club nights, or a fall festival. Build an itinerary and remember which experiences were worth repeating.
+
+Signature interaction: a ticket-style plan with a personal attendance stamp.
+
+Local model: events + attendance logs.
+
+Festival Pocket feature preview
+Open the full Festival Pocket brief →
+Personal momentum
+
+Make routines rewarding, not overwhelming.
+🌱
+Habits / gentle motivation
+Habit Mastery League
+A private progress garden for realistic routines. Grow a visual reward from honest check-ins, with no public leaderboard or guilt for missing a day.
+
+Signature interaction: a weekly garden tile powered by editable history.
+
+Local model: habits + check-ins.
+
+Habit Mastery feature preview
+Open the full Habit Mastery brief →
+⏱
+Study / mindful work sessions
+Adaptive Focus Studio
+A study-session cockpit that makes start, pause, and finish feel deliberate. Compare your own sessions and discover a duration that fits your day.
+
+Signature interaction: a tactile duration dial and truthful session receipt.
+
+Local model: focus presets + session logs.
+
+Adaptive Focus feature preview
+Open the full Adaptive Focus brief →
+💪
+Movement / personal training log
+Movement Quest
+A personal workout companion with a friendly quest theme. Plan a short routine, log what you actually did, and reflect without competitive or medical claims.
+
+Signature interaction: a set-by-set progress card with reversible corrections.
+
+Local model: workout plans + training logs.
+
+Movement Quest feature preview
+Open the full Movement Quest brief →
+Playful discovery
+
+Make state management part of the story.
+🧩
+Logic / escape-room companion
+Puzzle Companion
+A pocket puzzle journal for short, prewritten challenges. Reveal a clue, submit an answer, and understand the effect of a hint without a sprawling game engine.
+
+Signature interaction: a clue ladder that reveals help in deliberate steps.
+
+Local model: puzzles + attempt logs.
+
+Puzzle Companion feature preview
+Open the full Puzzle Companion brief →
+🎃
+Halloween / cozy detective mystery
+Midnight Manor
+Investigate the missing lantern at a haunted-manor celebration. Inspect a handful of clues, build evidence notes, and choose a suspect in a spooky-but-friendly offline story.
+
+Signature interaction: an evidence notebook that separates observation from inference.
+
+Local model: cases + evidence notes.
+
+Midnight Manor feature preview
+Open the full Midnight Manor brief →
+Modern ideas / manageable builds
+
+A little intelligence. A visible benefit.
+Each topic has a required beginner smart-helper recipe in its full brief: local inputs, a small method, a worked example, a visible benefit, and a test. Make one helpful suggestion in an existing screen rather than building a chatbot or growing the project scope.
+
+Predict something small
+Budget Bites estimates a meal cost; Habit Mastery suggests a realistic weekly target; Adaptive Focus suggests a session length; Trail Tales compares planning-time estimates.
+
+Recommend a next choice
+Campus Challenge picks a mission; Festival Pocket ranks local events; Movement Quest suggests a user-entered plan by equipment preference, not health needs.
+
+Keep the mystery moving
+Puzzle Companion and Midnight Manor choose prewritten hints that are relevant without spoiling the answer. Students can test whether their helper is useful, not just impressive-looking.
+
+Beginner-friendly: rules and averages introduce the smart-helper workflow, but are not trained models. For a small machine-learning experience, recommendation topics can optionally try a nearest-neighbor matcher using a handful of fictional labeled examples. Keep calculations local, explain the method honestly, and let users ignore or override it.
+
+Try the beginner AI walkthrough
+One helper per team is required for full base credit. Undergraduates use a baseline and five case types; graduates also compare at least five held-out valid cases. Both document critical-thinking decisions in AI_FEATURE.md. Choose from the shared feature menu; no trained model or cloud service is required.
+
+Choose your implementation pathway
+
+One topic, clearly separated academic expectations.
+Undergraduate implementation
+Complete the shared five-screen, two-entity local CRUD app. Demonstrate widgets, controls, state, lifecycle cleanup, settings, filtering, aggregation, offline testing, and a peer-tested revision. Every topic brief has a dedicated undergraduate implementation section.
+
+Undergraduate rubric / 100 points
+Graduate implementation
+Complete the same core plus advanced state management, UI/domain/data architecture with repository and dependency injection, automated tests and coverage, animations, background processing, local notifications, and file operations. Every brief has a separate graduate implementation section.
+
+Graduate rubric / 100 points
+Mixed-level teams: identify each member's pathway and contribution evidence. Graduate extensions are mandatory for graduates, not for undergraduates. Visual polish remains optional. The local helper, baseline, evaluation, and AI_FEATURE.md are required for both pathways; an AI coding assistant is optional.
+
+Curated Questions Select 10–15 questions and use the pathway-specific selection guidance.
+
+Choose with confidence.
+Read one full brief and identify a target user you can explain.
+Sketch its five screens and map CRUD for both entities before adding visual polish.
+Choose one signature interaction and one required smart helper; justify its inputs, method, baseline, and counterexample. Use small local seed data.
+Estimate tasks and assign owners on your Kanban board. Get approval before implementation.
+Use the brief's integrity challenge as a test scenario and presentation story.
+Previously approved ideas remain possible with instructor agreement when bounded to the same shared scope. Product names are creative working titles, not claims of market uniqueness or trademark availability.
+
+Turn your choice into a proposal
+Project overview / Full build requirements / Curated Questions
+Home
+Top
+Bottom
+Back to home

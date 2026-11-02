@@ -1,0 +1,779 @@
+Mobile Application Development · Oktoberfest-inspired build season
+
+The implementation playbook.
+Use this guide for the full core requirements, graduate extensions, local-data examples, and final quality checklist. Explore the topic studio for separate, detailed product briefs.
+
+Flutter + Dart
+SQLite + local storage
+GitHub + Kanban
+Undergraduate + graduate
+Start your build
+Reference desk & FAQs
+Your October checkpoints
+Proposal
+October 17, 2026 · 11:59 PM
+
+Final project
+October 27, 2026 · 11:59 PM
+
+Use Eastern Time (America/New_York). Proposal approval is required before development.
+
+View the dated milestone schedule
+Project One / October 13-27, 2026
+
+Build progress dashboard
+15 calendar days. One clear route to delivery.
+
+Testing & delivery
+View milestones & daily steps
+Today's focus
+Day 14 of 15
+Upload questions before recording; rehearse, record, and verify the release APK.
+
+Next milestone
+Final submission / deadline
+
+1d 03h 05m 31s
+Oct 27 · 11:59 PM Eastern
+
+Final deadline remaining
+Individual submission / October 27
+
+1d 03h 05m 31s
+11:59 PM Eastern / verify upload receipt
+
+Calendar time elapsed
+Not task completion
+92.5%
+
+Start / Oct 13
+Finish / Oct 27
+Your four delivery checkpoints
+01
+Proposal
+Oct 17 · 11:59 PM
+Date passed / verify evidence
+02
+UI / navigation
+Oct 20 · checkpoint
+Date passed / verify evidence
+03
+Core functionality
+Oct 23 · checkpoint
+Date passed / verify evidence
+04
+Final submission
+Oct 27 · 11:59 PM
+Upcoming
+Eastern Time / America/New_York
+Uses your device clock; verify that it is correct. Checkpoints are date-based planning targets, not new upload deadlines. Elapsed dates do not prove task completion or approval. Build only after instructor-team approval.
+
+🚨 Critical Instructions - Read Carefully!
+Proposal MUST be approved by the Instructor's Team before starting development
+MUST create a new GitHub repository for this project (and for every new project)
+You will be graded INDIVIDUALLY on group assignments and may not receive the same grade as all members
+All parties must play an important role from start to finish
+NO CLOUD-BASED STORAGE: Use SQLite or local storage ONLY
+🚫 NOTICE (Commit Activity Enforcement): Moving forward, marks will be deducted for projects where commit history does not show steady, meaningful progress throughout the development process.
+
+For example, only 5–10 commits across the full duration of a project does not reflect continuous development or proper use of version control as a workflow tool.
+
+Please ensure you are:
+
+Committing changes regularly as you complete specific tasks
+Writing clear, descriptive commit messages
+Avoiding last-minute pushes with large amounts of code
+I will be reviewing commit histories closely for remaining submissions. Please adjust your workflow accordingly.
+
+Each member must upload a copy to the designated dropbox in i-college
+Project 1 Q&A is mandatory and directly impacts your grade (see Rubric and Project 1 Q&A)
+01 · From idea to showcase
+Plan → approve → build → evaluate → deliver
+These steps guide the design and iterative redesign of your Flutter app; you are not required to reproduce this course website. Keep your approved topic and core features, then improve their usability and educational value.
+
+How to use this guide: follow the procedure below, then open its linked instructions as needed. The student-journey navigation follows the planning-to-delivery reading route; the separate "Build guide" navigation follows this page's section order. Review your pathway and rubric before committing to scope.
+
+Choose and define · October 13-14
+Do: read a full topic brief, identify users, write three user stories with success criteria, and confirm pathway requirements.
+
+Checkpoint: one agreed topic, five screen purposes, and named team responsibilities. Check the rubric now, not only at submission.
+
+Organize the work · October 13-14
+Do: create the new repository and follow ClickUp setup and evidence requirements. Break the agreed scope into owned, dated tasks with acceptance criteria and WIP limits.
+
+Checkpoint: every member has access; proposal, implementation, testing, helper, documentation, and release tasks are represented. Update the board each working day and link authentic code/review/test evidence as it becomes available.
+
+Design before coding · October 15-16
+Do: complete the wireframe workshop, map two related SQLite entities and their CRUD/delete policies, and plan settings and activity states. Select the required helper, inputs, explanation/override, baseline, counterexample, and pathway evaluation plan.
+
+Checkpoint: annotated five-screen flows, schema/CRUD map, empty/error cases, and a feasible helper plan ready for proposal review.
+
+Submit the proposal and wait · October 17
+Do: upload the complete Word proposal and signed attachment by 11:59 PM, including repository/board URLs, wireframes, team details, and the dated planning snapshot.
+
+Approval gate: record instructor-team approval before any implementation. Until then, planning and wireframe review only.
+
+Build one reliable slice · October 18-20, after approval
+Do: connect navigation, a validated editor, SQLite create/read/update/delete, and settings persistence. Follow the build practices; use feature branches and reviewed PRs.
+
+Checkpoint: demonstrate working UI/navigation on October 20, one end-to-end data flow, clear errors, and offline restart persistence. Save the dated board snapshot and link the review/test evidence.
+
+Complete the approved scope · October 21-23
+Do: finish both entities' CRUD, activity/filter/aggregate, and settings; then implement the required local helper and baseline with explanations, user control, and invalid/no-data feedback. Graduates also complete all advanced requirements.
+
+Checkpoint: a full working demo on October 23, initial tests, helper behavior, and a dated board snapshot. Freeze new scope and track remaining defects.
+
+Test, revise, and document · October 24-25
+Do: verify offline/restart on two devices/emulators, complete helper evaluation, run required graduate tests, and collect a peer observation with a verified design revision. Check text scaling, labels, contrast, accessible controls, and applicable motion/lifecycle behavior.
+
+Checkpoint: expected/actual test results, before/after evidence, required AI_FEATURE.md, architecture/report/setup documentation, individual task traces, and an evidence-based workflow reflection.
+
+Rehearse and record · October 26
+Do: select and upload the questions-only Word document before recording. Prepare slides and one 20-25 minute team video, aiming for 23 minutes including Q&A. Every member participates; show one ClickUp task-to-code/test trace within the existing collaboration portion.
+
+Checkpoint: release APK builds and installs; YouTube playback and repository permissions are verified; the package checklist is complete except the next day's final snapshot.
+
+Capture final evidence and submit · October 27
+Do: capture the dated final board, finish Kanban_Contribution_Evidence.pdf, and include it in the repository and each final ZIP. Add its path and board URL to the README. Run the final readiness checklist.
+
+Finish: every member uploads individually to iCollege by 11:59 PM and verifies receipt, required artifacts, APK, and link access. All deadlines use Eastern Time (America/New_York); browser checkmarks are not a submission.
+
+If approval is delayed: continue planning and wireframe review, notify the instructor, and reprioritize the board with the instructor's team. The October 27 deadline does not automatically move.
+Festival challenge: make it useful
+Give your app a memorable identity, a satisfying completion moment, or a friendly mission. Seasonal styling is optional in the app; accessibility and a clear user purpose come first.
+
+Learning evidence: show the change
+Capture before/after wireframes, one usability observation, the resulting revision, and the test confirming it works. Explain the state, data, and design decisions behind the change.
+
+02 · Project overview & objectives
+This group project challenges you to design, develop, and deploy a fully functional mobile application using Flutter and Dart. You will work collaboratively to create an app that demonstrates proper software development practices, version control, and modern mobile development techniques.
+
+💡 Pro Tip:
+Start with a fun, real student problem and design for offline-first use. Build ideas like challenge hubs, puzzle companions, focus studios, fitness quests, trip planners, or campus event missions using SQLite/SharedPreferences, and implement one required introductory smart helper simply and on-device (no cloud APIs).
+🎯 Learning Objectives
+Master Flutter framework for cross-platform mobile development
+Implement proper state management techniques
+Design intuitive and responsive user interfaces
+Work with local data persistence (SQLite, SharedPreferences)
+Practice version control with Git and GitHub
+Collaborate effectively in a development team
+Follow software development lifecycle (SDLC) practices
+Create comprehensive technical documentation
+03 · Student pathways & requirements
+Core Requirements Undergraduate
+1. Technical Implementation
+Flutter framework (latest stable version)
+Minimum 5 distinct screens/pages
+Responsive design (portrait & landscape)
+Proper navigation flow
+Error handling & validation
+One required local AI-learning smart helper, with baseline, explanation/override, critical-thinking decisions, and pathway evaluation
+2. Data Persistence
+SQLite database integration
+CRUD operations (Create, Read, Update, Delete)
+SharedPreferences for settings
+Data validation & sanitization
+NO cloud storage allowed
+3. User Interface
+Material Design principles
+Consistent theming
+Custom widgets
+Smooth animations
+Accessibility features
+4. Code Quality
+Clean code practices
+Meaningful variable names
+Code comments & documentation
+Proper file organization
+DRY principle (Don't Repeat Yourself)
+5. Version Control
+GitHub repository
+Regular meaningful commits (minimum 20 per person)
+Meaningful commit messages
+Branch management
+Pull requests for features
+6. Documentation
+Clear README with project summary
+Step-by-step setup instructions
+Simple user guide (how to use the app)
+Helpful comments in important code sections
+Document local package/service interfaces; no remote app backend or cloud AI APIs
+💡 SQLite Best Practices:
+Use sqflite with a dedicated database helper. Keep the connection owned by the data layer, not individual widgets; await cleanup when that owner shuts down and clear the cached handle before reopening.
+Graduate Requirements Graduate Students
+In addition to all undergraduate requirements, graduate students must implement the following:
+
+Advanced State Management
+Provider, Riverpod, or BLoC pattern
+Global state management
+State persistence
+Reactive programming
+Advanced Features
+Custom animations (implicit & explicit)
+Background processing
+Local notifications
+File system operations
+Testing & Quality
+Unit tests (minimum 10)
+Widget tests
+Test coverage report
+Integration tests
+Architecture
+Clean architecture principles
+Separation of concerns
+Dependency injection
+Repository pattern
+⚠️ Important for All Students:
+You must document your architectural decisions in a separate ARCHITECTURE.md file. Explain why you chose specific patterns and how they benefit your application.
+Graduate mobile implementation guidance / existing requirements, not extra scope
+04 · Required features & functionality
+1. User Interface Components
+Forms & Inputs: Text fields, dropdowns, date pickers, checkboxes
+Lists & Grids: Scrollable lists with proper itemization
+Navigation: Bottom navigation, drawer, or tab bar
+Dialogs & Alerts: Confirmation dialogs, error messages, loading indicators
+Gestures: Swipe actions, long press, tap handling
+Widget composition: use a reusable StatelessWidget for presentation and a StatefulWidget for an interactive form/activity. Explain build(), state ownership, and setState(); graduate students also meet the advanced-state requirements.
+Buttons & controls: use labeled action buttons for save, edit, delete, and activity control. Include a Slider when a numeric range makes sense (budget, difficulty, duration, intensity); otherwise document an appropriate dropdown/stepper alternative.
+Lifecycle: dispose controllers/timers/listeners that you own, guard asynchronous UI updates, and distinguish transient widget state from persisted records.
+2. Local Data Management
+This single-table SQLite starter demonstrates connection setup and basic CRUD; it is not a complete project data layer. Adapt it to your two related entities, add validation and a parent-delete policy, and enable foreign-key enforcement when using foreign keys. Add your own settings persistence and visible error feedback. Use the copy button as a starting point, not as evidence that the full local-data requirement is complete.
+
+
+👁️
+Unhide Local Data Management Code
+💡 Pro Tip:
+Use SharedPreferences for simple key-value storage (user settings, preferences) and SQLite for complex relational data. This combination covers most local storage needs!
+05 · Topic studio · equal scope, different stories
+Open the topic studio Each topic now has its own product brief: user story, screen map, feature suggestions, local schema, must-solve challenge, test evidence, and a required local smart helper. The comparison below is a quick reference.
+
+Choose one topic. All nine use the same baseline below and the same rubric; the theme does not change the workload. Previously approved ideas may be bounded to this scope with instructor agreement.
+
+No cloud-based app storage: all topics must work offline with SQLite CRUD and SharedPreferences settings. No Firebase/Firestore, remote databases, cloud authentication, live feeds, cloud AI, or cross-device multiplayer. GitHub, ClickUp, and YouTube are for planning/submission only, never app backends.
+One common complexity contract
+Five screen roles: catalog/dashboard, create/edit form, detail/activity, history/insights, and settings. Create/edit can share one screen; splash/login screens do not substitute for these five roles.
+Two related SQLite entities: a primary record and an activity/history record. Implement create, read, update, and delete for both, validate input, confirm destructive actions, and define how deleting a parent affects its history. Persist at least one setting with SharedPreferences.
+One complete stateful workflow: start, change progress, finish/reset, and restore saved records after an app restart. Include one filter and one aggregate (count, total, average, or completion rate). Reuse stateless display widgets and stateful interaction widgets.
+Course-concept coverage: apply the covered layout, navigation, forms, buttons, lists/grids, dialogs, gestures, state, async/lifecycle, and persistence concepts to your chosen domain. Use a slider for a meaningful range or document a better control.
+Common verification: show both entities' CRUD, invalid/empty states, parent-delete behavior, restart persistence, and offline operation on two devices/emulators; document a peer-tested design revision.
+Required introductory AI: one small local prediction, ranking, or adaptive hint using existing inputs, with explanation, override, baseline, five case types, and AI_FEATURE.md. Rules qualify when honestly labeled; graduates additionally compare at least five held-out valid cases. Graduate students meet the same additional architecture/state/testing/features for every topic.
+Start with a small local catalog, such as three primary records with two history records each. This is demo data, not an extra feature quota. Photos, live maps, generative stories/audio, online leaderboards, and large campaigns are out of baseline scope.
+
+Quick-reference comparison of all nine topics
+Idea Engagement Checklist: Solves a real student problem and feels useful day-to-day
+Feature Depth: Includes clear CRUD flows with meaningful user interaction
+Local Data Fit: Works fully offline with SQLite/SharedPreferences
+AI Constraint: Any AI-assisted feature must run locally/on-device (no cloud APIs)
+Demo-Friendly: Easy to explain, show in video, and map to rubric criteria
+🤖 AI Component Hints (Simple):
+Start simple:
+Use rule-based logic first (if/then scoring) before advanced AI.
+Use local history:
+Save user actions in SQLite and suggest "next best" items from patterns.
+Keep it explainable:
+Show why a suggestion was made (e.g., "Based on your last 3 sessions").
+Add user control:
+Offer Apply / Not now or Reveal / Not now. Optional ratings must have a documented effect; a rating alone does not train a model or prove improvement.
+Demo tip:
+Show local inputs → suggestion/reason → explicit user choice, then recompute when relevant saved inputs change.
+⭐ Bonus Features (Extra Credit)
++3 points: Data export/import functionality (JSON/CSV)
++3 points: Dark mode theme switching
++3 points: Advanced search with filters
++4 points: Data visualization with a maintained chart package compatible with your Flutter version (for example, fl_chart)
++5 points: On-device biometric unlock (fingerprint/face through the OS; no cloud account/authentication)
++5 points: Local file-based data sync with documented validation/merge behavior (no cloud services or live cross-device sync)
++7 points: Custom camera integration for image capture
++10 points (Graduate): Complete test suite with >80% coverage
+⚠️ Note:
+Maximum bonus points: 15 for undergraduates, 15 for graduate students. Bonus features must be fully functional and documented, and must not merely repeat the required helper or graduate capabilities.
+06 · Required introductory AI / smart-helper lab
+Required for both pathways · topic-linked · offline
+Every team must implement one topic-linked smart helper in its app. Rules/statistical estimates or a small example-based ML method qualify for this introductory learning component; label the method accurately rather than claiming rules are a trained model. An ordinary aggregate alone or use of an AI coding assistant does not satisfy the runtime feature requirement.
+
+Think tiny smart helper, not chatbot: one suggestion card, explanation, and Apply / Not now (or Reveal / Not now) choice are enough. No training service, API key, subscription, extra screen, or third SQLite entity is needed. Read the required feature menu, critical-thinking decisions, and pathway acceptance criteria. Plan it in the proposal, build after the core data slice works, and complete it by the October 23 checkpoint.
+Two approachable ways to explore AI ideas
+Start here / no ML library
+Explainable rules and recommendations
+Use a few weights, a recent-history average, or a prewritten hint lookup. This introduces inputs, ranking, prediction, explanations, and evaluation. Describe it as a rule-based smart helper, not a trained model or generative AI. Rules are written by you; an average alone does not learn a model.
+
+Optional next step / tiny example-based ML
+Find the most similar example
+For a recommendation topic, bundle 6–10 fictional, labeled examples in Dart or local JSON. Each pairs a small feature vector (such as a category encoded as 0/1 flags and a preference) with a recommended choice. Find the example with the smallest mismatch distance and return its label. This is a simple one-nearest-neighbor classifier: it predicts from labeled examples rather than a hand-written answer rule. It needs no gradient training, cloud service, or ML package; it is not a language model.
+
+Give categorical flags equal weight, scale numeric features if used, choose ties deterministically, and explain which example matched. Add an explicit no-match/out-of-scope threshold and an empty-example state. Store labeled examples locally; never call an exact-match lookup alone a learned model.
+
+Tiny ML fixture: encode a mission request as [art preference, study preference, wants a short task], each 0 or 1. A labeled example [1, 0, 1] recommends "Sketch a campus detail"; [0, 1, 1] recommends "Try a study spot." For a new input [1, 0, 0], the sum of absolute flag differences is 1 versus 3, so the nearest example recommends the sketch. For this fixture, accept distances up to 1; otherwise show "No close example." With equally close examples, choose the lowest stable example ID and disclose the tie. This is a fictional classification demonstration, not a claim about every student's preferences.
+
+A small build-and-play loop
+Pick one useful decision: choose the topic's helper below, not an entire AI assistant. Name the benefit: fewer taps, a clearer estimate, or a hint that keeps the game moving.
+Prepare a few safe examples: use existing SQLite history or fictional bundled data. Choose only fields already available; do not collect sensitive information to make the feature seem smarter.
+Write one pure Dart function: inputs in, suggestion plus explanation out. Keep it outside widgets. Reuse the existing state and storage boundaries.
+Show one card in an existing screen: display "Suggested, not guaranteed," the reason, and Apply / Not now. Applying a suggestion fills a control; only the user's explicit Save/Start/Submit action commits it.
+Play detective with the result: try a normal input, no history, a tie, invalid data, and one deliberately bad suggestion. Use the topic's tiny numeric or ranking fixture to check exact outputs.
+Try feedback without hype: ask a peer whether the suggestion helped. If using feedback, save a preference/rating on an existing record or in SharedPreferences and show exactly how it affects the next result. A rating button that does not change anything is not learning.
+Honest evaluation: reserve a few examples that were not used to choose rules, weights, or example labels. For estimates, show absolute error in real units; for choices, show matches out of tested cases; for hints, check relevance and spoiler avoidance. Report a small demonstration sample as a demonstration, not proof of accuracy for everyone. No invented confidence percentages.
+
+Predict
+Estimate the next meal cost or personal trip duration from earlier local records. Suggest a habit target or focus duration without claiming a behavioral or health prediction. Show inputs, units, and limits.
+
+Investigate
+Review puzzle attempts, attended event tags, or planned-versus-actual trip times. Use the findings to select a useful hint or explain a trend; do not claim a cause from a few observations.
+
+Recommend
+Rank a mission, local event, or user-entered workout plan by explicit preferences. Explain the ranking and allow dismissal or override; workout rankings organize choices, not medical or exertion advice.
+
+Frame a question: name the user decision, the local input fields, expected output, and a measurable success criterion in the proposal.
+Prepare local data: use consented or clearly labeled synthetic samples in SQLite. Do not upload app-user records to external AI or data services. Permitted GitHub/ClickUp/YouTube coordination and submission do not authorize cloud app storage or remote inference.
+Implement and compare: build the helper using a history-based estimate, scoring rules, or a simple on-device model. Add a separate comparison baseline such as the last value, a fixed duration, or neutral ID ordering. Keep calculation logic separate from rendering.
+Evaluate: compare predicted and actual values, or evaluate ranked recommendations with labeled examples. Test normal, empty-history, invalid-input, and outlier cases. Report sample size, metric, and limitations.
+Design safe feedback: show an explanation and an explicit "not enough data" state. Do not invent confidence scores. Fitness and trail suggestions are educational demonstrations, not medical or safety advice.
+Document and demonstrate: show input → analysis → explanation → feedback → updated result. Record reasoning and evaluation in required AI_FEATURE.md; maintain AI_Usage_Log.md separately only for AI development assistance.
+Undergraduate / required
+Implement and explain
+Build one helper and a simple comparison baseline. Record at least five cases: normal, no-data, invalid, boundary/tie/outlier, and counterexample. Explain inputs/method/alternative, metric/sample size, user control, and a justified revision or limitation in AI_FEATURE.md. Manual reproducible cases are acceptable.
+
+Graduate / required
+Compare and justify
+Complete the core helper cases, then compare two approaches on the same at least five held-out valid cases without leakage. Report both metrics, error analysis, and the final trade-off. Include helper tests in the existing 10-unit-test plus widget/integration/coverage requirements, not an additional 10-test quota. See the split and revision rules.
+
+Local-only boundary: app storage and runtime inference must remain on-device; no Firebase, cloud databases, or cloud AI APIs. GitHub and ClickUp are permitted for team coordination, not as app backends. Find evaluation and responsible-AI help.
+07 · Kanban: finish together
+Visualize work · limit work in progress · improve flow
+Kanban is a way to manage and improve the flow of work, not just a colorful task board. Make your workflow, entry/exit rules, and work-in-progress (WIP) limits explicit. Pull new work only when there is capacity, and finish or unblock existing work before starting more.
+
+Backlog
+Ideas and unrefined work.
+
+Explore a budget prediction.
+Ready
+Owner, acceptance criteria, and dependencies identified.
+
+Validated Add Meal form.
+In progress
+WIP: one active task per member.
+
+Connect SQLite insert + read.
+Review / test
+WIP: two team tasks.
+
+Peer review + offline restart test.
+Done
+Reviewed, tested, documented, and merged.
+
+Settings persist after restart.
+Task card: title, owner, due date, acceptance criteria, dependency, and GitHub issue/PR link. Example: "Adding a valid meal saves once and still appears after an offline restart."
+Blocked work: flag the task in its current column, record the reason and next action, and assign someone to help. Blocked tasks still count toward WIP.
+Daily check-in: spend five minutes discussing what can finish, what is aging, and what is blocked. Review and testing are real work, not a dumping ground.
+Measure flow: WIP = started but unfinished tasks; throughput = tasks finished per day; work item age = elapsed time since starting an unfinished task; cycle time = elapsed time from start to finish. Log a small daily sample and discuss one improvement.
+Milestone review: capture board snapshots at the proposal, October 20 UI/navigation checkpoint, October 23 functional checkpoint, and final submission. Link completed cards to authentic commits and test evidence.
+Required planning tool: use ClickUp to apply this workflow throughout the build, not just create a board at the end. Read the ClickUp requirements and evidence checklist; open setup tips and official help.
+08 · ClickUp · plan it, build it, prove it
+Required for undergraduate and graduate teams
+ClickUp is an all-in-one cloud-based project management, productivity, and collaboration platform designed to consolidate tasks, documents, whiteboards, chat, and time tracking into a single workspace. Use its Free Forever plan for this project; no paid upgrade, paid AI, automation, or premium dashboard is required.
+
+Project management, not app integration: implement ClickUp in your team's planning and delivery process. Do not add it to the Flutter app or use its API as app storage. SQLite, SharedPreferences, and on-device computation remain the app's only data/runtime boundary. If account, access, or accessibility barriers prevent use, obtain instructor approval before substituting GitHub Projects; document the approval and provide equivalent evidence.
+What every team must do
+Set up before the proposal. Create one shared project List with a Board view, invite all members, and use Backlog, Ready, In progress, Review / test, and Done. Include the board URL and a readable dated planning snapshot in the October 17 proposal. Implementation starts only after approval.
+Turn requirements into trackable tasks. Cover wireframes, both entities' CRUD, settings/activity flow, required smart helper and evaluation, testing, documentation, and release. Add an owner, due date, acceptance criteria, dependencies where relevant, and authentic GitHub issue/commit/PR links. Graduates also track their advanced requirements.
+Use the board while building. Update it each working day, record blockers and review decisions, and apply the Kanban WIP limits above. Move a task to Done only when its acceptance criteria are met and review/test evidence is linked.
+Explain one workflow improvement. Record a small daily flow sample using the Kanban definitions above. Describe what the evidence showed, one policy or coordination change, and its observed result or limitation. Every member must have traceable task ownership and participation.
+Required evidence · include in Kanban_Contribution_Evidence.pdf
+Evidence of actual ClickUp use, not an empty workspace
+Evidence	Minimum content
+Board identity & policies	Project/team name, board URL, member/role mapping, statuses, WIP limits, and definition of Done. Include any approved substitution.
+Four dated snapshots	October 17 proposal, October 20 UI/navigation checkpoint, October 23 functional checkpoint, and October 27 final board. Show readable task names and columns; caption each image with its capture date and milestone. Do not backdate or fabricate history; disclose missing evidence or approval delays.
+Task-to-build traceability	At least one completed implementation task per member, plus team coverage of local CRUD, the required smart helper, and testing (tasks may overlap). For each show task ID/title, owner, acceptance criteria, dated progress/review comments or activity, commit/PR reference, and actual test/review result. Show how the task reached Done.
+Flow & reflection	Dated flow sample, one blocker or review decision if encountered, individual contributions, and one evidence-based workflow improvement with result/limitation. If no blockers occurred, state that honestly.
+Required / both pathways / final delivery gate
+
+Submit it. Link it. Demonstrate it.
+Do not skip
+Use these checkboxes to verify the existing ClickUp evidence requirements. Progress is saved in this browser and included in the readiness count; checking a box does not upload files or earn credit.
+
+
+01 / Package the evidence. Kanban_Contribution_Evidence.pdf is in the repository and every member's final ZIP, with four dated snapshots, readable task details, each member's code/test trace, and flow reflection. Grading does not depend on a live ClickUp login.
+
+02 / Make it easy to find. The README includes the board URL and exact evidence-file path. Verify shared-link permissions without publishing private team information; the PDF remains usable offline.
+
+03 / Review privacy. The PDF, README, shared board, and recording contain no passwords, invite tokens, or unrelated personal information. Redact unnecessary private details without hiding task ownership or evidence.
+
+04 / Show one complete trace. The recorded collaboration portion follows a ClickUp task → owner/acceptance criteria → commit or PR → actual code → test/review result. It stays inside the same 20–25 minute presentation; no separate video or extra presentation time.
+Undergraduate / existing category
+10 points
+Version control, engagement & Kanban
+Graduate / existing category
+5 points
+Engagement & Kanban collaboration
+These are the full existing category weights, not points awarded just for the PDF or checkboxes. Both pathways provide the same delivery evidence; graduates also meet their existing advanced expectations. No new points or automatic penalty are added.
+
+ClickUp setup & free-plan help
+Package your evidence
+09 · Development guide & best practices
+Development Roadmap
+Repository & planning setup
+Create the new repository and ClickUp board; choose the topic, scope, owners, and pathway requirements. Do not initialize or implement the Flutter app before approval.
+
+UI/UX Design
+Wireframe your screens, choose color scheme, design navigation flow
+
+Database Schema
+Design database tables, relationships, and indexes
+
+Approval gate & core development
+Submit the October 17 proposal and wait for instructor-team approval. Then initialize Flutter and implement navigation, both entities' CRUD, settings, and the activity flow.
+
+Required helper & graduate extensions
+Implement the approved local helper and baseline for both pathways. Graduates complete advanced state, architecture, animations, background processing, notifications, files, and tests. Optional polish comes only after required work.
+
+Testing & Debugging
+Test on multiple devices, fix bugs, optimize performance
+
+Documentation
+Complete README, architecture, report, AI_FEATURE.md, and ClickUp evidence. Include the conditional development-assistance log only when used.
+
+Final Review & Submission
+Code review, final testing, prepare presentation
+
+📦 Essential Flutter Packages
+Choose packages for your approved Flutter mobile features; this is not a requirement to install every package below. Add them through flutter pub add package_name, check platform support and setup, and record the resolved versions. The SQLite starter imports sqflite and path; graduates choose one of Provider, Riverpod, or BLoC rather than implementing all three.
+
+Packages and their roles in a local-first Flutter app
+Package	Purpose	Usage Example
+sqflite	SQLite database	Local data persistence
+path_provider	File system paths	Database & file storage locations
+path	Platform-aware path joining	Join the SQLite database directory and filename in the starter
+shared_preferences	Key-value storage	User settings & preferences
+provider	State management	One graduate state-management option; Riverpod or BLoC also qualifies
+intl	Internationalization	Date formatting, localization
+uuid	Unique IDs	Generate unique identifiers
+image_picker	Image selection	Select images from gallery/camera
+fl_chart (optional)	Data visualization	Create charts & graphs (Bonus)
+🎨 UI/UX Best Practices
+Consistency: Use consistent colors, fonts, and spacing throughout
+Feedback: Provide visual feedback for all user actions
+Accessibility: Use semantic labels, sufficient contrast, scalable fonts
+Performance: Optimize list rendering with ListView.builder
+Error States: Handle loading, empty, and error states gracefully
+Responsive: Test on different screen sizes and orientations
+💡 Design Resources:
+Use the Material Design guidelines, Flutter widget catalog, and design reference desk for wireframes before coding.
+🔧 Git & GitHub Best Practices
+📝 Step 1: Repository Setup
+Create Repository: One team member creates a new GitHub repo for this project (and for each new project)
+Do Not Reuse: Do not reuse old repositories from prior assignments/projects
+Add Collaborators: Settings → Collaborators → Add all team members
+Clone Repository: All members clone to their local machines
+Setup .gitignore: Use Flutter's default .gitignore template
+💻 Terminal Commands
+
+📋
+Copy
+# Clone the repository
+git clone https://github.com/your-team/project-name.git
+cd project-name
+
+# Check current status
+git status
+
+# View all branches
+git branch -a
+🌿 Step 2: Branch Management
+Main Branch: Keep stable, production-ready code
+Feature Branches: Create new branch for each feature
+Naming Convention: Use descriptive, lowercase names with hyphens
+Regular Sync: Pull from main regularly to avoid conflicts
+🌿 Branch Commands
+
+📋
+Copy
+# Create and switch to new branch
+git checkout -b feature/meal-editor
+
+# Or create branch for bug fixes
+git checkout -b bugfix/record-save-error
+
+# Or for enhancements
+git checkout -b enhancement/dark-mode
+
+# Switch to existing branch
+git checkout main
+
+# View current branch
+git branch
+
+# Delete branch after merge
+git branch -d feature/meal-editor
+💡 Branch Naming Examples:
+
+✓ feature/database-setup
+✓ feature/meal-editor
+✓ bugfix/null-pointer-exception
+✓ enhancement/splash-animation
+✗ my-branch (too vague)
+✗ test (not descriptive)
+💬 Step 3: Commit Messages
+Be Specific: Describe what changed and why
+Use Present Tense: "Add feature" not "Added feature"
+Start with Verb: Add, Fix, Update, Remove, Refactor
+Keep it Short: 50 characters for title, detailed explanation in body if needed
+✅ Good Commit Examples
+
+📋
+Copy
+✓ "Add meal editor with local price validation"
+✓ "Fix database connection bug in DatabaseHelper"
+✓ "Update README with installation instructions"
+✓ "Implement dark mode theme switching"
+✓ "Refactor item list widget for better performance"
+✓ "Remove deprecated sqflite methods"
+✓ "Add unit tests for database operations"
+✓ "Fix navigation bar overflow on small screens"
+❌ Bad Commit Examples
+
+📋
+Copy
+✗ "update" (what was updated?)
+✗ "fix bug" (which bug?)
+✗ "changes" (what changes?)
+✗ "asdfasdf" (meaningless)
+✗ "final version" (not descriptive)
+✗ "working now" (what is working?)
+✗ "..." (empty message)
+✗ "stuff" (too vague)
+🚀 Step 4: Making Commits
+💾 Commit Workflow
+
+📋
+Copy
+# 1. Check what files have changed
+git status
+
+# 2. Add specific files
+git add lib/screens/meal_editor.dart
+git add lib/helpers/database_helper.dart
+
+# Or add all changed files
+git add .
+
+# 3. Commit with descriptive message
+git commit -m "Add record editor with form validation"
+
+# 4. Push to your branch
+git push origin feature/meal-editor
+
+# First time pushing a new branch:
+git push -u origin feature/meal-editor
+🔄 Step 5: Syncing with Team
+🔄 Pull & Merge Commands
+
+📋
+Copy
+# Get latest changes from main branch
+git checkout main
+git pull origin main
+
+# Update your feature branch with main changes
+git checkout feature/your-feature
+git merge main
+
+# If conflicts occur, resolve them in your editor
+# Then add and commit the resolved files
+git add .
+git commit -m "Resolve merge conflicts with main"
+
+# Push updated branch
+git push origin feature/your-feature
+🔀 Step 6: Pull Requests
+Create PR: On GitHub, click "New Pull Request" for your branch
+Write Description: Explain what the PR does and why
+Request Review: Tag team members for code review
+Address Feedback: Make requested changes and push updates
+Merge: After approval, merge into main branch
+💡 Pull Request Best Practices:
+
+• Include screenshots for UI changes
+• Link to related issues or tasks
+• Test thoroughly before requesting review
+• Keep PRs focused (one feature per PR)
+• Respond to review comments promptly
+⚠️ Version Control Requirements:
+Minimum 20 commits
+per person throughout the project
+All team members
+must make meaningful contributions
+Never commit:
+Sensitive data, API keys, passwords, or large binary files
+Always update
+.gitignore to exclude build files, IDE configs
+Pull before push:
+Always get latest changes before pushing
+Commit often:
+Small, frequent commits are better than large ones
+💡 Typical .gitignore for Flutter:
+Your repository should already have Flutter's .gitignore, but make sure it excludes: *.iml, .idea/, .dart_tool/, build/. Use Flutter's generated ignore file; commit pubspec.lock for this application so teammates resolve the same dependencies.
+10 · Assessment rubric
+Use the detailed undergraduate and graduate rubrics to assess functionality, conceptual understanding, student engagement, creativity, applied knowledge, teamwork, and technical communication. Each pathway retains its 100-point base and maximum 15-point bonus. Evidence is graded individually, even when code is shared.
+
+Curated Questions Select 10–15 questions with at least two from each category; include I1/I2/D1/D2/R4. Graduate selections also include at least one from each group: A3/A4/A5, D3/D4, and T3/T4/T5, within the same total. Submit the questions-only Word document before recording and in the final package. Answers are integrated into the 20–25 minute video.
+
+Rubric and supporting grading specifications are now separated into focused pages to keep this guide clean and easy to navigate.
+
+📊 Main Grading Rubric
+Primary scoring tables, deductions, and individual grading criteria aligned with Project 1 objectives.
+
+Open Grading Rubric Page →
+📄 Project 1 Specs Details
+Aligned details based on About Submission requirements: presentation, YouTube submission, milestone tracking, and grading alignment.
+
+Open Project 1 Specs Page →
+⭐ Special Project Instructions
+Dedicated guidance for AI usage, milestone submission, team collaboration, and final package requirements.
+
+Open Special Instructions Page →
+🧠 Project 1 Q&A
+Structured reflection prompts to reinforce objectives, connect concepts, reveal learning gaps, and document reasoning.
+
+Open Project 1 Q&A Page →
+📌 About Submission
+Canonical presentation, recording, YouTube, and final submission requirement details.
+
+Open About Submission Page →
+11 · Submission requirements
+Follow this sequence to avoid missed points: package your project files, record your demo, then upload all required materials.
+
+Step 1: Prepare the Project Package
+Collect all required files, verify your APK, and confirm your GitHub repository is accessible.
+
+Step 2: Record the Demo Video
+Upload the questions-only Word selection before recording. Then show the app running and explain key implementation details from VS Code, integrating answers into the same 20–25 minute presentation.
+
+Step 3: Upload Individually
+Every team member must submit the final package to i-college before the deadline.
+
+Required Package Checklist
+
+GitHub Repository Link - Public repository or instructor added as collaborator
+
+README.md - Complete setup and usage documentation
+
+Approved Proposal - Include your finalized proposal document
+
+APK File - Android release build
+
+Demo Video (Required) - 20–25 minute walkthrough with app demo and VS Code explanation
+
+Project Report - Features built, challenges faced, and solutions
+
+AI_FEATURE.md (Required) - Helper method, reasoning/alternative, baseline, cases/metrics, counterexample, revision/limitation, and user-control/offline evidence; graduate held-out/test details
+
+Signed Statement - Printable acknowledgment with all team member signatures; signed PDF or readable PNG/JPG
+
+PowerPoint + required Q&A - Slides, accessible YouTube link, questions-only selection document, and recorded evidence-backed answers from each member
+
+ClickUp / Kanban evidence - Complete the four-item delivery checklist: PDF in repository/every ZIP, README board URL/file path, privacy/link verification, and one recorded task-to-code/test trace
+Video Is Graded Directly:
+Your demo video is used to assess
+Functionality
+,
+Code Quality
+, and
+Documentation/Communication
+. Missing or weak video evidence can cause major deductions (up to -30 points).
+Demo Video Must Include
+Length: 20–25 minutes; aim for a rehearsed 23-minute team presentation
+App Walkthrough: Core features end-to-end
+VS Code Walkthrough: Key files and implementation choices
+Technical Explanation: App flow, data handling, and logic
+Team Coverage: Each member's contribution represented
+README Must Include
+Project Overview: App purpose and target users
+Team Roles: Names and responsibilities
+Features Implemented: Complete feature list
+Setup & Usage: Installation and run instructions
+Tech & Data: Packages, Flutter version, DB schema
+Known Issues + Future Enhancements
+License
+💡 Building Release APK:
+Run flutter build apk --release to generate a production-ready APK. The file will be in build/app/outputs/flutter-apk/app-release.apk
+Submission Format
+Project_Group[Number]_[AppName].zip
+├── README.md
+├── ARCHITECTURE.md
+├── Approved_Proposal.docx
+├── PROJECT_REPORT.pdf
+├── SIGNED_STATEMENT.pdf
+├── AI_FEATURE.md
+├── Project1_Presentation.pptx
+├── TeamName_Project1_SelectedQuestions.docx
+├── Kanban_Contribution_Evidence.pdf
+├── app-release.apk
+├── GitHub_Repository_Link.txt
+└── YouTube_Video_Link.txt
+Include AI_FEATURE.md for both pathways with the required helper rationale, cases, baseline, metrics, and limitations. Include AI_Usage_Log.md separately if AI development assistance was used, and graduate test commands/results plus the coverage report where applicable. The initial proposal remains a Word document with the signed-statement attachment. SIGNED_STATEMENT.pdf in the example may instead be a clear signed .png or .jpg, including any continuation pages. Code and test sources must be accessible in the repository; the ZIP example organizes the final artifacts.
+
+Kanban_Contribution_Evidence.pdf is required in the repository and each final ZIP; follow the ClickUp evidence checklist. Include the board URL and evidence-file path in the README, with readable offline evidence rather than a live link alone.
+
+⚠️ Final Verification Before You Submit:
+Every team member uploaded to i-college
+GitHub repository link works
+ZIP package includes all required files
+APK installs and launches successfully
+README and report are complete and accurate
+📚 Additional Learning Topics
+Reference examples are separated from the requirements above. Expand this desk when you need it; reading a sample does not add a new mandatory feature.
+
+State patterns, SQLite fragments, performance, and test examples
+12 · Pre-submission checklist
+Complete this checklist before submission:
+
+Proposal approved by instructor
+
+All required features implemented and tested
+
+Both related SQLite entities support validated create/read/update/delete, including parent-delete behavior
+
+App tested on at least 2 different devices/emulators
+
+No cloud app backend, storage, authentication, or inference used; app works offline
+
+GitHub repository complete with all commits
+
+README.md comprehensive and accurate
+
+Code properly commented and formatted
+
+APK builds successfully in release mode
+
+Project report written and reviewed
+
+All team members signed acknowledgment statement
+
+All required files included in submission package
+
+Required local smart helper, baseline, five case types, explanation/override, critical-thinking rationale, and AI_FEATURE.md verified
+
+ClickUp used throughout the build; all four delivery checks verified, including PDF/README placement, privacy/access, and a recorded trace within the 20–25 minute presentation
+
+(Graduate) Two-method comparison on at least five held-out valid cases, both metrics/error analysis, and helper tests within existing test quota verified
+
+(Graduate) State management implemented
+
+(Graduate) Test suite completed
+
+(Graduate) Architecture documented
+💡 Final Tip:
+Have someone outside your team test your app! Fresh eyes can catch usability issues you might have missed. Also, test on a real device, not just an emulator!
+🚀 Ready to Build Something Amazing?
+Remember: Great apps aren't built in a day. Plan carefully, communicate with your team, commit often, and don't be afraid to ask for help!
+
+Good luck with your project! 🎉
+
+Questions? Reach out to your instructor or visit office hours.
+
+Mobile Application Development · Project One · Proposal October 17 / Final October 27, 2026
+References, FAQs & project help
+Home
+Top
+Bottom
+Back to home

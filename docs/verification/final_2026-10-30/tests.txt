@@ -1,0 +1,44 @@
+00:00 +0: loading D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart
+00:00 +0: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: habit CRUD, archival and immutable snapshots
+00:00 +1: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: habit CRUD, archival and immutable snapshots
+00:00 +2: D:/ai-business-engine/bloom-flutter-app/test/data/settings_test.dart: failed platform write is reported and cached value restored
+00:00 +3: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: check-in CRUD/correction; child delete preserves parent
+00:00 +4: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: check-in CRUD/correction; child delete preserves parent
+00:00 +5: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: invalid titles, targets and missing IDs fail without records
+00:00 +6: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: progress/status/date validation and duplicate correction rollback
+00:00 +7: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: progress/status/date validation and duplicate correction rollback
+00:00 +8: D:/ai-business-engine/bloom-flutter-app/test/helper/goal_suggestion_test.dart: eight completions gives four; all ties round upward and clamp
+00:00 +9: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: Start/resume, Finish guard, demotion, Reset affects one day only
+00:00 +10: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: Start/resume, Finish guard, demotion, Reset affects one day only
+00:00 +11: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: Start/resume, Finish guard, demotion, Reset affects one day only
+00:00 +12: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: Start/resume, Finish guard, demotion, Reset affects one day only
+00:00 +13: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: Start/resume, Finish guard, demotion, Reset affects one day only
+00:00 +14: D:/ai-business-engine/bloom-flutter-app/test/helper/goal_suggestion_test.dart: held-out synthetic paired MAE, no fitting
+steady low frequency: helper=2 baseline=3 outcome=2
+steady high frequency: helper=6 baseline=3 outcome=6
+moderate irregular: helper=3 baseline=3 outcome=2
+quiet fortnight: helper=1 baseline=3 outcome=0
+exam disruption ahead counterexample: helper=7 baseline=3 outcome=1
+travel ends counterexample: helper=1 baseline=3 outcome=6
+mixed routine: helper=4 baseline=3 outcome=3
+short eligible history: helper=2 baseline=3 outcome=3
+SYNTHETIC paired n=8; abstained=1; helper MAE=1.875; baseline MAE=1.625 days/week
+00:00 +15: D:/ai-business-engine/bloom-flutter-app/test/data/repository_test.dart: target edits atomically normalize existing entries
+00:01 +16: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: unavailable storage shows error and retry without fake records
+00:01 +17: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: unavailable storage shows error and retry without fake records
+00:01 +18: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: unavailable storage shows error and retry without fake records
+00:01 +19: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: unavailable storage shows error and retry without fake records
+00:01 +20: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: unavailable storage shows error and retry without fake records
+00:02 +21: D:/ai-business-engine/bloom-flutter-app/test/ui_startup_test.dart: opens repository once and closes it with app disposal
+00:02 +22: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: empty database validates create form and refreshes saved habit
+00:02 +23: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: empty database validates create form and refreshes saved habit
+00:02 +24: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: empty database validates create form and refreshes saved habit
+00:03 +25: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: failed save retains form and actionable message
+00:03 +26: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: start progress finish and reset require explicit actions
+00:03 +27: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: goal Apply only prefills; cancel never persists; Save does
+00:04 +28: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: habit deletion warns cascade and cancellation preserves data
+00:04 +29: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: duplicate check-in and out-of-range progress are rejected before writes
+00:04 +30: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: settings writes route through gateway and refresh values
+00:05 +31: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: garden reflects completed saved records and history shows real filtered summary
+00:05 +32: D:/ai-business-engine/bloom-flutter-app/test/ui_flows_test.dart: portrait landscape and large text layouts have no framework errors
+00:05 +33: All tests passed!

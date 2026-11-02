@@ -1,0 +1,137 @@
+oose / explain / test / improve
+
+A small helper.
+A thoughtful solution.
+Every team implements one topic-linked smart helper. Learn how inputs, decision logic, explanations, and evaluation can support a useful user decision without building a chatbot or using a cloud service.
+
+Choose a feature
+Plan your reasoning
+One feature / both pathways
+Proposal October 17, 2026
+Final October 27, 2026
+Both 11:59 PM, Eastern Time (America/New_York).
+
+One helper per team app, not per member.
+One existing screen / two existing entities.
+20–25 minute presentation includes it.
+
+Project One / October 13-27, 2026
+
+Build progress dashboard
+15 calendar days. One clear route to delivery.
+
+Testing & delivery
+View milestones & daily steps
+Today's focus
+Day 14 of 15
+Upload questions before recording; rehearse, record, and verify the release APK.
+
+Next milestone
+Final submission / deadline
+
+1d 03h 06m 23s
+Oct 27 · 11:59 PM Eastern
+
+Final deadline remaining
+Individual submission / October 27
+
+1d 03h 06m 23s
+11:59 PM Eastern / verify upload receipt
+
+Calendar time elapsed
+Not task completion
+92.5%
+
+Start / Oct 13
+Finish / Oct 27
+Your four delivery checkpoints
+01
+Proposal
+Oct 17 · 11:59 PM
+Date passed / verify evidence
+02
+UI / navigation
+Oct 20 · checkpoint
+Date passed / verify evidence
+03
+Core functionality
+Oct 23 · checkpoint
+Date passed / verify evidence
+04
+Final submission
+Oct 27 · 11:59 PM
+Upcoming
+Eastern Time / America/New_York
+Uses your device clock; verify that it is correct. Checkpoints are date-based planning targets, not new upload deadlines. Elapsed dates do not prove task completion or approval. Build only after instructor-team approval.
+
+The required introductory AI learning component
+Required for undergraduates and graduates: implement one local prediction, recommendation, or adaptive hint that uses relevant input to produce a suggestion and a truthful explanation. A static decoration, ordinary aggregate alone, chatbot mockup, or using an AI coding assistant does not satisfy this requirement.
+
+Best first-time route: write transparent scoring rules, a history-based estimate, or an adaptive prewritten-hint selector. These qualify for this assignment's introductory AI learning component because students practice decision logic, evaluation, and responsible use. Label the feature rule-based smart helper if it is rules or statistics; do not claim a trained or generative model. A simple example-based nearest-neighbor method also qualifies but is not mandatory, including for graduates.
+
+Use existing local records/preferences or clearly labeled fictional bundled examples. No extra screen, third relational entity, API key, paid tool, cloud database, remote inference, or model-training service is required.
+Show the suggestion, its inputs/reason, and a way to dismiss or override it. Applying a value does not commit a record until the user explicitly saves/starts/submits. Hint helpers may reveal a hint only after an explicit Reveal action.
+Show actionable no-data/no-match and invalid-input feedback. Tie-breaking and any thresholds must be documented. Never invent confidence percentages or medical/safety claims.
+Recompute when relevant local inputs change; demonstrate networking-disabled operation and restart with the saved inputs. A prediction is not a guarantee, and a recommendation need not always win.
+All other core and graduate requirements remain in force. One shared helper can provide evidence for multiple team members, but each must explain their own role and the reasoning. Mixed-level teams use the same feature; graduate members provide the additional comparison/testing evidence.
+
+Suggested features: choose one, not the whole list
+Both pathways may select any row. These are examples, not assigned difficulty levels. Adapt the topic recipe or propose an equivalent small helper for instructor-team approval before implementation.
+
+Nine choices with equivalent helper scope
+Topic / suggested feature	Starter method and benefit	Critical-thinking problem	Comparison baseline
+Budget Bites / Lunch Lens	Recent-price mean estimates the next meal cost.	Does an unusually expensive purchase distort the estimate? Which history should count?	Last observed price.
+Campus Challenge / Mission Match	Preference and unfinished-status points rank a next mission.	Should finishing a preferred mission outweigh trying an unfinished one? Explain weights and ties.	Stable ID order with no scoring.
+Habit Mastery / Garden Guide	Recent completed weeks suggest a bounded target.	How do zero weeks, duplicates, and week boundaries change a fair suggestion?	Current user-set target.
+Adaptive Focus / Session Scout	Median matching completed durations suggests a starting length.	Why exclude cancelled sessions? Would the mean react differently to an outlier?	Fixed 25-minute suggestion.
+Movement Quest / Gear Match	Equipment preference and recent-use points organize user-entered plans.	How do you avoid mistaking preference for ability or prescribing exertion?	Equipment match only; stable ID ties.
+Trail Tales / Notebook Forecast	Historical time differences adjust a personal planning estimate.	Why use stored snapshots rather than an edited parent plan? What can this never predict safely?	Unadjusted planned duration.
+Festival Pocket / Pocket Picks	Explicit preferences and attended tags rank local events.	Why is planned not attended? How do you avoid double-counting tag matches?	Preference-match only; stable ID ties.
+Puzzle Companion / Hint Buddy	Failed-attempt and viewed-hint state selects a prewritten nudge.	Can help be relevant without revealing the answer? What happens after every hint was viewed?	Fixed ladder without attempt-based adaptation.
+Midnight Manor / Lantern Guide	Inspected-clue prerequisites and a wrong-guess match rank spoiler-free hints.	How can observation stay separate from inference? Which hints must be withheld?	First eligible hint by ID, without guess scoring.
+Alternative method, same feature: recommendation helpers can use a tiny nearest-neighbor classifier with local labeled examples instead of scoring rules. Follow the method walkthrough; justify features, distance scaling, ties, and no-match behavior. Graduate students may compare two simple rule methods; they do not have to train a model.
+
+Critical thinking is part of the implementation
+Define usefulness: state the user decision and a modest, measurable success criterion before coding. An engaging feature must help a task, not just display an "AI" badge.
+Choose inputs: justify each field, exclude irrelevant/sensitive fields, and explain how duplicates, edited records, or biased fictional data could mislead the result.
+Defend the method: explain weights, history windows, clamps, prerequisites, and tie rules. Name an alternative and why you did not choose it initially.
+Challenge your solution: construct a counterexample where the helper gives a poor or unhelpful suggestion. Explain why, then revise the method or explicitly preserve and disclose the limitation.
+Compare fairly: use a simple baseline on the same valid inputs. A complex method is not automatically better; keep the simpler one when the evidence supports it.
+Preserve agency: show how a user can reject the result and how an invalid/no-data state avoids misleading output. Distinguish a checked estimate from a guarantee.
+Undergraduate: implement, explain, and challenge
+Build one helper and one simple comparison baseline (a constant, last value, or neutral ordering is sufficient). Record at least five distinct cases: normal, empty/insufficient input, invalid input, a boundary/tie/outlier case appropriate to the method, and a counterexample. Manual reproducible cases are acceptable; automated tests are welcome but are not a new undergraduate unit-test quota.
+
+For each case, record case ID, inputs, expected behavior, actual behavior, and pass/fail. For valid comparison cases, record both outputs and the reference outcome; for no-data/invalid cases assess correct feedback rather than inventing numeric scores. Show the metric and sample size, one limitation, and a justified revision or decision to retain the method. Explain all six critical-thinking decisions above.
+
+Use absolute error for numeric estimates; matches out of cases for labeled recommendations; relevance and spoiler checks for hints. Prefer fictional/consented cases with known reference outcomes. A tiny sample demonstrates the method; it does not establish broad accuracy or causal benefit.
+
+Graduate: compare, test, and justify
+Complete the undergraduate helper and reasoning requirements. Compare the two approaches (the helper and a meaningful baseline count) on the same at least five held-out valid cases, separate from cases used to tune rules, weights, or example labels. In addition, retain the normal/empty/invalid/boundary/counterexample checks; held-out cases may overlap the normal and counterexample checks if they were genuinely reserved, but invalid cases do not count as valid scored cases.
+
+Freeze methods before evaluation, report both metrics/sample sizes, inspect errors, and justify the final method. If you revise after viewing held-out results, treat those cases as development data and reserve a new held-out set for the final comparison. For chronological estimates, inputs must precede the reference outcome. Use a fake clock or controlled fixtures where relevant.
+
+Include helper tests within the existing minimum 10 meaningful unit tests plus widget/integration tests and coverage report; this does not add another 10-test quota. Show a widget case for explanation/override or no-data feedback and an offline/restart integration case. Apply the required state-management, repository/DI, and UI/domain/data boundaries to the helper.
+
+Plan, build, verify, and package
+Proposal / October 17: choose one helper, inputs/output, simple method, baseline, owner, and evaluation plan. Identify member pathways and mock up the explanation/override/no-data states. Obtain instructor-team approval before implementation.
+After approval / October 18–20: establish the core navigation/data slice, then create a pure Dart helper function and local fixtures. UI remains within the existing five screen roles.
+October 21–23: wire the helper to current local input/state, explanations, and explicit actions. Demonstrate a working helper with the functionality checkpoint; graduates include their comparison/test plan.
+October 24–25: complete pathway cases, peer review, revision/limitation, and offline/restart verification. Update documentation and test results.
+October 26–27: include AI_FEATURE.md in the repository and final ZIP for both pathways. It contains method label, benefit, inputs/units, rationale/alternative, baseline, case table, metrics/sample size, counterexample, revision/limitation, and user-control/offline evidence. Graduates add held-out split/comparison and automated-test/coverage links. Keep AI_Usage_Log.md separately only if an AI development assistant was used.
+Presentation: include required R4 with I1/I2/D1/D2 in the same balanced 10–15 questions and 20–25 minute presentation. Show input → suggestion → explanation → override → test evidence. Every member explains their role; all submit individually.
+Assessment without hidden extra points
+The 100-point pathway rubrics retain their weights and maximum 15-point bonus. The helper is required base work, not bonus work. Missing helper evidence means its full-credit criteria are not met in the relevant categories; there is no invented automatic penalty or separate second grade.
+
+Where required helper evidence is assessed
+Evidence	Undergraduate category	Graduate category
+Working helper, five cases, baseline, usefulness and limits	Functionality / 25	Core functionality / 20; testing / 10 for held-out comparison
+Pure logic, accurate terminology, boundaries	Code quality / 15	Core code / 10; state / 15; architecture / 10
+Explanation, accessible controls, override, peer revision	UI/UX / 15	UI/UX / 10
+Required AI_FEATURE.md and critical-thinking rationale	Documentation / 10	Documentation / 5
+R4 demonstration and individual understanding	Q&A / 10	Q&A / 5
+These numbers are existing category maxima, not dedicated additional helper points. Local persistence, collaboration, and advanced-feature obligations remain unchanged. Do not award bonus for merely completing this required helper.
+
+Project One / Required AI learning component / Browse topic recipes
+Home
+Top
+Bottom

@@ -1,0 +1,20 @@
+[
+  {
+    "seconds": 1.197583,
+    "log": "format.txt",
+    "command": "dart format --output=none --set-exit-if-changed lib test integration_test",
+    "exit_code": 0
+  },
+  {
+    "seconds": 10.9479244,
+    "log": "analyze.txt",
+    "command": "flutter analyze",
+    "exit_code": 0
+  },
+  {
+    "seconds": 12.55553,
+    "log": "tests.txt",
+    "command": "flutter test --reporter expanded",
+    "exit_code": 0
+  }
+]

@@ -1,6 +1,7 @@
 # Miscellaneous
 *.class
 *.lock
+!pubspec.lock
 *.log
 *.pyc
 *.swp
@@ -117,3 +118,11 @@ app.*.symbols
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 !/dev/ci/**/Gemfile.lock
+
+# Bloom application reproducibility and local submission artifacts
+!/android/gradlew
+!/android/gradlew.bat
+!/android/gradle/wrapper/gradle-wrapper.jar
+final_submission/
+*.iml
+docs/verification/tablet_emulator_std*.txt

@@ -1,0 +1,148 @@
+📄 Project Proposal
+Prepare one complete proposal package and submit it as a Word document (.doc or .docx).
+
+Proposal due: October 17, 2026 at 11:59 PM. Final project due: October 27, 2026 at 11:59 PM. Use Eastern Time (America/New_York); obtain instructor-team approval before development.
+
+Student roadmap · Choose your topic · ClickUp evidence · Milestones · Wireframes · Required AI Lab · Proposal & approval · Implementation playbook · Rubric · Curated Questions · Final submission · Resources & FAQs
+Project One / October 13-27, 2026
+
+Build progress dashboard
+15 calendar days. One clear route to delivery.
+
+Testing & delivery
+View milestones & daily steps
+Today's focus
+Day 14 of 15
+Upload questions before recording; rehearse, record, and verify the release APK.
+
+Next milestone
+Final submission / deadline
+
+1d 03h 06m 12s
+Oct 27 · 11:59 PM Eastern
+
+Final deadline remaining
+Individual submission / October 27
+
+1d 03h 06m 12s
+11:59 PM Eastern / verify upload receipt
+
+Calendar time elapsed
+Not task completion
+92.5%
+
+Start / Oct 13
+Finish / Oct 27
+Your four delivery checkpoints
+01
+Proposal
+Oct 17 · 11:59 PM
+Date passed / verify evidence
+02
+UI / navigation
+Oct 20 · checkpoint
+Date passed / verify evidence
+03
+Core functionality
+Oct 23 · checkpoint
+Date passed / verify evidence
+04
+Final submission
+Oct 27 · 11:59 PM
+Upcoming
+Eastern Time / America/New_York
+Uses your device clock; verify that it is correct. Checkpoints are date-based planning targets, not new upload deadlines. Elapsed dates do not prove task completion or approval. Build only after instructor-team approval.
+
+Grading Note: This proposal is worth 5% of your grade.
+
+Required Proposal Package (Word Document)
+Your proposal must be complete, specific, and practical. Include every item below in one organized document.
+
+Proposed Group Members
+List full names, student IDs, and expected role/responsibility for each member.
+Clarify ownership for UI, data layer, testing, documentation, and demo sections.
+Identify each member's undergraduate or graduate pathway. Map the topic's separate implementation sections to owners; graduates must cover the complete core plus every graduate extension.
+Project Summary
+Describe the problem your app solves and why it matters for your target users.
+State core features, local-storage plan (SQLite/SharedPreferences), and expected outcomes.
+Map your chosen topic to the equal-scope contract: five screen roles, two related entities with CRUD for both, stateless/stateful widgets, buttons, a meaningful numeric control, one activity/filter/aggregate, and restart/offline tests. Cloud-based app storage is prohibited.
+Required AI learning component: select one topic-linked local smart helper for both pathways. Specify user benefit, input fields/units, suggestion/explanation/override, method label, a simple baseline, owner, and evaluation plan. Justify one alternative and plan a counterexample. Undergraduates plan five case types; graduates additionally plan at least five held-out valid comparison cases. Rules qualify honestly; no trained model or cloud API is required.
+Use ClickUp's free plan for coordination, not app storage. Include the board URL, readable dated October 17 planning snapshot, Kanban workflow, WIP limits, ownership, acceptance criteria, and tasks aligned to the proposal/final deadlines. Follow the required ClickUp evidence checklist; an access-barrier substitution needs instructor approval.
+GitHub Repository Link
+Provide the active project repository URL used by your team.
+Ensure instructor access and confirm all members are collaborators.
+Signed Statement Attachment (PDF or Clear Image)
+Open the printable team acknowledgment, fill in the details, and use Print / Save as PDF. Select the PDF destination in your browser, or print and collect handwritten signatures.
+Attach the signed PDF or a clear PNG/JPG photo or scan with all names, signatures, and dates readable. Include any continuation sheet. An unsigned PDF is only a draft.
+Do not submit an unsigned or incomplete statement file.
+Proposed Wireframe (UI Visual Plan)
+Use the wireframe workshop for the supplied images, Flutter screen-role mapping, annotated CRUD flows, peer-review steps, and handoff checklist. Embed readable drawings in the proposal; a link alone is not the visual plan.
+
+Layouts: Number and name each unique screen included in your project.
+Functionality: Explain key use cases and how users transition from screen to screen.
+User Experience: Describe the purpose and expected interaction on each screen.
+Iterative Design: Propose test cases and your approach for refining improvements.
+How to build a strong wireframe section:
+
+Start with a screen map: catalog/dashboard → create/edit → detail/activity → history/insights → settings. Splash/login does not replace any of these five core roles.
+Draw low-fidelity first: use simple boxes/text before colors and polish. Focus on structure, not decoration.
+Show navigation flow: add arrows and labels for each transition (tap button, submit form, back action, tab switch).
+Document each screen: include purpose, key UI components, and expected user action on that screen.
+Add at least 2 edge cases: empty state, validation error, failed save, or missing data behavior.
+Define iteration plan: explain what feedback you will collect and how you will revise the wireframe after testing.
+Helpful tools (choose one): Figma, Canva, Draw.io, Balsamiq, PowerPoint, or hand-drawn scans with clear labels.
+
+Quality checklist before submission:
+
+Every screen has a name and unique purpose.
+All main user flows are visible and easy to follow.
+Layout supports readability and accessibility (spacing, labels, button clarity).
+Wireframe aligns with planned SQLite/SharedPreferences data flow.
+Proposed tests are specific (what will be tested, expected result, and revision action).
+Draft fields are saved in this browser, not uploaded. Clear saved data on a shared computer when finished. The separate signature page does not save personal details.
+
+Course
+e.g., Mobile App Development
+Section
+e.g., CRN / Section #
+Team Name
+Enter team name
+Proposal Date
+
+10/26/2026
+GitHub Repository URL
+https://github.com/your-team/project-repo
+Word Document File Name
+TeamName_Project1_Proposal.docx
+Project Summary
+Briefly summarize problem, target users, core features, and local storage plan.
+
+Proposal checkpoint: this document should be detailed enough that an instructor can understand your product direction, architecture intent, and team execution plan before development begins.
+
+#	Proposed Group Member	Student ID	Role / Responsibility	Signed Date
+1	
+Full name
+Student ID
+UI, data, testing, etc.
+
+mm/dd/yyyy
+2	
+Full name
+Student ID
+UI, data, testing, etc.
+
+mm/dd/yyyy
+3	
+Full name
+Student ID
+UI, data, testing, etc.
+
+mm/dd/yyyy
+Wireframe Plan Details
+Include layouts (screen names/count), transitions, use cases per screen, and iterative test/refinement approach.
+
+Print / Save Draft as PDF
+Clear saved form data
+Open Project 1 Q&A
+Back to Project Guide
+Submission note: your official proposal upload should be a Word document with all required sections plus the completed signed-stat

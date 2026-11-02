@@ -1,0 +1,39 @@
+00:00 +0: loading /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart
+00:00 +0: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: empty/new and six tracked days abstain, seven unfinished qualify
+00:00 +1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: eight completions gives four; all ties round upward and clamp
+00:00 +2: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: inclusive today-minus-13 through today excludes older records
+00:00 +3: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: calendar windows cross leap day, year and DST boundaries
+00:00 +4: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: corrupt/wrong-habit/duplicate/future/pre-creation inputs rejected
+00:00 +5: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: counterexample: perfect recent history does not predict an exam week
+00:00 +6: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: held-out synthetic paired MAE, no fitting
+steady low frequency: helper=2 baseline=3 outcome=2
+steady high frequency: helper=6 baseline=3 outcome=6
+moderate irregular: helper=3 baseline=3 outcome=2
+quiet fortnight: helper=1 baseline=3 outcome=0
+exam disruption ahead counterexample: helper=7 baseline=3 outcome=1
+travel ends counterexample: helper=1 baseline=3 outcome=6
+mixed routine: helper=4 baseline=3 outcome=3
+short eligible history: helper=2 baseline=3 outcome=3
+00:00 +6 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: held-out synthetic paired MAE, no fitting [E]
+  Expected: <15>
+    Actual: <13>
+  
+  package:matcher                                     expect
+  package:flutter_test/src/widget_tester.dart 473:18  expect
+  test/helper/goal_suggestion_test.dart 228:5         main.<fn>
+  
+00:00 +6 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/settings_test.dart: valid defaults and persisted settings reload
+00:00 +7 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/settings_test.dart: corrupt settings reported, explicit valid save repairs them
+00:00 +8 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: habit CRUD, archival and immutable snapshots
+00:00 +9 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: check-in CRUD/correction; child delete preserves parent
+00:00 +10 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: invalid titles, targets and missing IDs fail without records
+00:00 +11 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: progress/status/date validation and duplicate correction rollback
+00:00 +12 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: Start/resume, Finish guard, demotion, Reset affects one day only
+00:00 +13 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: target edits atomically normalize existing entries
+00:00 +14 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: raw SQLite enforces FK, unique, status, bounds, dates and cascade
+00:00 +15 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: file close/reopen preserves records, settings and no duplicate seeding
+00:00 +16 -1: /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/data/repository_test.dart: helper gateway never saves the suggested target
+00:00 +17 -1: Some tests failed.
+
+Failing tests:
+  /Users/hetjani/Desktop/MAD PORJECT /bloom-flutter-app/test/helper/goal_suggestion_test.dart: held-out synthetic paired MAE, no fitting

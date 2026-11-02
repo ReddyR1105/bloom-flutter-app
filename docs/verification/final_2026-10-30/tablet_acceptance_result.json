@@ -1,0 +1,4 @@
+{
+  "command": "flutter test integration_test/android_acceptance_test.dart -d emulator-5556 --no-uninstall --reporter expanded",
+  "exit_code": 0
+}

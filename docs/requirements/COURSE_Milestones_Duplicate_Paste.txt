@@ -1,0 +1,132 @@
+15 calendar days · planning included
+
+Small milestones. Strong finish.
+Plan from October 13, submit the proposal October 17, and deliver October 27. Build only after approval. Keep every checkpoint demonstrable, documented, and linked to your Kanban board.
+
+Start planning
+Set up ClickUp
+Hard deadlines
+Proposal: October 17, 2026
+11:59 PM
+
+Final: October 27, 2026
+11:59 PM
+
+Use Eastern Time (America/New_York).
+
+Project One / October 13-27, 2026
+
+Build progress dashboard
+15 calendar days. One clear route to delivery.
+
+Testing & delivery
+View milestones & daily steps
+Today's focus
+Day 14 of 15
+Upload questions before recording; rehearse, record, and verify the release APK.
+
+Next milestone
+Final submission / deadline
+
+1d 03h 06m 51s
+Oct 27 · 11:59 PM Eastern
+
+Final deadline remaining
+Individual submission / October 27
+
+1d 03h 06m 51s
+11:59 PM Eastern / verify upload receipt
+
+Calendar time elapsed
+Not task completion
+92.5%
+
+Start / Oct 13
+Finish / Oct 27
+Your four delivery checkpoints
+01
+Proposal
+Oct 17 · 11:59 PM
+Date passed / verify evidence
+02
+UI / navigation
+Oct 20 · checkpoint
+Date passed / verify evidence
+03
+Core functionality
+Oct 23 · checkpoint
+Date passed / verify evidence
+04
+Final submission
+Oct 27 · 11:59 PM
+Upcoming
+Eastern Time / America/New_York
+Uses your device clock; verify that it is correct. Checkpoints are date-based planning targets, not new upload deadlines. Elapsed dates do not prove task completion or approval. Build only after instructor-team approval.
+
+How to read the clock: Day 1 is October 13 and Day 15 is October 27 in Eastern Time (America/New_York). The live clock shows your next milestone and the final deadline. October 20 and 23 are date-based checkpoints; their counters run to the end of the checkpoint day, not a new graded upload deadline. Proposal and final counters end at 11:59 PM Eastern. Calendar progress is time elapsed, not tasks completed; use ClickUp and the readiness checklist for actual work evidence. The clock relies on your device's date/time and is hidden when printing.
+
+Approval gate: dates after October 17 assume timely instructor-team approval. Until approval, continue planning and wireframe review only. If approval is delayed, contact the instructor and revise task scope/priorities; the final deadline is not automatically extended.
+01 · Planning & proposal · October 13–17
+Pre-development tasks and evidence
+Date	Focus	Evidence / deliverable
+Tue, October 13	Scope, users, roles, and new GitHub repository.	Problem statement, three user stories, team ownership, repository access, and initial task board.
+Wed, October 14	Screen map and workflow policies.	At least five screen purposes, navigation flow, Kanban statuses, WIP limits, and dated backlog.
+Thu, October 15	Wireframes and local data plan.	SQLite schema/CRUD map, SharedPreferences settings, accessible layouts, and at least two annotated edge cases.
+Fri, October 16	Proposal review and required smart-helper scope.	Feasible feature list, signed statement, and peer review. Choose one local helper, inputs/benefit, explanation/override, simple baseline, counterexample, owner, and pathway evaluation plan.
+Sat, October 17	Proposal due by 11:59 PM.	Submit one complete Word-document proposal with team details, repository URL, wireframes, and signed statement attachment. Capture the board and request approval.
+02 · Foundation & UI checkpoint · October 18–20
+October 18 · Set up
+After approval, initialize Flutter, theming, routing, folder conventions, and state ownership. Scaffold SQLite and settings.
+
+Evidence: starter runs on the target device; setup documented; feature branches active.
+
+October 19 · First slice
+Build a validated form, list/detail view, and complete local CRUD flow. Handle empty/loading/error states.
+
+Evidence: create/edit/delete and offline restart demonstration; reviewed PR.
+
+October 20 · Milestone 1
+Complete the five-screen UI layout and working navigation. Confirm planned data boundaries and accessible labels.
+
+Evidence: UI/navigation demo, screen captures, board snapshot, and milestone-tagged commit.
+
+03 · Functionality checkpoint · October 21–23
+October 21 · Core integration
+Complete core features and cross-screen state; finish SQLite CRUD and settings persistence.
+
+Evidence: end-to-end flows and regression notes.
+
+October 22 · Required smart helper
+Implement one local helper, baseline, explanation, override, and no-data/invalid feedback for both pathways. Complete graduate advanced-state, animation, background, notification, and file requirements.
+
+Evidence: working helper, case fixtures, rationale/counterexample, and graduate feature demonstrations.
+
+October 23 · Milestone 2
+Finish full core functionality including the required local helper, integrated storage, and initial tests. Review defects and freeze new scope.
+
+Evidence: working demo, helper and test results, board snapshot, and milestone-tagged commit.
+
+04 · Quality, reflection & delivery · October 24–27
+Final quality gates
+Date	Focus	Evidence / deliverable
+Sat, October 24	Testing and resilience.	Two-device/emulator tests; persistence, validation, offline/errors; helper five-case matrix and baseline. Graduates compare two methods on at least five held-out valid cases and include helper tests in the existing minimum 10 unit tests plus widget/integration/coverage requirements.
+Sun, October 25	Usability, redesign, and documentation.	Peer usability observation, verified before/after revision, performance/accessibility checks, README, architecture, report, required AI_FEATURE.md for both pathways, and contribution evidence. Include AI_Usage_Log.md separately only if an AI development assistant was used.
+Mon, October 26	Release and rehearsal.	Installable release APK; PowerPoint; upload the questions-only Word selection before recording; 20–25 minute team video (aim for 23) and YouTube link with integrated curated Q&A; ZIP and link checks.
+Tue, October 27	Final project due by 11:59 PM.	Every member uploads the required package to iCollege and verifies receipt. Capture final board, repository history, and checklist evidence.
+October 20 and October 23 are progress checkpoints, not replacements for the proposal/final deadlines. Follow any instructor-announced checkpoint upload destinations.
+
+05 · Daily Kanban completion routine
+Required ClickUp evidence: maintain the shared board throughout the build. Include its URL and October 17 planning snapshot in the proposal; retain October 20, October 23, and October 27 snapshots. Compile these with each member's task-to-code/test trace, policies, and flow reflection into Kanban_Contribution_Evidence.pdf for the repository and every final ZIP. Open the full requirements and evidence checklist.
+
+Review work closest to Done, then blocked and aging tasks.
+Keep one active implementation task per person and at most two team review/test tasks; blocked work still counts.
+Link each finished task to an authentic commit/PR, test, and acceptance criteria.
+Record WIP, throughput, work item age, and cycle time consistently. Use checkpoint reflections to improve one policy.
+Update documentation and individual ownership; make steady, meaningful commits instead of saving everything for the deadline.
+Review the assignment's Kanban workflow or use the Kanban reference collection.
+
+Project One · October 13–27, 2026 · Back to the project guide
+Home
+Top
+Bottom
+Back to home

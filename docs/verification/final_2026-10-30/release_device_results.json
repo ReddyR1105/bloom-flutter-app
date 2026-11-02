@@ -1,0 +1,7 @@
+{
+  "phone_exit_code": 0,
+  "tablet_exit_code": 0,
+  "phone_final_result": "phone_release_final_result.json",
+  "tablet_final_result": "tablet_release_final_result.json",
+  "initial_attempts_retained": true
+}

@@ -1,0 +1,178 @@
+A useful idea. A playful experience. A reliable build.
+
+Small app.
+Big personality.
+Create an original Flutter experience that makes a student task easier, a routine more rewarding, or a mystery worth solving. Build it locally. Test it honestly. Explain every decision.
+
+Find your project
+Read the build requirements
+The October brief
+Proposal October 17, 2026
+Final October 27, 2026
+
+Both at 11:59 PM, Eastern Time (America/New_York). Instructor-team approval is required before implementation.
+
+20-25 minute team showcase
+Aim for 23 minutes, including Q&A.
+
+Project One / October 13-27, 2026
+
+Build progress dashboard
+15 calendar days. One clear route to delivery.
+
+Testing & delivery
+View milestones & daily steps
+Today's focus
+Day 14 of 15
+Upload questions before recording; rehearse, record, and verify the release APK.
+
+Next milestone
+Final submission / deadline
+
+1d 03h 08m 05s
+Oct 27 · 11:59 PM Eastern
+
+Final deadline remaining
+Individual submission / October 27
+
+1d 03h 08m 05s
+11:59 PM Eastern / verify upload receipt
+
+Calendar time elapsed
+Not task completion
+92.5%
+
+Start / Oct 13
+Finish / Oct 27
+Your four delivery checkpoints
+01
+Proposal
+Oct 17 · 11:59 PM
+Date passed / verify evidence
+02
+UI / navigation
+Oct 20 · checkpoint
+Date passed / verify evidence
+03
+Core functionality
+Oct 23 · checkpoint
+Date passed / verify evidence
+04
+Final submission
+Oct 27 · 11:59 PM
+Upcoming
+Eastern Time / America/New_York
+Uses your device clock; verify that it is correct. Checkpoints are date-based planning targets, not new upload deadlines. Elapsed dates do not prove task completion or approval. Build only after instructor-team approval.
+
+01 / The challenge
+
+Build something people want to use.
+This is a group development project with individual assessment. Start with a clear user problem, design five purposeful screens, and turn Flutter concepts into visible, testable behavior. The seasonal website theme is inspiration, not a requirement for your app.
+
+9
+creative topic briefs
+5
+core screen roles
+2
+related SQLite entities
+0
+cloud app dependencies
+Non-negotiable: use a new GitHub repository, obtain approval before development, and show steady meaningful commits (at least 20 per person). Every member contributes throughout, explains their work, and submits individually. GitHub, ClickUp, and YouTube are planning/submission tools, not app backends.
+02 / Find your direction
+
+A topic studio, not a wall of instructions.
+Compare nine equally scoped concepts, then open a dedicated brief for the product story, screen-by-screen behavior, feature suggestions, data model, challenge, and demonstration plan.
+
+Everyday utility
+Make campus life easier
+Budget Bites, Campus Challenge, Trail Tales, and Festival Pocket put planning, progress, and personal records in your pocket.
+
+Explore useful tools
+Personal momentum
+Make progress feel good
+Habit Mastery, Adaptive Focus, and Movement Quest use thoughtful interactions and local history instead of pressure or public rankings.
+
+Explore routine builders
+Playful discovery
+Make curiosity the interface
+Puzzle Companion and Midnight Manor make clue inspection, choices, and replay a practical lesson in state and data integrity.
+
+Explore mysteries
+03 / One shared scope
+
+Different stories. Equivalent workload.
+Core for every topic
+Catalog/dashboard, editor, detail/activity, history/insights, and settings.
+Two related SQLite entities with validated create, read, update, and delete for both; confirm deletion and define the parent/child policy.
+Start, progress, finish/reset workflow; saved records and settings survive restart.
+One filter, one aggregate, reusable StatelessWidget and StatefulWidget classes, forms, lists/grids, navigation, gestures, dialogs, and buttons.
+A meaningful slider or documented better control; lifecycle cleanup and clear errors.
+Offline operation on two devices/emulators and one peer-tested design revision.
+Read the complete complexity contract
+Challenge without scope creep
+Undergraduates complete the full core. Graduates complete the same core plus the established advanced state-management, architecture, background/local notification/file/animation, and automated-testing requirements.
+
+Every team must implement one explainable local smart helper, a simple baseline, and pathway-specific evaluation. Rules qualify when labeled honestly; no trained model is required. Plan it in the proposal and build after the core data slice works. Choose a feature and review the critical-thinking tasks. Visual polish remains optional.
+
+Compare undergraduate & graduate pathways
+Check the 100-point rubrics and bonus rules
+
+Local only: no Firebase, remote databases, cloud authentication, live feeds, cloud inference, or online multiplayer. Bundle seed data and art or enter them on-device. An exciting concept does not require an expensive infrastructure stack.
+
+04 / Build in deliberate steps
+
+Know what to do next.
+The numbered navigation is your reading route; Resources & FAQs is help at any stage. Plan the AI feature before approval, implement it after the core data slice, and consult the rubric early as well as during final checks.
+
+Choose / October 13-14. Read one full topic brief, identify your users, and write three user stories. Ready when: the team agrees on one topic, five screen roles, and its undergraduate/graduate responsibilities.
+Organize / October 13-14. Create a new repository and shared ClickUp board; assign owners, acceptance criteria, dates, and WIP policies. Ready when: every member can access the board and repository and the required work is tracked.
+Design / October 15-16. Follow the wireframe workshop, map two related SQLite entities and settings, and choose the required local helper and baseline. Ready when: annotated flows, error cases, and a pathway evaluation plan are documented.
+Propose and wait / October 17. Upload the Word proposal and signed attachment, including the board URL and dated snapshot, by 11:59 PM. Gate: no implementation until instructor-team approval.
+Build / October 18-23, after approval. Use the detailed build procedure: one tested vertical slice, then both entities' full CRUD, activity/settings, required helper, and graduate extensions. Ready when: October 20 and 23 demos, reviews, and board snapshots show working progress.
+Verify and improve / October 24-25. Test offline/restart on two devices/emulators, evaluate the helper, and verify a peer-driven revision against the rubric. Ready when: documentation, test results, and individual ClickUp task traces support the claims.
+Present and submit / October 26-27. Upload the questions-only Word selection before recording; deliver one 20-25 minute team video. Ready when: each member's final package includes the required evidence PDF and October 27 board snapshot, the release APK installs, links work, and individual upload receipt is verified by 11:59 PM.
+Keep evidence as you go: capture board snapshots on October 17, 20, 23, and 27; link completed cards to authentic code and test/review results. Planning tools are not Flutter app backends. If approval is delayed, contact the instructor, continue planning only, and revise priorities; the final deadline does not automatically change.
+
+Open the dated milestone plan
+Plan your screens & interactions
+05 / The implementation desk
+
+Keep reference material out of your way.
+Build and investigate
+The implementation playbook holds the full feature rules, SQLite examples, Git workflow, testing guidance, and required local smart-helper lab. Read the relevant section as you work.
+
+Open the implementation playbook
+ClickUp: show your build process
+Both pathways must use ClickUp's free plan for team planning and provide four dated board snapshots, each member's task-to-code/test trace, and a workflow reflection in the existing Kanban evidence PDF. It is not an app backend.
+
+Read ClickUp & required evidence
+Setup tips & official help
+
+06 / The showcase
+
+20-25 minutes. Evidence over hype.
+Present one rehearsed team walkthrough, averaging about 23 minutes. Include app behavior, both entities' CRUD, offline restart, the VS Code trace, testing, and individual ownership. Integrate 10-15 curated answers into the same recording; do not add a second Q&A presentation.
+
+Prepare your defense
+Select at least two questions from each category, including I1, I2, D1, D2, and R4. Graduate selections also include at least one from each group A3/A4/A5, D3/D4, and T3/T4/T5 within the same total. Submit selected IDs and full questions in Word, with no answers.
+
+Curated Questions
+Package the evidence
+Include the APK, approved proposal, report, signed statement, slides, question selection, required AI_FEATURE.md, repository/YouTube links, architecture and contribution/Kanban evidence. Every member uploads individually.
+
+Final submission instructions
+Full package checklist & ZIP example
+
+What earns credit?
+Reliable implementation, understanding, thoughtful design, local persistence, steady teamwork, documentation, and evidence-backed answers. Undergraduate and graduate pathways each have a 100-point base and at most 15 bonus points; grades reflect individual evidence.
+
+Open the assessment rubric
+Your final quality gate
+The saved readiness checklist lives with the complete build instructions. Previous checklist progress is preserved; it is a browser aid, not a submission receipt.
+
+Open the interactive readiness checklist
+Project One / Flutter Build Studio / Help & references
+Home
+Top
+Bottom
+Replay Halloween intro

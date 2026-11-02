@@ -1,0 +1,4 @@
+{
+  "command": "flutter build apk --release",
+  "exit_code": 0
+}

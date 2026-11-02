@@ -1,0 +1,14 @@
+{
+  "description": "Synthetic held-out evaluation prepared separately from unit examples. Fixed proposal rule is not fitted or tuned. Outcomes are invented scenario labels, not measured behavior. completedOffsets are days before 2026-10-26; trackedDays includes unfinished zero-progress entries.",
+  "cases": [
+    {"name":"steady low frequency", "trackedDays":14,"completedOffsets":[1,4,8,11],"followingWeek":2},
+    {"name":"steady high frequency", "trackedDays":14,"completedOffsets":[0,1,2,3,4,6,7,8,9,10,11,13],"followingWeek":6},
+    {"name":"moderate irregular", "trackedDays":14,"completedOffsets":[0,2,5,8,12],"followingWeek":2},
+    {"name":"quiet fortnight", "trackedDays":14,"completedOffsets":[],"followingWeek":0},
+    {"name":"exam disruption ahead counterexample", "trackedDays":14,"completedOffsets":[0,1,2,3,4,5,6,7,8,9,10,11,12,13],"followingWeek":1},
+    {"name":"travel ends counterexample", "trackedDays":14,"completedOffsets":[11],"followingWeek":6},
+    {"name":"mixed routine", "trackedDays":14,"completedOffsets":[0,1,4,6,8,11,13],"followingWeek":3},
+    {"name":"short eligible history", "trackedDays":7,"completedOffsets":[0,2,5],"followingWeek":3},
+    {"name":"new habit abstention", "trackedDays":3,"completedOffsets":[0,2],"followingWeek":2}
+  ]
+}

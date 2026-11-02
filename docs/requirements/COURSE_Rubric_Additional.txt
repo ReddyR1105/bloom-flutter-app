@@ -1,0 +1,100 @@
+01 · How evidence is assessed
+The category weights below preserve the project scoring framework. Performance levels apply within each category: assess the listed evidence, multiply the category maximum by the demonstrated level, and sum the results. Partial scores within a band reflect completeness and reliability.
+
+Performance descriptors for every rubric category
+Level	Category credit	What the evidence shows
+Excellent	90–100%	Complete, reliable implementation; clear reasoning; verified edge cases; original, user-centered decisions; authentic individual evidence.
+Proficient	75–89%	Most requirements work consistently; concepts are explained accurately; meaningful testing and collaboration evidence; minor gaps.
+Developing	50–74%	Partial implementation or uneven reliability; limited explanation, iteration, or tests; contribution evidence needs clarification.
+Insufficient	1–49%	Major missing behavior, unsupported claims, weak understanding, or little verifiable evidence.
+Not demonstrated	0%	No usable submission or evidence for the category.
+Learning dimensions: student engagement is visible in Kanban/commits, peer review, and reflection; understanding of core concepts in state/data explanations; creativity in user-centered feature design and iteration; effective application of knowledge in working, tested app flows. Seasonal decoration alone does not earn creativity credit.
+
+Required AI learning component: both pathways implement one explainable on-device smart helper. Rules/statistical estimates qualify when labeled honestly; a trained model is not mandatory. Assess the helper acceptance criteria within existing functionality, code, UI/UX, documentation, and Q&A categories; graduate testing also assesses the held-out comparison. No new points or automatic penalty is introduced. The helper is base work, not bonus work.
+Mandatory Q&A: answer selected Project 1 question-bank prompts during the 20–25 minute presentation, using app and VS Code evidence. Each member must explain their contribution.
+Equal-topic scope: apply the common five-screen/two-entity contract to every app, including Midnight Manor. Demonstrate StatelessWidget and StatefulWidget composition, buttons, a meaningful slider or justified alternative, both entities' CRUD, a filter/aggregate, settings, lifecycle cleanup, and offline restart.
+
+Question selection: follow the Curated Questions rules: 10–15 total, at least two per category, including I1/I2/D1/D2/R4. Submit the questions-only Word document before recording/presenting and in the final package. Graduate students also select at least one from each group: A3/A4/A5 (architecture), D3/D4 (local data), and T3/T4/T5 (testing), within the same total. The presentation is 20–25 minutes, aiming for 23.
+
+Undergraduate rubric · 100 points
+Implement, explain, and improve
+Category	Points	Full-credit criteria and evidence
+Functionality & applied knowledge	25	Five distinct screen roles with navigation, forms, lists/grids, gestures, dialogs, validation, start/progress/finish/reset, filter/aggregate, and two-device/emulator testing. Implement the required local smart helper and comparison baseline; record at least five normal/no-data/invalid/boundary/counterexample cases with expected/actual results. Report a suitable metric/sample size and a justified revision or limitation. Explain state changes and visible error recovery.
+Code quality & core concepts	15	Reusable StatelessWidget and StatefulWidget composition, meaningful names, organized files, DRY logic, and useful comments in non-obvious code. Keep helper decision logic separate from widgets and label rules/statistics versus example-based models accurately. Explain state ownership, lifecycle cleanup, and data boundaries in ARCHITECTURE.md. Demonstrate Flutter/Dart understanding rather than copied code without explanation.
+UI/UX, creativity & user engagement	15	Consistent Material interface, portrait/landscape responsiveness, accessible labels, contrast, text scaling, and appropriate animation. Show the helper suggestion/reason, accessible dismiss/override controls, and actionable no-data/invalid feedback; never silently save a suggested value. Demonstrate one user-centered creative interaction or problem-solving improvement. Include before/after design evidence, a peer usability observation, and a verified revision.
+Local data persistence	15	Validated SQLite create/read/update/delete for both related entities and SharedPreferences settings. Show the parent-delete policy, refreshed derived values after edits/deletes, offline restart persistence, parameterized queries, sensible schema/data ownership, and clear failure feedback. Explain why each storage choice fits the data. No cloud app storage.
+Version control, engagement & Kanban	10	At least 20 meaningful commits per person over the project; feature branches and pull requests. Apply the required ClickUp workflow: daily board updates, ownership/WIP policies, four dated snapshots, each member's completed task-to-code/test trace, and one flow improvement. Complete the four delivery checks: Kanban_Contribution_Evidence.pdf in the repository and every final ZIP; README board URL/file path; readable offline evidence with privacy/permission verification; one recorded task → code → test/review trace inside the 20–25 minute presentation. Record blockers honestly if encountered. Manufactured or last-minute history is not steady progress.
+Documentation & reflection	10	Approved proposal, README setup/version/dependency notes, user guide, schema, ARCHITECTURE.md, report, contribution evidence, known issues, and required slides/video links. Required AI_FEATURE.md explains benefit, inputs/units, method/rationale/alternative, baseline, cases/metrics/sample size, counterexample, revision/limitation, and user-control/offline evidence. Record AI development assistance separately in AI_Usage_Log.md when used. Explain what you learned.
+Project 1 Q&A · mandatory	10	Answer the balanced selection including required I1/I2/D1/D2/R4 during the team presentation using app behavior and code. Every member explains their contribution, state/data concepts, helper reasoning/evaluation, and a challenge/solution. Unsupported claims or unexplained generated code do not demonstrate understanding.
+Base total	100	Up to 15 additional bonus points; individual evidence determines each student's grade.
+Graduate rubric · 100 points
+Complete all undergraduate requirements plus all graduate requirements. The existing 55-point undergraduate-core block is divided below so engagement, creativity, and applied knowledge remain explicit; the advanced category weights are unchanged.
+
+Design, evaluate, and justify
+Category	Points	Full-credit criteria and evidence
+Core functionality & applied knowledge	20	Meet all undergraduate behavior requirements, including the required local smart helper, baseline, five case types, five screens, offline flows, validation, and two-device/emulator evidence. Justify the data/state flow, method choice, alternative, counterexample, and revision/limitation. Graduate held-out comparison evidence is assessed in testing below.
+Core code quality	10	Meet undergraduate readability/reuse expectations; consistent domain types, maintainable organization, explicit errors, and a reviewed implementation. Explain nontrivial code rather than using generated output as justification.
+Creative, accessible UI/UX	10	Meet undergraduate responsiveness/accessibility and helper explanation, dismiss/override, no-data/invalid-feedback expectations. Document a user-centered innovation, peer feedback, before/after revision, and verified improvement to a core task. Justify trade-offs instead of adding complexity for its own sake.
+Local data persistence	5	Meet undergraduate SQLite CRUD/settings requirements. Demonstrate restart persistence, robust validation, and a defensible schema. No cloud storage or runtime AI APIs.
+Engagement & Kanban collaboration	5	Meet the 20 meaningful commits per person and PR requirements. Apply the same required ClickUp workflow: policies, ownership, reviews, four dated snapshots, each member's task-to-code/test trace, and flow metrics. Complete the same four delivery checks: Kanban_Contribution_Evidence.pdf in the repository and every final ZIP; README board URL/file path; readable offline evidence with privacy/permission verification; one recorded task → code → test/review trace inside the 20–25 minute presentation. Identify a bottleneck or coordination limitation and justify one workflow improvement.
+Documentation & reflection	5	Meet undergraduate documentation/submission requirements including AI_FEATURE.md. Add held-out split/comparison, helper test/coverage links, evidence-based rationale/reflection, contribution mapping, and AI development-assistance disclosure when applicable.
+Advanced state management	15	Implement Provider, Riverpod, or BLoC with reactive global state and persistence. Explain ownership, loading/error transitions, cross-screen consistency, and lifecycle/disposal behavior; verify transitions with tests or reproducible cases.
+Architecture & conceptual understanding	10	Apply clean architecture, separated UI/domain/data responsibilities, dependency injection, and repository pattern. Diagram boundaries in ARCHITECTURE.md, justify an alternative and trade-off, and show how the structure supports testing.
+Testing & evaluation	10	At least 10 meaningful unit tests plus widget tests, integration tests, and a coverage report, including helper logic, explanation/override feedback, and offline restart. Compare the helper and a meaningful baseline on the same at least five held-out valid cases, separate from tuning cases; report both metrics/sample sizes and error analysis. Prevent data leakage and reserve new held-out cases if methods are retuned. Helper tests count within the existing quota. Coverage alone does not prove correctness.
+Advanced features	5	Demonstrate required implicit/explicit custom animations, background processing, local notifications, and file operations. Show permission/failure paths and lifecycle cleanup while preserving offline behavior and accessibility.
+Project 1 Q&A · mandatory	5	Defend architecture, testing, data, and helper decisions through the balanced selection including I1/I2/D1/D2/R4 and graduate ID groups. Explain your contribution, two-method comparison, an alternative, and a limitation. Every graduate member demonstrates graduate-level understanding.
+Base total	100	55 core + 45 advanced/Q&A; up to 15 additional bonus points.
+Mixed-level teams: share code and agree on scope, but identify each student's pathway and evidence. Graduate work must meet graduate expectations; undergraduates are not required to complete graduate extensions.
+Bonus · maximum 15 points per pathway
+Preserve core quality first. Bonus features must be fully functional, documented, demonstrated, and not merely repeat a required feature. Completing the required smart helper, baseline, evaluation, or AI_FEATURE.md does not earn bonus by itself.
+
+Data export/import (JSON/CSV): +3.
+Dark-mode switching: +3.
+Advanced filtered search: +3.
+Data visualization/charts: +4.
+On-device biometric unlock through the OS: +5 (no cloud account/authentication).
+Local file-based data sync with documented validation/merge behavior: +5 (no cloud services or live cross-device sync).
+Custom camera integration: +7.
+Graduate complete test suite with greater than 80% coverage: +10.
+The combined award is capped at 15, even if individual feature values total more.
+
+02 · Submission evidence crosswalk
+One base grade, not two: the pathway tables above determine the 100-point base. This preserved About Submission crosswalk organizes evidence; it is not an additional grade.
+About Submission alignment · reference weights only
+Evidence area	Reference points	Required evidence
+Version control activity	15	Steady, meaningful commits by every member.
+Design documentation	10	Wireframes, architecture reasoning, and iteration.
+Code explanation	10	App and VS Code walkthrough of major logic.
+Team collaboration logs	10	Required ClickUp/Kanban evidence PDF: board policies, four dated snapshots, individual task-to-build traces, reviews/contributions, and flow reflection.
+Code readability	10	Maintainable organization and useful comments.
+Milestone achievement	15	October 17 proposal; October 20 and 23 checkpoints; October 27 final evidence.
+Functionality & testing	15	Working core features and reproducible tests.
+Presentation, reflection & mandatory Q&A	15	20–25 minute video, slides, technical answers, and individual reflection.
+Reference total	100	See About Submission for packaging details.
+03 · Existing project deduction policy
+These policies are retained from the original rubric; contact the instructor for policy interpretation.
+
+Missing/incomplete documentation: −10 points.
+Poor code quality (unreadable structure or missing necessary comments): −15 points.
+Nonfunctional features or major bugs: −20 points.
+Cloud storage instead of local storage: −25 points.
+Missing/inadequate app and VS Code demo video: up to −30 points.
+Missing or unsupported Project 1 Q&A responses: up to −20 points.
+Inadequate version control or collaboration: −30 points.
+Late submission: −50 points per day.
+04 · Individual grading evidence
+Group members may receive different grades. Each member must demonstrate their learning, not merely appear on a team list.
+
+Individual commits, reviewed PRs, task ownership, and code quality.
+Meeting participation and documented Kanban decisions.
+Peer evaluations and contribution mapping in the README.
+Your portion of the demo and your understanding during Q&A.
+One challenge, the solution you applied, and what feedback changed.
+Every member's final iCollege upload by October 27, 2026 at 11:59 PM.
+Open the presentation question bank or visit the reference desk FAQs.
+
+Project One · 100 base points per pathway · Back to the project guide
+Home
+Top
+Bottom
+Back to home

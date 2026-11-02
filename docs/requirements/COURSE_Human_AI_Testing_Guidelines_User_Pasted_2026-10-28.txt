@@ -1,0 +1,7 @@
+**Professor's Announcement — Human–AI Testing Guidelines**
+Dear Students,
+For this assignment, AI tools such as Codex may be used to generate, execute, and evaluate tests.
+Testing may be classified as **“Human–AI Testing”** when a student has participated in the process, including through observation, review, or supervision.
+Direct manual execution of every test is not required. .
+Best regards,
+Professor
